@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>일해요</title>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare-base64.css">
+<link rel="stylesheet" type="text/css" href="http://devm-yupitereu.ilhaeyo.com/_global/assets/css/ilh_default.css">
+<link href="css/ilh_search.css" rel="stylesheet" type="text/css">
+</head>
+<body><div id="wrap" class="pd_35">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_main">
+		<div class="srch_bg">
+			<div class="srch_btn srch_back">
+				<a href="javascript:void(0);" onClick="javascript:cl.finishWin();">뒤로</a>
+			</div>
+			<input type="text" id="srch_input" placeholder="검색어를 입력하세요" style="ime-mode:active">
+			<div id="srch_voice" class="srch_btn srch_voice">
+				<a href="#">음성 검색</a>
+			</div>
+			<div id="srch_del" class="srch_btn srch_del">
+				<a href="javascript:void(0);" onClick="javascript:delSrchInputText();">검색어 삭제</a>
+			</div>
+			<div id="srch_on" class="srch_btn srch_on">
+				<a href="javascript:void(0);" onClick="javascript:procSearch()">검색</a>
+			</div>
+		</div>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 최근검색 및 추천검색 -->
+    <div class="history_wrap">
+        <div class="srch_history box_shadow1">
+            <!-- 직업검색 -->
+            <ul id="jobCtgr_srchWord" class="br_bot"></ul>
+            <!-- 추천검색 -->
+            <ul id="recommend_srchWord" class="br_bot">
+                <li>
+                <a href="#">추천검색어1</a>
+                </li>
+                <li>
+                <a href="#">추천검색어2</a>
+                </li>
+                <li>
+                <a href="#">추천검색어3</a>
+                </li>
+            </ul>
+            <!-- 최근검색 -->
+            <ul id="latest_srchWord"></ul>
+        </div>
+    </div>
+	<!-- // 최근검색 및 추천검색 -->
+	<!-- 검색 결과 -->
+	<div class="result_wrap">
+		<div class="list_none ft_wt700">
+			 검색 결과가 없습니다<br/>
+			다른 조건으로 검색해 보세요.
+		</div>
+		<!-- 검색 필터 -->
+		<div class="filter_box">
+			<div class="result_filter grd_divide">
+				<select>
+					<option>전체</option>
+					<option>일구함</option>
+					<option>인력구함</option>
+				</select>
+			</div>
+			<div class="result_filter grd_divide">
+				<select>
+					<option>전체</option>
+					<option>서울</option>
+					<option>경기</option>
+					<option>인천</option>
+					<option>대전</option>
+					<option>대구</option>
+					<option>부산</option>
+					<option>광주</option>
+					<option>세종</option>
+					<option>울산</option>
+					<option>충북</option>
+					<option>충남</option>
+					<option>전북</option>
+					<option>전남</option>
+					<option>경북</option>
+					<option>경남</option>
+					<option>강원</option>
+					<option>제주</option>
+					<option>해외</option>
+				</select>
+			</div>
+			<div class="result_align">
+				<select>
+					<option>정확도순</option>
+					<option>등록일순</option>
+				</select>
+			</div>
+		</div>
+		<!-- // 검색 필터 -->
+		<!-- 검색 결과 정보 -->
+		<h2 class="result_info ft_wt700">'<span class="result_txt ft_wt900">배관</span>' 검색결과 : 총 <span class="result_num">25</span> 개</h2>
+		<!-- // 검색 결과 정보 -->
+		<!-- 검색 리스트 -->
+		<div id="container">
+			<ul class="content_list">
+				<!-- 개별 리스트 (구인)-->
+				<li class="list_card">
+				<!-- 사진터치 구분 영역 -->
+				<div class="list_photo_wrap">
+					<a href="#">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg" class="mem_photo">
+					</div>
+					</a>
+					<span class="badge"><span>10</span></span>
+					<!-- 사진 갯수 뱃지 -->
+					<span class="job_offer_badge">인력구함</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 사진터치 구분 영역 -->
+				<div class="list_profile">
+					<a href="#">
+					<div class="top_line">
+						<!-- 제목 타이틀 -->
+						<p class="list_title ft_wt700">
+							뷔페 서빙 구합니다
+						</p>
+						<!-- // 제목 타이틀 -->
+						<span class="help_badge">급구</span>
+						<!-- 급구마크 -->
+						<span class="wt_time ft_wt700">3분전</span>
+						<!-- 시간표시 -->
+					</div>
+					<div class="mid_line">
+						<!-- 회원글 내용 -->
+						<span class="list_txt">
+						<strong class="company_color">[오뚜기뷔페]</strong>
+						<!-- 회사이름/회원이름 -->
+						 오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요. </span>
+						<!-- //회원글 내용 -->
+					</div>
+					<div class="bot_line">
+						<ul>
+							<li class="list_money"><span class="day_badge">일당</span><span class="ft_wt900">120,000원</span></li>
+							<li class="list_field">단순 > 서빙</li>
+						</ul>
+						<ul>
+							<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+							<li class="list_dist">254.6km</li>
+						</ul>
+					</div>
+					</a>
+				</div>
+				</li>
+				<!-- // 개별 리스트 (구인)-->
+				<!-- 개별 리스트 (구인)-->
+				<li class="list_card">
+				<!-- 사진터치 구분 영역 -->
+				<div class="list_photo_wrap">
+					<a href="#">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg" class="mem_photo">
+					</div>
+					</a>
+					<span class="badge"><span>10</span></span>
+					<!-- 사진 갯수 뱃지 -->
+					<span class="job_offer_badge">인력구함</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 사진터치 구분 영역 -->
+				<div class="list_profile">
+					<a href="#">
+					<div class="top_line">
+						<!-- 제목 타이틀 -->
+						<p class="list_title ft_wt700">
+							뷔페 서빙 구합니다
+						</p>
+						<!-- // 제목 타이틀 -->
+						<span class="help_badge">급구</span>
+						<!-- 급구마크 -->
+						<span class="wt_time ft_wt700">3분전</span>
+						<!-- 시간표시 -->
+					</div>
+					<div class="mid_line">
+						<!-- 회원글 내용 -->
+						<span class="list_txt">
+						<strong class="company_color">[오뚜기뷔페]</strong>
+						<!-- 회사이름/회원이름 -->
+						 오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요. </span>
+						<!-- //회원글 내용 -->
+					</div>
+					<div class="bot_line">
+						<ul>
+							<li class="list_money"><span class="month_badge">월급</span><span class="ft_wt900">3,300,000원</span></li>
+							<li class="list_field">단순 > 서빙</li>
+						</ul>
+						<ul>
+							<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+							<li class="list_dist">254.6km</li>
+						</ul>
+					</div>
+					</a>
+				</div>
+				</li>
+				<!-- // 개별 리스트 (구인)-->
+				<!-- 개별 리스트 (구직 남자)-->
+				<li class="list_card">
+				<!-- 사진터치 구분 영역 -->
+				<div class="list_photo_wrap">
+					<a href="#">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_002.jpg" class="mem_photo">
+					</div>
+					</a>
+					<span class="find_job_badge">일구함</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 사진터치 구분 영역 -->
+				<div class="list_profile">
+					<a href="#">
+					<div class="top_line">
+						<!-- 제목 타이틀 -->
+						<p class="list_title ft_wt700">
+							미장 경력 3년 입니다
+						</p>
+						<!-- // 제목 타이틀 -->
+						<span class="wt_time ft_wt700">3분전</span>
+						<!-- 시간표시 -->
+					</div>
+					<div class="mid_line">
+						<!-- 회원글 내용 -->
+						<span class="list_txt">
+						<strong class=" man_color">김상민(남/33세/경력10년)</strong>
+						<!-- 회사이름/회원이름 -->
+						 평평하게 아주 잘 깝니다. 일당 15만 이상만 연락 주세요~ </span>
+						<!-- //회원글 내용 -->
+					</div>
+					<div class="bot_line">
+						<ul>
+							<li class="list_field">건설 > 콘크리트</li>
+							<li class="list_field">단순 > 택배상하차</li>
+							<li class="list_field">건설 > 미장</li>
+						</ul>
+						<ul>
+							<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+							<li class="list_dist">254.6km</li>
+						</ul>
+					</div>
+					</a>
+				</div>
+				</li>
+				<!-- // 개별 리스트 (구직 남자)-->
+				<!-- 개별 리스트 (구직 여자)-->
+				<li class="list_card">
+				<!-- 사진터치 구분 영역 -->
+				<div class="list_photo_wrap">
+					<a href="#">
+					<div class="photo_clip">
+						<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_003.jpg" class="mem_photo">
+					</div>
+					</a>
+					<span class="badge"><span>10</span></span>
+					<!-- 사진 갯수 뱃지 -->
+					<span class="find_job_badge">일구함</span>
+					<!-- 구인 뱃지 -->
+				</div>
+				<!-- // 사진터치 구분 영역 -->
+				<div class="list_profile">
+					<a href="#">
+					<div class="top_line">
+						<!-- 제목 타이틀 -->
+						<p class="list_title ft_wt700">
+							미용사가 되고 싶어요
+						</p>
+						<!-- // 제목 타이틀 -->
+						<span class="wt_time ft_wt700">3분전</span>
+						<!-- 시간표시 -->
+					</div>
+					<div class="mid_line">
+						<!-- 회원글 내용 -->
+						<span class="list_txt">
+						<strong class="woman_color">이민자(여/25세/경력없음)</strong>
+						<!-- 회사이름/회원이름 -->
+						 머리 마사지 잘 합니다. 다른 잡일도 잘 할 수 있어요. 연락주세요 </span>
+						<!-- //회원글 내용 -->
+					</div>
+					<div class="bot_line">
+						<ul>
+							<li class="list_field">서비스 > 미용</li>
+						</ul>
+						<ul>
+							<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+							<li class="list_dist">254.6km</li>
+						</ul>
+					</div>
+					</a>
+				</div>
+				</li>
+				<!-- // 개별 리스트 (구직 여자)-->
+			</ul>
+			<!-- 더보기 -->
+			<a href="#" class="list_more ft_wt700">
+			더보기 </a>
+			<!-- // 더보기 -->
+			<!-- 위로 -->
+			<a href="#" class="go_up">
+			위로올리기 </a>
+			<!-- // 위로 -->
+		</div>
+		<!-- // 검색 리스트 -->
+	</div>
+	<!-- // 검색 결과 -->
+</div>
+
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-cookie.js"></script>
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/common.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
+
+<script type="text/javascript">
+<!--
+
+var $isMobile = cl.isMobile();
+var $device	= cl.getDevice();
+var $media = ($isMobile) ? ($device) ? 's' : 'x' : 'w';
+var $isApp = ($device) ? true : false;
+
+var isDebug = function() {
+	return true;
+}
+
+$(document).ready(function(){
+	$(window).on("popstate",function(){
+		cl.delHistory();
+	});
+
+	$(window).on("unload",function(){
+		cl.setLayerPopCnt();
+	});
+
+	$(window).load(function(){
+		cl.removeLayerPopCnt();
+	});
+
+});
+
+//-->
+</script><script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/assets/ui/uiNotice.js"></script>
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/assets/ui/uiModify.js"></script>
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/assets/js/srchLastestWord.js"></script>
+<script type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/assets/js/srchJobCtgrWord.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	srch_input = document.getElementById("srch_input");
+	srch_voice = document.getElementById("srch_voice");
+	srch_del = document.getElementById("srch_del");
+	srch_on = document.getElementById("srch_on");
+	jobCtgr_srchWord = document.getElementById("jobCtgr_srchWord");
+	recommend_srchWord = document.getElementById("recommend_srchWord");
+	latest_srchWord = document.getElementById("latest_srchWord");
+	
+	jobCtgr_srchWord_array = Array();
+
+	// 검색 바 입력 및 포커스 이벤트
+	$( document ).on("keyup focus", "#srch_input",function(){
+		if(srch_input.value){
+			setSrchModeOn();
+			jwAutoCmplt.openJobSrchWord();
+		}else{
+			setSrchModeOff();
+			lwAutoCmplt.openLatestSrchWord();
+		}
+	});
+
+	// 검색 기능 수행
+	procSearch = function(){
+		lwAutoCmplt.saveLatestSrchWord(); // 최근 검색어 저장
+		setSrchModeComplete();
+	}
+
+	// 입력된 검색어 텍스트 지우기
+	delSrchInputText = function(){
+		srch_input.value="";
+		setSrchModeOff();
+		lwAutoCmplt.openLatestSrchWord();
+	}
+
+	// 검색어 입력 여부에 따른 아이콘 및 리스트 세팅
+	var setSrchModeOn = function(){
+		srch_voice.style.display = "none";
+		latest_srchWord.style.display = "none";
+		srch_del.style.display = "block";
+		srch_on.style.display = "block";
+		jobCtgr_srchWord.style.display = "block";
+		recommend_srchWord.style.display = "block";
+	}
+	var setSrchModeOff = function(){
+		srch_voice.style.display = "block";
+		srch_del.style.display = "none";
+		srch_on.style.display = "none";
+		jobCtgr_srchWord.style.display = "none";
+		recommend_srchWord.style.display = "none";
+	}
+	setSrchModeComplete = function(){
+		srch_voice.style.display = "none";
+		latest_srchWord.style.display = "none";
+		jobCtgr_srchWord.style.display = "none";
+		recommend_srchWord.style.display = "none";
+		srch_del.style.display = "block";
+		srch_on.style.display = "block";
+	}
+});
+
+window.onload = function(){
+	lwAutoCmplt.initFunction("srch_input", "latest_srchWord"); // 최근검색어 자동완성 객체 초기화
+	jwAutoCmplt.initFunction("srch_input", "jobCtgr_srchWord"); // 직업분야 검색어 자동완성 객체 초기화
+	srch_input.focus();
+	
+}
+</script>
+</body>
+</html>
