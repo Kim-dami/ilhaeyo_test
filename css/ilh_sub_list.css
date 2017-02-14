@@ -3,8 +3,8 @@
 #info_wrap {position:relative; width:100%; height:auto;}
 #info_wrap .info01 {width:100%; height:30px; margin:0; padding:0 10px; border-bottom:1px solid #3d4964; background-color:#46526c; color:#fff; font-size:15px; line-height:30px; box-sizing:border-box;letter-spacing:-1px;}
 #info_wrap .info01 span {color:#fff844;}
-#info_wrap .info02 {width:100%; height:27px; margin:0; padding:0 10px; border-bottom:1px solid #8788aa; background-color:#9b98b9; color:#fff; font-size:13px; line-height:27px; box-sizing:border-box;letter-spacing:-1px;}
-#info_wrap .info03 {width:100%; height:27px; margin:0; padding:0 10px; border-bottom:1px solid #c3c3b8; background-color:#f4f4ec; color:#4d4d4d; font-size:13px; line-height:27px; box-sizing:border-box;letter-spacing:-1px;}
+#info_wrap .info02 {width:100%; height:27px; margin:0; padding:0 10px; border-bottom:1px solid #8788aa; background-color:#9b98b9; color:#fff; font-size:13px; line-height:28px; box-sizing:border-box;letter-spacing:-1px;}
+#info_wrap .info03 {width:100%; height:27px; margin:0; padding:0 10px; border-bottom:1px solid #c3c3b8; background-color:#f4f4ec; color:#4d4d4d; font-size:13px; line-height:28px; box-sizing:border-box;letter-spacing:-1px;}
 #info_wrap .info03 span {position:relative; top:4px; margin-right:5px;}
 
 /* 필터 영역 */
