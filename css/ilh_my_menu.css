@@ -9,8 +9,8 @@
 .fix_bar {position:absolute; top:95px!important; left:12px; width:2px; height:0; background-color:#eceff4;}
 .scrap_wrap {display:block; position:relative; height:100%; background-color:transparent;}
 .scrap_wrap .content_scrap_day {position:relative; width:100%; height:auto; margin:10px 0; overflow:hidden;}
-.scrap_wrap .content_scrap_day p {padding-left:25px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/scrap_dot.png) no-repeat; background-position:8px 2px; background-size:10px 10px; color:#909dad; font-size:12px; font-weight:700; line-height:12px;}
-.scrap_wrap .content_scrap_day ul {display:block; position:relative; width:85%; margin:12px auto; padding:0; border:1px solid #d8deea; border-radius:7px; background:#f6faff; transform-origin:center;}
+.scrap_wrap .content_scrap_day p {width:100%; height:auto; padding-left:25px; box-sizing:border-box; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/scrap_dot.png) no-repeat; background-position:8px 2px; background-size:10px 10px; color:#909dad; font-size:13px; font-weight:700; line-height:16px;}
+.scrap_wrap .content_scrap_day ul {display:block; position:relative; width:85%; margin:10px auto; padding:0; border:1px solid #d8deea; border-radius:7px; background:#f6faff; font-size:14px; transform-origin:center;}
 @keyframes close {
 15% {transform:scale(0.95);}
 40% {transform:scale(1.05);}
@@ -40,11 +40,11 @@
 .scrap_wrap .content_scrap_day .btn_position {position:absolute; top:-10px; right:-10px;}
 .scrap_wrap .content_scrap_day ul li {width:90%; height:16px; margin:0 auto; padding:8px 10px; border-bottom:1px solid #d8deea; line-height:16px; vertical-align:middle;}
 .scrap_wrap .content_scrap_day ul li:nth-child(2) {border-bottom:none;}
-.scrap_wrap .content_scrap_day ul li .txt_title {display:inline-block; max-width:75%; overflow:hidden; text-overflow:ellipsis; vertical-align:middle; white-space:nowrap;}
+.scrap_wrap .content_scrap_day ul li .txt_title {display:inline-block; max-width:75%; overflow:hidden; text-overflow:ellipsis; vertical-align:middle; white-space:nowrap; font-weight:900;}
 .scrap_wrap .content_scrap_day ul li .imp_content {float:right; padding-right:10px;}
 .scrap_wrap .content_scrap_day ul li .txt_career {color:#46526c; font-weight:700;}
 .btn_closed {width:23px; height:23px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_btn_closed.png) no-repeat; background-size:23px 23px;}
-.scrap_wrap .content_scrap_day ul li .day_badge, .month_badge, .job_offer_badge, .find_job_badge {vertical-align:middle;}
+.scrap_wrap .content_scrap_day ul li .job_offer_badge, .scrap_wrap .content_scrap_day ul li .find_job_badge {vertical-align:middle; margin-right:4px;}
 
 /*----------------------------------------------- 내 등록글 관리 -----------------------------------------------*/
 .regi_content {position:relative; width:100%; height:100%; padding:5px 7px; box-sizing:border-box;}
@@ -266,16 +266,16 @@
 
 /*---------------------- 대화함 ----------------------*/
 /* 상단 공지 */
-#notice_content {display:block; position:relative; padding:7px 12px 4px 12px; background-color:#fff;}
-#notice_content p {margin-bottom:3px; color:#7e7e7e; font-size:12px; font-weight:700; line-height:12px;}
+#notice_content {display:block; position:relative; padding:9px 12px 2px 12px; background-color:#fff;}
+#notice_content p {margin-bottom:6px; color:#7e7e7e; font-size:13px; font-weight:700; line-height:12px;}
 
 /* 상단 전체선택/삭제 */
-.input_line {position:relative; width:100%; height:35px; padding:0 5px; border-bottom:1px solid #cdd5e1; box-sizing:border-box;}
+.input_line {position:relative; width:100%; height:40px; padding:0 5px; border-bottom:1px solid #cdd5e1; box-sizing:border-box;}
 .input_line .chk_wrap {position:relative; float:left; width:30px; height:100%; margin-left:2px;}
 .input_line .chk_wrap .chk {width:100%; height:100%;}
-.input_line .chk_wrap .msgbox_lb {position:relative; top:9px; padding-top:9px; padding-bottom:9px;}
+.input_line .chk_wrap .msgbox_lb {position:relative; top:11px; padding-top:11px; padding-bottom:10px;}
 .input_line .btn_wrap_box {position:relative; float:left; width:65px; height:100%;}
-.input_line .btn_wrap_box a {display:block; width:100%; height:100%; padding:5px 0;}
+.input_line .btn_wrap_box a {display:block; width:100%; height:100%; padding:7px 0; box-sizing:border-box;}
 .input_line .btn_wrap_box .btn_white {height:13px; padding:5px 0; font-size:13px; line-height:13px;}
 
 /* 리스트 시작 */

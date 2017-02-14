@@ -71,11 +71,11 @@
 #myinfo_wrap .id_wrap{position:relative; width:100%; height:auto; padding:17px 0 15px 0; color:#fff; font-size:13px; line-height:15px; letter-spacing:-0.5px;}
 #myinfo_wrap .id_title{color:#ffbb37;}
 #myinfo_wrap .id_ilh{display:inline-block; padding-left:5px;}
-#myinfo_wrap .id_nv, .id_kko{display:inline-block; padding-left:18px;}
+#myinfo_wrap .id_nv, .id_kko{display:inline-block; height:15px; line-height:16px; padding-left:18px;}
 #myinfo_wrap .id_nv{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_nv.png) no-repeat left center; background-size:13px 11px;}
 #myinfo_wrap .id_kko{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_kko.png) no-repeat left center; background-size:15px 15px;}
 #myinfo_wrap .btn_logout{position:absolute; bottom:11px; right:0; width:65px; height:25px; border:1px solid #fff; border-radius:20px;}
-#myinfo_wrap .btn_logout a{display:block; width:100%; height:100%; line-height:25px; border-radius:20px; text-align:center; font-size:13px;}
+#myinfo_wrap .btn_logout a{display:block; width:100%; height:100%; line-height:26px; border-radius:20px; text-align:center; font-size:13px;}
 #myinfo_wrap .btn_logout a:active{background:rgba(255,255,255,0.1);}
 
 /* 마이 메뉴 목록 */
@@ -99,8 +99,8 @@
 
 /* 하단 버튼 */
 #my_footer{position:relative; width:100%; height:auto; padding:0 10px; box-sizing:border-box; color:#fff;}
-#my_footer .reco_wrap{position:relative; width:100%; height:auto; line-height:14px; padding:20px 0; box-sizing:border-box; font-size:14px;}
-#my_footer .reco_kko,.reco_ms{position:absolute; top:15px; width:65px; height:25px; line-height:25px;}
+#my_footer .reco_wrap{position:relative; width:100%; height:auto; line-height:14px; padding:22px 0 20px 0; box-sizing:border-box; font-size:14px;}
+#my_footer .reco_kko,.reco_ms{position:absolute; top:15px; width:65px; height:28px; line-height:29px;}
 #my_footer .reco_kko{right:75px; background-color:#fae100; color:#3c1e1e;}
 #my_footer .reco_ms{right:0px; background-color:#219ba6;}
 #my_footer .reco_kko a,.reco_ms a{display:block; width:100%; height:100%; font-size:13px; text-align:center;}

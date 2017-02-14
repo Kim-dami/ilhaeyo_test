@@ -5,7 +5,7 @@
 .pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,.4);}
 /* 팝업 중앙 */
 .pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:10px; background-color:#fff;}
-.wid_94 {left:3%; right:3%; width:94%;}
+.wid_94 {left:4%; right:4%; width:92%;}
 .wid_66 {left:17%; right:17%; width:66%;}
 .mt_225 {margin-top:-225px;}
 .mt_100 {margin-top:-100px;}
@@ -17,11 +17,11 @@
 .pop_content .pop_u:after {display:block; clear:both; content:"";}
 .pop_content .pop_u .pop_l {float:left; width:50%; height:auto;}
 .pop_content .pop_u .pop_l h4 {width:100%; height:33px; margin:0; padding:0; color:#46526c; font-size:16px; text-align:center; line-height:32px;}
-.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch;} /* 160106 아이폰대응 추가 _ 김다미 */
+.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
 .pop_content .pop_u .pop_l .pop_second {border-right:0 none;}
 .pop_content .pop_u .pop_l .pop_second ul {display:none;}
 .pop_content .pop_u .pop_l ul {width:100%; height:auto;}
-.pop_content .pop_u .pop_l ul li {width:100%; height:40px; line-height:40px;}
+.pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
 .pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; text-align:center;}
 .pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.1);}
 .pop_content .pop_u .pop_l ul li a_active {background:rgba(0,0,0,.1);}
@@ -78,7 +78,7 @@
 
 /* 메시지 */
 .ms_header {position:relative; width:100%; height:auto;}
-.ms_header h2 {width:100%; height:35px; margin:0; padding:0 35px; border-radius:10px 10px 0 0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_ms02.png) no-repeat 10px 10px; background-size:18px 14px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
+.ms_header h2 {width:100%; height:35px; margin:0; padding:0 40px; border-radius:10px 10px 0 0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_ms02.png) no-repeat 10px center; background-size:18px 14px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
 
 .ms_content {position:relative; width:100%; height:auto; padding:0 5px; box-sizing:border-box;}
 .ms_content h2 {position:relative; width:100%; height:25px; margin-top:3px; padding:0 65px 0 5px; overflow:hidden; border-radius:3px; background-color:#46526c; color:#fff; font-size:13px; font-weight:400; text-align:left; text-overflow:ellipsis; line-height:25px; white-space:nowrap; box-sizing:border-box;letter-spacing:-0.5px;}
@@ -214,3 +214,27 @@
 .pop_container .btn_call{position:relative; width:100%; margin-bottom:15px; text-align:center;}
 .pop_container .btn_call a{width:120px; padding:12px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 26px center; background-size:13px 16px; font-size:17px; padding-left:14px;}
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+	-webkit-appearance: none;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #adadad;
+}
+#style-1::-webkit-scrollbar-thumb:window-inactive {
+   background: #41617D !important; 
+ }
+ /*----------------------------- 팝업류 스크롤 보이게 (170214 주철만) -----------------------------*/
