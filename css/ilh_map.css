@@ -180,3 +180,7 @@ background:#fff url('http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_arrow_o
 .slct_km select_active {border:1px solid #04d464;}
 .ui-select span{display:none;}
 /*---------------------------------------------------------------------------------*/
+
+/*---------------- 170213 추가사항 상세위치직접지정-내위치버튼추가(김다솜) ----------------*/
+.loca_mine{position:fixed; top:125px; left:10px; z-index:2;}
+/*----------------------------------------------------------------------------------*/
