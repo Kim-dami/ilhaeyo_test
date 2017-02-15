@@ -22,8 +22,8 @@
 #filter_wrap .btn_container .btn_right_box li {display:table; float:left; width:auto; height:35px;}
 #filter_wrap .btn_container .btn_right_box li a {display:table-cell; position:relative; padding-left:5px; vertical-align:middle;}
 #filter_wrap .btn_container .btn_right_box li a .btn_blue {width:60px;}
-#filter_wrap .btn_container .btn_right_box li a .btn_rfsh {width:53px; height:26px; padding:0;}
-#filter_wrap .btn_container .btn_right_box li a .btn_rfsh span {display:block; width:100%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_refresh.png) no-repeat center center; background-size:17px 16px; text-indent:-9999px;}
+#filter_wrap .btn_container .btn_right_box li a .btn_rfsh {width:52px; height:27px; padding:0;}
+#filter_wrap .btn_container .btn_right_box li a .btn_rfsh span {display:block; width:100%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_refresh.png) no-repeat center 2px; background-size:20px 22px; text-indent:-9999px;}
 
 /* 필터 드롭메뉴 */
 #filter_drop {position:absolute; z-index:700; margin:4px 0 0 4px; overflow:hidden; border:1px solid #909dad; background:#fff;}

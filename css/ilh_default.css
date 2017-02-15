@@ -261,6 +261,9 @@ td,th {padding:0;}
 #container .content_list .bot_line ul .list_money .day_badge, #container .content_list .bot_line ul .list_money .month_badge, #container .content_list .bot_line ul .list_money .annual_badge, #container .content_list .bot_line ul .list_money .part_badge {position:relative; margin-right:3px;}
 #container .content_list .bot_line ul .list_dist {float:right; font-size:12px;}
 #container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {padding-left:6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot.png) no-repeat left 6px; background-size:3px 3px;}
+@media (max-width:320px) {
+#container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {padding-left:6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot.png) no-repeat left 6px; background-size:3px 3px; letter-spacing:-1px;}   
+}
 #container .content_list .bot_line ul .list_dist {color:#797979;}
 #container .content_list .bot_line ul .category_bar {display:inline-block; width:auto; height:100%; padding-right:5px; margin-right:4px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_col_bar.png) no-repeat right 3px; background-size:2px 10px;}
 
