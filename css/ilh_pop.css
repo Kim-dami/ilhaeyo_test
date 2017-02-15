@@ -78,7 +78,7 @@
 
 /* 메시지 */
 .ms_header {position:relative; width:100%; height:auto;}
-.ms_header h2 {width:100%; height:35px; margin:0; padding:0 40px; border-radius:10px 10px 0 0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_ms02.png) no-repeat 10px center; background-size:18px 14px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
+.ms_header h2 {width:100%; height:35px; margin:0; padding:0 40px; border-radius:10px 10px 0 0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_ms02.png) no-repeat 15px 10px; background-size:18px 14px; color:#fff; font-size:15px; line-height:35px; box-sizing:border-box;}
 
 .ms_content {position:relative; width:100%; height:auto; padding:0 5px; box-sizing:border-box;}
 .ms_content h2 {position:relative; width:100%; height:25px; margin-top:3px; padding:0 65px 0 5px; overflow:hidden; border-radius:3px; background-color:#46526c; color:#fff; font-size:13px; font-weight:400; text-align:left; text-overflow:ellipsis; line-height:25px; white-space:nowrap; box-sizing:border-box;letter-spacing:-0.5px;}
@@ -143,7 +143,7 @@
 .pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 10px 10px;}
 .pop_dn .pop_check {position:relative; width:100%; height:auto; padding:0 2.5%; box-sizing:border-box;}
 .pop_dn .pop_check:after {display:block; clear:both; content:"";}
-.pop_dn .pop_check p {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding-left:5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
+.pop_dn .pop_check p {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding:0 6% 0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
 .pop_dn .pop_check p a{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 65% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:60px; padding:10px 0; box-sizing:border-box;}
 .pop_dn .pop_btn a {display:block; width:120px; height:40px; margin:0 auto; border-radius:20px; background-color:#46526c; color:#fff; font-size:16px; text-align:center; line-height:40px; ;}
