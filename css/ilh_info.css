@@ -65,7 +65,7 @@
 #wrap_drop_out .line_e{position:relative; width:86%; height:2px; margin:18px auto; background:#d8deea;}
 #wrap_drop_out .dropout_input{position:relative; width:250px; height:32px; margin:21px auto 32px auto;}
 #wrap_drop_out .dropout_input p.dropout_pw_tit{float:left; font-size:14px; line-height:32px;}
-#wrap_drop_out .dropout_input .dropout_pw{float:right; width:185px; height:32px; border:1px solid #c0c7d4; background:#f2f5fa; border-radius:3px; box-sizing:border-box; padding:3px 10px;}
+#wrap_drop_out .dropout_input .dropout_pw{float:right; width:185px; height:32px; border:1px solid #c0c7d4; background:#f2f5fa; border-radius:3px; box-sizing:border-box; padding:2px 10px 4px 10px;}
 #wrap_drop_out .dropout_input .dropout_pw input{position:relative; width:100%; font-size:13px; line-height:13px; padding:6px 0 5px 0; border:none; background:none; outline:none;}
 #wrap_drop_out .dropout_btn{position:relative; width:230px; height:40px; margin:0 auto;}
 #wrap_drop_out .dropout_btn .btn_c{float:left; width:103px; font-size:16px; line-height:16px; padding:11px 0; border-radius:20px;}
@@ -84,7 +84,7 @@
 #wrap_c_center .cc_info ul li{float:left;}
 #wrap_c_center .cc_info ul li.cc_info_tit{width:58px; height:27px; font-size:14px; line-height:27px; }
 #wrap_c_center .cc_info ul li.cc_info_txt{height:27px; font-size:14px; line-height:27px;}
-#wrap_c_center .cc_info ul li.cc_info_btn .btn_cc1{width:76px; margin-left:8px; padding:5px 0; background:#9ba9c4; border-radius:15px; font-size:13px; line-height:13px; color:#fff; text-align:center; cursor:pointer;}
+#wrap_c_center .cc_info ul li.cc_info_btn .btn_cc1{width:76px; margin-left:8px; padding:6px 0 4px 0; background:#9ba9c4; border-radius:15px; font-size:13px; line-height:13px; color:#fff; text-align:center; cursor:pointer;}
 #wrap_c_center .cc_info ul li.cc_info_btn .btn_cc1:active{position:relative; top:1px; box-shadow:0px 0px 5px 2px rgba(155,169,196,.4); -webkit-box-shadow:0px 0px 5px 2px rgba(155,169,196,.4); -moz-box-shadow:0px 0px 5px 2px rgba(155,169,196,.4);}
 #wrap_c_center .cc_info ul li.cc_info_btn .btn_cc1_active{position:relative; top:1px; box-shadow:0px 0px 5px 2px rgba(155,169,196,.4); -webkit-box-shadow:0px 0px 5px 2px rgba(155,169,196,.4); -moz-box-shadow:0px 0px 5px 2px rgba(155,169,196,.4);}
 
