@@ -96,6 +96,7 @@
 .msg_input_wrap .msg_bar .ico_camera img {display:block; margin:9px 11px;}
 .msg_input_wrap .msg_bar .textarea {width:93%; height:19px; margin:7px 7px 7px 8px; border:none; color:#292929; font-size:13px; outline:none; border:none;}
 .msg_input_wrap .msg_bar .btn_send {display:block; height:13px; padding:11px 14px 9px 13px; background:#b5bec8; color:#fff; font-size:13px; text-align:center; line-height:10px;}
+.msg_input_wrap .msg_bar .btn_send_on {display:block; height:13px; padding:11px 14px 9px 13px; background:#0081d5; color:#fff; font-size:13px; text-align:center; line-height:10px;}
 @media (min-width:360px) {
 .msg_input_wrap .msg_bar .textarea { width:98% }
 }
