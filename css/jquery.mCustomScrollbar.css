@@ -64,7 +64,7 @@ y-axis
 
 	.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
 		position: absolute;
-		width: 13px;
+		width: 12px;
 		height: auto;
 		left: auto;
 		top: 0;
@@ -334,9 +334,6 @@ yx-axis
 
 	.mCSB_scrollTools{ opacity: 0.75; filter: "alpha(opacity=75)"; -ms-filter: "alpha(opacity=75)"; }
 	
-	.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
-	.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools{ opacity: 0; filter: "alpha(opacity=0)"; -ms-filter: "alpha(opacity=0)"; }
-	
 	.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
 	.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
 	.mCustomScrollBox:hover > .mCSB_scrollTools,
@@ -515,14 +512,14 @@ yx-axis
 
 	.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
-		width: 3px;
+		width: 4px;
 		background-color: #fff; background-color: rgba(255,255,255,0.1);
 		-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
 	}
 
 	.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		width: 5px;
+		width: 6px;
 		background-color: #fff; background-color: rgba(255,255,255,0.75);
 		-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
 	}
@@ -558,19 +555,19 @@ yx-axis
 	/* theme: "dark-thick" */
 	
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
-		background-color: #000; background-color: rgba(0,0,0,0);
+		background-color: #000; background-color: rgba(0,0,0,0.1);
 		-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
 	}
 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		background-color: #000; background-color: rgba(0,0,0,0.3);
+		background-color: #000; background-color: rgba(0,0,0,0.75);
 		-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
 	}
 
-	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: #000; background-color: rgba(0,0,0,0.4); }
+	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: #000; background-color: rgba(0,0,0,0.85); }
 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #000; background-color: rgba(0,0,0,0.5); }
+	.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #000; background-color: rgba(0,0,0,0.9); }
 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonUp{ background-position: -96px 0; }
 
@@ -996,7 +993,7 @@ yx-axis
 	.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, 
 	.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{
 		right: 0; 
-		margin: 12px 0; 
+		margin: 5px 0; 
 	}
 	
 	.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools.mCSB_scrollTools_horizontal, 
@@ -1039,7 +1036,11 @@ yx-axis
 	
 	.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
 		background-color: #000; background-color: rgba(0,0,0,0.2);
-		filter: "alpha(opacity=20)"; -ms-filter: "alpha(opacity=20)"; 
+		filter: "alpha(opacity=20)"; -ms-filter: "alpha(opacity=20)";
+        -webkit-transition: background-color .2s ease-in-out;
+		-moz-transition: background-color .2s ease-in-out;
+		-o-transition:  background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
 	}
 	
 	.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
