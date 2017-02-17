@@ -9,6 +9,7 @@
 <link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_map.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
@@ -232,5 +233,13 @@ daum.maps.event.addListener(map, 'click', function(mouseEvent) {
 
 // 마커가 드래그 가능하도록 설정합니다 
 marker.setDraggable(true); 
+</script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+    $(window).load(function(){
+        $(".srch_content").mCustomScrollbar({theme:"minimal-dark"});
+    });
+})(jQuery);
 </script>
 </html>
