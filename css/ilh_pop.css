@@ -17,7 +17,7 @@
 .pop_content .pop_u:after {display:block; clear:both; content:"";}
 .pop_content .pop_u .pop_l {float:left; width:50%; height:auto;}
 .pop_content .pop_u .pop_l h4 {width:100%; height:33px; margin:0; padding:0; color:#46526c; font-size:16px; text-align:center; line-height:32px;}
-.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
+.pop_content .pop_u .pop_l .pop_first, .pop_second {position:relative; width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
 .pop_content .pop_u .pop_l .pop_second {border-right:0 none;}
 .pop_content .pop_u .pop_l .pop_second ul {display:none;}
 .pop_content .pop_u .pop_l ul {width:100%; height:auto;}
