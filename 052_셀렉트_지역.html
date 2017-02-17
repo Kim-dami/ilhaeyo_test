@@ -9,7 +9,6 @@
 <link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_pop.css" rel="stylesheet" type="text/css">
-<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
@@ -35,7 +34,7 @@
 			<ul class="pop_u">
 				<li class="pop_l">
 				<h4 class="ft_wt700">대지역</h3>
-				<div class="pop_first mCustomScrollbar" data-mcs-theme="minimal">
+				<div class="pop_first">
 					<ul>
 						<li><a href="#" class="slct_active">전체</a></li>
 						<li><a href="#">서울</a></li>
@@ -187,16 +186,5 @@
 		<!-- // 팝업 하단 -->
 	</div>
 </div>
-<script src="js/jquery.mCustomScrollbar.js"></script>
-<script>
-(function($){
-    $(window).on("load",function(){
-        $(".pop_first").mCustomScrollbar({
-            //axis:"x",
-            theme:"minimal"
-        });
-    });
-})(jQuery);
-</script>
 </body>
 </html>
