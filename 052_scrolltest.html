@@ -35,7 +35,7 @@
 			<ul class="pop_u">
 				<li class="pop_l">
 				<h4 class="ft_wt700">대지역</h3>
-				<div class="pop_first mCustomScrollbar">
+				<div class="pop_first">
 					<ul>
 						<li><a href="#" class="slct_active">전체</a></li>
 						<li><a href="#">서울</a></li>
@@ -190,7 +190,7 @@
 <!--<style>
     #content-2{position:relative; width:340px; height:620px; padding:20px; border-radius:5px; margin:0 auto; background-color:#efefef; color:#333; font-size:16px;}
 </style>
-<div id="content-2" class="content mCustomScrollbar light" data-mcs-theme="minimal-dark">
+<div id="content-2">
     <h2>theme: "minimal-dark"</h2>
     <hr />
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -207,5 +207,13 @@
     <p>End of content.</p>
 </div>-->
 <script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+    $(window).load(function(){
+        $(".pop_first").mCustomScrollbar({theme:"dark-thick"});
+        $("#content-2").mCustomScrollbar({theme:"dark-thin"});
+    });
+})(jQuery);
+</script>
 </body>
 </html>
