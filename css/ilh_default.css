@@ -241,6 +241,7 @@ td,th {padding:0;}
 #container .content_list .list_photo_wrap .photo_clip img {width:55px; height:55px;}
 #container .content_list .list_photo_wrap .badge {position:absolute; top:5px; right:5px;}
 #container .content_list .list_photo_wrap .job_offer_badge, #container .content_list .list_photo_wrap .find_job_badge {position:absolute; left:12px; bottom:3px;}
+#container .content_list .list_photo_wrap .offer_nm, #container .content_list .list_photo_wrap .offer_pb, #container .content_list .list_photo_wrap .offer_cp, #container .content_list .list_photo_wrap .offer_ab, #container .content_list .list_photo_wrap .find_nm, #container .content_list .list_photo_wrap .find_ab {position:absolute; left:12px; bottom:3px;}
 #container .content_list .list_profile {position:relative; width:100%; height:auto; padding-top:10px; overflow:hidden; box-sizing:border-box; cursor:pointer;}
 #container .content_list .list_profile a {display:block; width:100%; height:100%;}
 #container .content_list .top_line {position:relative; width:100%; height:20px; padding-left:75px; vertical-align:top; box-sizing:border-box;}
@@ -346,14 +347,14 @@ li, div, input{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 .badge span {display:table-cell; vertical-align:middle;}
 .help_badge {display:inline-block; width:32px; height:20px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/help_badge.png) no-repeat center center; background-size:32px 20px; text-indent:-9999px;}
 
-.job_offer_badge {display:inline-block; width:50px; height:16px; text-indent:-9999px;}
+.job_offer_badge {display:inline-block; width:50px; height:16px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/job_offer_badge.png) no-repeat center center; background-size:50px 16px; text-indent:-9999px;}
 .find_job_badge {display:inline-block; width:50px; height:16px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/find_job_badge.png) no-repeat center center; background-size:50px 16px; text-indent:-9999px;}
-.offer_nm{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_nm1.png) no-repeat center center; background-size:50px 16px;}
-.offer_pb{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_pb1.png) no-repeat center center; background-size:50px 16px;}
-.offer_cp{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_cp1.png) no-repeat center center; background-size:50px 16px;}
-.offer_ab{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_ab1.png) no-repeat center center; background-size:50px 16px;}
-.find_nm{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_nm1.png) no-repeat center center; background-size:50px 16px;}
-.find_ab{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_ab1.png) no-repeat center center; background-size:50px 16px;}
+.offer_nm{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_nm1.png) no-repeat center center; background-size:50px 16px;}
+.offer_pb{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_pb1.png) no-repeat center center; background-size:50px 16px;}
+.offer_cp{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_cp1.png) no-repeat center center; background-size:50px 16px;}
+.offer_ab{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_offer_ab1.png) no-repeat center center; background-size:50px 16px;}
+.find_nm{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_nm1.png) no-repeat center center; background-size:50px 16px;}
+.find_ab{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_ab1.png) no-repeat center center; background-size:50px 16px;}
 
 .day_badge {display:inline-block; width:30px; height:15px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/day_badge.png) no-repeat center center; background-size:30px 15px; text-indent:-9999px; vertical-align:middle;}
 .month_badge {display:inline-block; width:30px; height:15px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/month_badge.png) no-repeat center center; background-size:30px 15px; text-indent:-9999px; vertical-align:middle;}
