@@ -161,9 +161,6 @@ td,th {padding:0;}
 /* 리스트 더보기 */
 .list_more {display:block; position:relative; width:100%; height:40px; margin:3px 0 !important; background-color:#b3bec9 !important; color:#fff !important; text-align:center; line-height:40px;}
 
-/* 위로 */
-.go_up {position:fixed; z-index:800; right:17.5px; bottom:10px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}
-
 /* 마크 */
 .company_color {color:#42af7c;}
 /* 업체컬러 */
@@ -336,9 +333,13 @@ li, div, input{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 
 .history_none {width:100%; line-height:22px; margin-top:75px; padding-top:60px; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_exclam02.png) no-repeat center top; background-size:47px 47px; color:#abb7c5; text-align:center;}
 
-/* 위로 */
-.float_btn {position:fixed; z-index:800; display:block; right:10px; bottom:60px; width:55px; height:55px; line-height:55px; border-radius:100%; text-align:center; color:#fff!important; font-size:15px; font-weight:700;  background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
+/* 로그인 & 글쓰기 플로팅 버튼 */
+.float_btn {position:fixed; z-index:300; display:block; right:10px; bottom:60px; width:65px; height:65px; line-height:65px; border-radius:100%; text-align:center; color:#fff!important; font-size:15px; font-weight:700;  background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
 .float_btn:active{box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -webkit-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -moz-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -ms-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -o-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3);}
+
+
+/* 위로 */
+.go_up {position:fixed; z-index:400; right:23px; bottom:10px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}
 
 /*--------------------------------- 170221 뱃지수정 ---------------------------------*/
 .badge {display:table; width:18px; height:18px; border:1px solid #fff; border-radius:50%; background-color:#ffbb37; box-shadow:0px 3px 10px -4px #ffbb37; color:#fff; font-size:12px; text-align:center; line-height:19px; letter-spacing:-0.5px;-webkit-box-shadow:0px 3px 10px -4px #ffbb37; -moz-box-shadow:0px 3px 10px -4px #ffbb37;}
