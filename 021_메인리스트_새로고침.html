@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link rel="stylesheet" type="text/css" href="http://devm.ilhaeyo.com/_global/assets/css/nanum_sq_url.css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_main_list.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<style>
+    #wrap:hover .circle_svg{animation:loading 0.6s ease-in-out 1; -webkit-animation:loading 0.6s ease-in-out 1; -ms-animation:loading 0.6s ease-in-out 1; -moz-animation:loading 0.6s ease-in-out 1; -o-animation:loading 0.6s ease-in-out 1;}
+    #wrap:hover .circle_inner{animation:loading-circle 0.6s ease-in-out 1; -webkit-animation:loading-circle 0.6s ease-in-out 1; -ms-animation:loading-circle 0.6s ease-in-out 1; -moz-animation:loading-circle 0.6s ease-in-out 1; -o-animation:loading-circle 0.6s ease-in-out 1;}
+    #wrap:hover .arrow_span{transform:rotate(45deg) scale(0.0); -webkit-transform:rotate(45deg) scale(0.0); -ms-transform:rotate(45deg) scale(0.0); -moz-transform:rotate(45deg) scale(0.0); -o-transform:rotate(45deg) scale(0.0);}
+</style>
+</head>
+<body>
+<!---------------------------------------- 메인리스트 ---------------------------------------->
+<div id="wrap" class="pd_35">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_main">
+	    <div class="header_btn btn_my">
+			<a href="#left-panel">마이메뉴</a>
+			<span class="badge">N</span>
+		</div>
+		<div class="srch_wrap">
+            <div class="srch_bg">
+               <div class="srch_btn srch_back">
+				<a href="#">뒤로</a>
+                </div>
+                <input type="text" id="srch_text">
+                <label for="srch_text">일해요</label>
+                <!--<div class="srch_btn srch_voice">
+                    <a href="#">음성 검색</a>
+                </div>-->
+                <div class="srch_btn srch_del">
+                    <a href="#">검색어 삭제</a>
+                </div>
+                <div class="srch_btn srch_on">
+                    <a href="#">검색</a>
+                </div> 
+            </div>
+        </div>
+		<div class="header_btn btn_my_roca">
+			<a href="#right-panel">구인&amp;구직 검색</a>
+		</div>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 최근검색 및 추천검색 -->
+    <div class="history_wrap">
+        <div class="srch_history box_shadow1">
+            <!-- 직업검색 -->
+            <ul id="jobCtgr_srchWord" class="hidden">
+                <li>
+                <a href="#" class="srch_go">건설일용직><span class="srch_rel ft_wt700">배</span>관</a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">건설일용직>도<span class="srch_rel ft_wt700">배</span></a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">단순직>오토바이 <span class="srch_rel ft_wt700">배</span>달</a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">단순직>오토바이 <span class="srch_rel ft_wt700">배</span>달</a>
+                </li>
+            </ul>
+            <!-- 추천검색 -->
+            <ul id="recommend_srchWord" class="hidden">
+                <li>
+                <a href="#">추천검색어1</a>
+                </li>
+                <li>
+                <a href="#">추천검색어2</a>
+                </li>
+                <li>
+                <a href="#">추천검색어3</a>
+                </li>
+            </ul>
+            <!-- 최근검색 -->
+            <ul id="latest_srchWord" class="hidden">
+                <li>
+                <a href="#" class="srch_go">레고</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">선박배관</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">과수원</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">레고</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">선박배관</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">과수원</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+            </ul>
+            <!-- 검색어 전체삭제 -->
+            <div class="history_all_del hidden">
+            <a href="#" class="ft_wt700">검색어 전체삭제</a>
+            </div>
+            <!-- 검색어 없음 -->
+            <div class="history_none ft_wt700">
+                 최근 검색어가 없습니다
+            </div>
+        </div>
+    </div>
+	<!-- // 최근검색 및 추천검색 -->
+	<!-- 메인 필터 -->
+    <div class="main_filter grd_main">
+        <ul class="main_filter_u">
+            <li class="main_filter_l">
+                <a href="#" class="filter_active">구분</a>
+            </li>
+            <li class="main_filter_l">
+                <a href="#">직업</a>
+            </li>
+            <li class="main_filter_l">
+                <a href="#">지역</a>
+            </li>
+            <li class="main_filter_l">
+                <a href="#" class="filter_active">성별</a>
+            </li>
+            <li class="main_filter_l">
+                <a href="#">나이</a>
+            </li>
+        </ul>       
+    </div>
+    <!-- // 메인 필터 -->
+    <!-- 구분 드롭 -->
+    <div class="divi_drop box_shadow1">
+        <ul class="divi_u">
+            <li class="divi_l">
+            <a href="#">전 체</a>
+            </li>
+            <li class="divi_l">
+            <a href="#" class="drop_active">전체구인</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">전체구직</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">일반구인</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">일반구직</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">공공기관구인</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">공공기관구직</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">기업형구인</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">기업형구직</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">알바구인</a>
+            </li>
+            <li class="divi_l">
+            <a href="#">알바구직</a>
+            </li>
+        </ul>
+    </div>
+    <!-- // 구분 드롭 -->
+    <!-- 성별 드롭 -->
+    <div class="gender_drop box_shadow1">
+        <ul class="gender_u">
+            <li class="gender_l">
+            <a href="#">전체</a>
+            </li>
+            <li class="gender_l">
+            <a href="#">남자</a>
+            </li>
+            <li class="gender_l">
+            <a href="#">여자</a>
+            </li>
+        </ul>
+    </div>
+    <!-- // 성별 드롭 -->
+    <!-- 메인 검색결과 -->
+    <div class="main_result">
+        <div class="result_default">
+           일해요는 등록비, 연락비, 수수료 모두 무료! 
+        </div>   
+        <div class="result_value">
+            <span class="ft_wt900">검색 │ </span>공공기간구인/콘크리트/일산구/남/21~25
+        </div>
+        <div class="refresh_wrap">
+            <a href="#">
+            <svg class="circle_svg" x="0px" y="0px" viewbox="0 0 150 150">
+            <circle class="circle_inner" cx="75" cy="75" r="45"/>
+            </svg>
+            <span class="arrow_span"></span>
+            </a>
+        </div>
+    </div>
+    <!-- // 메인 검색결과 -->
+	<div id="main_bg_modal"></div>
+	<!-- 드롭메뉴 배경 -->
+	<!-- 메인리스트 -->
+	<div id="container">
+		<ul class="content_list">
+			<!-- 개별 리스트 (구인)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_company.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>10</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="job_offer_badge">인력구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1" class="title_txt">뷔페 서빙 구합니다</span>
+						<span class="help_badge">급구</span>
+						<!-- 급구마크 -->
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="company_color">[오뚜기뷔페]</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_money"><span class="part_badge">파트타임</span><span class="ft_wt900">120,000원</span></li>
+						<li class="list_field">단순 > 서빙</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="category_bar">지역</span><span>창원시 마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구인)-->
+			<!-- 개별 리스트 (구직 여자)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_woman.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="find_job_badge">일구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">미용사가 되고 싶어요</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="woman_color">이민자(여/25세/경력없음)</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">머리 마사지 잘 합니다. 다른 잡일도 잘 할 수 있어요. 연락주세요</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_field">서비스 > 미용</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구직 여자)-->
+			<!-- 개별 리스트 (구직 남자)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_002.jpg" class="mem_photo">
+				</div>
+				</a>
+				<span class="find_job_badge">일구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">미장 경력 3년 입니다</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class=" man_color">김상민(남/33세/경력10년)</strong>
+					<!-- 회사이름/회원이름 -->
+					 <span id="list_txt1" style="color:#000000">평평하게 아주 잘 깝니다. 일당 15만 이상만 연락 주세요~</span>
+                     </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_field">건설 > 콘크리트</li>
+						<li class="list_field">단순 > 택배상하차</li>
+						<li class="list_field">건설 > 미장</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구직 남자)-->
+			<!-- 개별 리스트 (구인)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_001.jpg" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>10</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="job_offer_badge">인력구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1" class="title_txt">뷔페 서빙 구합니다</span>
+						<span class="help_badge">급구</span>
+					    <!-- 급구마크 -->
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="company_color">[오뚜기뷔페]</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_money"><span class="annual_badge">연봉</span><span class="ft_wt900">3,300,000원</span></li>
+						<li class="list_field">단순 > 서빙</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구인)-->
+			<!-- 개별 리스트 (구직 남자)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_man.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="find_job_badge">일구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">미장 경력 3년 입니다</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class=" man_color">김상민(남/33세/경력10년)</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">평평하게 아주 잘 깝니다. 일당 15만 이상만 연락 주세요~</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_field">건설 > 콘크리트</li>
+						<li class="list_field">단순 > 택배상하차</li>
+						<li class="list_field">건설 > 미장</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구직 남자)-->
+			<!-- 개별 리스트 (구직 여자)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/img_003.jpg" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>3</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="find_job_badge">일구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">미용사가 되고 싶어요</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="woman_color">이민자(여/25세/경력없음)</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">머리 마사지 잘 합니다. 다른 잡일도 잘 할 수 있어요. 연락주세요</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_field">서비스 > 미용</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구직 여자)-->
+            <!-- 개별 리스트 (구인)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_company.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>10</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="job_offer_badge">인력구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">뷔페 서빙 구합니다</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="help_badge">급구</span>
+					<!-- 급구마크 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="company_color">[오뚜기뷔페]</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_money"><span class="part_badge">파트타임</span><span class="ft_wt900">120,000원</span></li>
+						<li class="list_field">단순 > 서빙</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구인)-->
+            <!-- 개별 리스트 (구인)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_company.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>10</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="job_offer_badge">인력구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">뷔페 서빙 구합니다</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="help_badge">급구</span>
+					<!-- 급구마크 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="company_color">[오뚜기뷔페]</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_money"><span class="part_badge">파트타임</span><span class="ft_wt900">120,000원</span></li>
+						<li class="list_field">단순 > 서빙</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구인)-->
+			<!-- 개별 리스트 (구인)-->
+			<li class="list_card">
+			<!-- 사진터치 구분 영역 -->
+			<div class="list_photo_wrap">
+				<a href="#">
+				<div class="photo_clip">
+					<img src="http://image.club5678.com/imgs/ilheayo_job/img01/ava_company.png" class="mem_photo">
+				</div>
+				</a>
+				<span class="badge"><span>10</span></span>
+				<!-- 사진 갯수 뱃지 -->
+				<span class="job_offer_badge">인력구함</span>
+				<!-- 구인 뱃지 -->
+			</div>
+			<!-- // 사진터치 구분 영역 -->
+			<div class="list_profile">
+				<a href="#">
+				<div class="top_line">
+					<!-- 제목 타이틀 -->
+					<p class="list_title">
+						<span id="list_title1">뷔페 서빙 구합니다</span>
+					</p>
+					<!-- // 제목 타이틀 -->
+					<span class="help_badge">급구</span>
+					<!-- 급구마크 -->
+					<span class="wt_time ft_wt700">3분전</span>
+					<!-- 시간표시 -->
+				</div>
+				<div class="mid_line">
+					<!-- 회원글 내용 -->
+					<span class="list_txt">
+					<strong class="company_color">[오뚜기뷔페]</strong>
+					<!-- 회사이름/회원이름 -->
+					<span id="list_txt1" style="color:#000000">오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.오뚜기 뷔페입니다. 별로 힘들지 않습니다. 오늘내로 연락주세요.</span>
+                    </span>
+					<!-- //회원글 내용 -->
+				</div>
+                <div class="admin_line">
+                	<div>
+                        <a href="#">[X]</a>
+                        <a href="#">[관리]</a>
+                        <a href="#">[수정]</a>
+                    </div>
+                </div>
+				<div class="bot_line">
+					<ul>
+						<li class="list_money"><span class="part_badge">파트타임</span><span class="ft_wt900">120,000원</span></li>
+						<li class="list_field">단순 > 서빙</li>
+					</ul>
+					<ul>
+						<li class="list_roca"><span class="roca_span">지역</span><span>경남 > 창원시마산을구</span></li>
+						<li class="list_dist">254.6km</li>
+					</ul>
+				</div>
+				</a>
+			</div>
+			</li>
+			<!-- // 개별 리스트 (구인)-->
+		</ul>
+		<!-- 더보기 -->
+		<a href="#" class="list_more ft_wt700">
+		더보기 </a>
+		<!-- // 더보기 -->
+		<!-- 로그인 버튼 -->
+		<a href="#" class="float_btn">로그인</a>
+		<!-- // 로그인 버튼 -->
+		<!-- 글쓰기 버튼 -->
+		<a href="#" class="float_btn hidden">글쓰기</a>
+		<!-- // 글쓰기 버튼 -->
+		<!-- 위로 -->
+		<a href="#" class="go_up">위로올리기</a>
+		<!-- // 위로 -->
+	</div>
+	<!-- // 메인리스트 -->
+</div>
+<!-- 광고 삽입 부분 -->
+<!--<div id="ad_zone">
+	<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">
+		광고영역
+	</p>
+	</a>
+</div>
+<!-- // 광고 삽입 부분 -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+    $(window).load(function(){
+        $(".scroll_wrap").mCustomScrollbar({
+            axis:"x",
+            theme:"minimal-dark"
+        });
+    });
+})(jQuery);
+</script>
+</body>
+</html>

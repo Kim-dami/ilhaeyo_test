@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>일해요!</title>
-<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://devm.ilhaeyo.com/_global/assets/css/nanum_sq_url.css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
 
@@ -38,6 +38,9 @@
 				<li>
 				<div class="wt_title">
 					내용 <span>(※ 구체적 구직 내용을 입력하세요. 최대 300자)</span>
+					<div class="wt_count">
+					   (<span class="count_active">0</span>/300) 
+					</div>
 				</div>
 				<div class="wt_area">
 					<textarea name="text" cols="50" rows="3"></textarea>
@@ -49,6 +52,20 @@
 				</div>
 				<div class="wt_r">
 					<input type="text" placeholder="'-'없이 입력하세요" class="wt_text"/>
+				</div>
+				</li>
+				<li>
+				<div class="wt_l">
+					구직 종류
+				</div>
+				<div class="wt_r">
+					<div class="slct_career grd_divide">
+						<select>
+							<option>구직 종류를 선택하세요</option>
+							<option>일반직</option>
+							<option>알바</option>
+						</select>
+					</div>
 				</div>
 				</li>
 				<li>
@@ -114,7 +131,7 @@
 				</div>
 				<!-- 다음 지도 -->
 				<div class="dt_map_wrap">
-					<div class="map_title ft_wt700">
+					<div class="map_title ft_wt900">
 						<span>서울 강남구 역삼동</span>
 						<a href="#">위치 직접선택</a>
 					</div>

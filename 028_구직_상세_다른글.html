@@ -5,13 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>일해요!</title>
-<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
-<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://devm.ilhaeyo.com/_global/assets/css/nanum_sq_url.css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
 <script src="js/ilh_design.js"></script>
 </head>
 <body>
@@ -73,7 +72,7 @@
 				<div class="dt_l">
 					이름
 				</div>
-				<div class="dt_r woman_color ft_wt700">
+				<div class="dt_r woman_color ft_wt900">
 					김개인 (여자/33세)
 				</div>
 				</li>
@@ -103,6 +102,14 @@
 				</li>
 				<li>
 				<div class="dt_l">
+					구직 종류
+				</div>
+				<div class="dt_r">
+					일반직
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
 					근무 가능 지역
 				</div>
 				<div class="dt_r">
@@ -123,11 +130,11 @@
 				</div>
 				<!-- 다음 지도 -->
 				<div class="dt_map_wrap">
-					<div id="map" style="width:100%;height:200px;">
-					</div>
-					<div class="map_title ft_wt700">
+					<div class="map_title ft_wt900">
 						<span>서울 강남구 역삼동</span>
 						<a href="#">지도 크게보기</a>
+					</div>
+					<div id="map" style="width:100%;height:170px;">
 					</div>
 					<div class="zoom_control">
 						<span onclick="zoomIn()">확대</span>
@@ -154,13 +161,13 @@
 				</li>
 			</ul>
 			<!-- // 연락 버튼 -->
-			<p class="ft_wt700">
+			<p class="ft_wt900">
 				모든 연락은 무료입니다!
 			</p>
 		</div>
 		<!-- // 상세 정보 -->
 		<!-- 사진 정보 -->
-		<div class="photo_content">
+		<div class="photo_content hidden">
 			<h4>사진정보</h4>
 			<div class="dt_photo_wrap">
 				<a href="#">
@@ -185,9 +192,9 @@
 	<!-- // 정보 영역 -->
 </div>
 <!-- 광고 삽입 부분 -->
-<div id="ad_zone">
+<div id="ad_zone" class="hidden">
 <a href="#">
-	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+	<p style="font-size:18px; font-weight:900; color:#fff; text-align:center;">광고영역</p>
 </a>   
 </div>
 <!-- // 광고 삽입 부분 -->

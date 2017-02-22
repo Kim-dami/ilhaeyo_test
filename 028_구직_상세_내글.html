@@ -5,17 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>일해요!</title>
-<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
-<link href="css/jquery.mobile.reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://devm.ilhaeyo.com/_global/assets/css/nanum_sq_url.css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
 <script src="js/ilh_design.js"></script>
 </head>
 <body>
-<!---------------------------------------- 상세페이지(구직_내글) ---------------------------------------->
+<!---------------------------------------- 상세페이지(구직_타인) ---------------------------------------->
 <div id="wrap" class="pd_50">
 	<!-- 공통 헤더 -->
 	<div id="header" class="header_relative grd_green">
@@ -30,6 +29,12 @@
 	<!-- // 공통 헤더 -->
 	<!-- 상단 영역 -->
 	<div id="dt_top_wrap">
+		<div class="scrap">
+			<a href="#">
+			<span class="scrap_img"></span>
+			<span class="scrap_txt ft_wt900">스크랩</span>
+			</a>
+		</div>
 		<div class="badge_line">
 			<div class="find_job_badge02">
 				일구함
@@ -59,12 +64,15 @@
 		<!-- 상세 정보 -->
 		<div class="dt_content">
 			<h4>상세정보</h4>
+			<div class="btn_report">
+				<a href="#">신고</a>
+			</div>
 			<ul class="dt_u">
 				<li>
 				<div class="dt_l">
 					이름
 				</div>
-				<div class="dt_r woman_color ft_wt700">
+				<div class="dt_r woman_color ft_wt900">
 					김개인 (여자/33세)
 				</div>
 				</li>
@@ -94,6 +102,14 @@
 				</li>
 				<li>
 				<div class="dt_l">
+					구직 종류
+				</div>
+				<div class="dt_r">
+					일반직
+				</div>
+				</li>
+				<li>
+				<div class="dt_l">
 					근무 가능 지역
 				</div>
 				<div class="dt_r">
@@ -112,37 +128,20 @@
 				<div class="dt_l" style="margin-bottom:5px;">
 					상세위치
 				</div>
-				<div class="dt_r">
-					<div class="chk_wrap">
-						<div class="chk_switch">
-							<span class="chk_on">ON</span>
-							<span class="chk_off">OFF</span>
-							<span class="chk_handle"></span>
-						</div>
-						<input type="checkbox">
+				<!-- 다음 지도 -->
+				<div class="dt_map_wrap">
+					<div class="map_title ft_wt900">
+						<span>서울 강남구 역삼동</span>
+						<a href="#">지도 크게보기</a>
+					</div>
+					<div id="map" style="width:100%;height:170px;">
+					</div>
+					<div class="zoom_control">
+						<span onclick="zoomIn()">확대</span>
+						<span onclick="zoomOut()">축소</span>
 					</div>
 				</div>
-				<!-- 다음 지도 -->
-                    <div class="dt_map_wrap">
-                        <div class="map_title ft_wt700">
-                        	<span>서울 강남구 역삼동</span>
-                            <a href="#">위치 직접선택</a>
-                        </div>
-                        <!--<div class="map_gps">
-                        	<div>
-                                지도 위치 선택은 GPS ON(위치서비스 설정) 상태에서만 이용 가능합니다.
-                                아래 '설정'을 터치하셔서 일해요의 위치서비스를 이용하세요.
-                                설정없이 이용시 임의 지역으로 위치가 선택됩니다.
-                                <a href="#">GPS 설정하기</a>
-                            </div>
-                        </div>-->
-                        <div id="map" style="width:100%;height:200px;"></div>
-                    	<div class="zoom_control">
-                        	<span onclick="zoomIn()">확대</span>
-                            <span onclick="zoomOut()">축소</span>
-                        </div>
-          			</div>
-                    <!-- // 다음 지도 -->
+				<!-- // 다음 지도 -->
 				<div class="dt_adress">
 					[상세주소] 서울 강남구 역삼동 1234-1
 				</div>
@@ -150,6 +149,11 @@
 			</ul>
 			<!-- 수정 버튼 -->
 			<ul class="dtmy_btn_box">
+			    <li>
+				<a href="#">
+				<span class="dt_btn btn_white btn_grd_white">위로올리기</span>
+				</a>
+				</li>
 				<li>
 				<a href="#">
 				<span class="dt_btn btn_white btn_grd_white">수정하기</span>
@@ -162,10 +166,13 @@
 				</li>
 			</ul>
 			<!-- // 수정 버튼 -->
+			<p class="ft_wt900">
+				모든 연락은 무료입니다!
+			</p>
 		</div>
 		<!-- // 상세 정보 -->
 		<!-- 사진 정보 -->
-		<div class="photo_content">
+		<div class="photo_content hidden">
 			<h4>사진정보</h4>
 			<div class="dt_photo_wrap">
 				<a href="#">
@@ -190,9 +197,9 @@
 	<!-- // 정보 영역 -->
 </div>
 <!-- 광고 삽입 부분 -->
-<div id="ad_zone">
+<div id="ad_zone" class="hidden">
 <a href="#">
-	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+	<p style="font-size:18px; font-weight:900; color:#fff; text-align:center;">광고영역</p>
 </a>   
 </div>
 <!-- // 광고 삽입 부분 -->
