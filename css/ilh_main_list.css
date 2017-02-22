@@ -163,3 +163,5 @@
 #my_footer .btn_sece{float:right;}
 #my_footer .btn_info_change a, .btn_sece a{display:block; width:100%; height:100%; text-align:center; font-size:14px;}
 #my_footer .btn_info_change a:active, .btn_sece a:active{background:rgba(255,255,255,0.1);}
+
+body{background-color:#eceff4;}
