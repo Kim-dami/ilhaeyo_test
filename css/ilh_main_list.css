@@ -66,7 +66,7 @@
 .main_filter_l:nth-of-type(4) .filter_active{color:#0198b5; border-bottom:1px solid #edeff3; border-radius:3px 3px 0 0;background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop03.png) no-repeat 80% center; background-size:7px 5px;}
 
 /* 구분 드롭 */
-.divi_drop{display:none; position:absolute; top:88px; left:0px; z-index:500; width:60%; height:auto; background-color:#fff; border-radius:0 3px 3px 3px; overflow:hidden;}
+.divi_drop{position:absolute; top:88px; left:0px; z-index:500; width:60%; height:auto; background-color:#fff; border-radius:0 3px 3px 3px; overflow:hidden;}
 .divi_u{position:relative; width:100%; height:auto;}
 .divi_u:after{content:""; display:block; clear:both;}
 .divi_l{width:50%; height:40px; line-height:40px; float:left; border-bottom:1px solid #edeff3; box-sizing:border-box;}
@@ -77,7 +77,7 @@
 .divi_l .drop_active{font-weight:700; color:#04d464;}
 
 /* 성별 드롭 */
-.gender_drop{display:none; position:absolute; top:88px; left:60%; z-index:500; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
+.gender_drop{position:absolute; top:88px; left:60%; z-index:500; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
 .gender_u{position:relative; width:100%; height:auto;}
 .gender_l{width:100%; height:40px; line-height:40px; border-bottom:1px solid #edeff3; box-sizing:border-box;}
 .gender_l:last-of-type{border-bottom:none;}

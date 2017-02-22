@@ -4,7 +4,7 @@
 /* 팝업배경 */
 .pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,.4);}
 /* 팝업 중앙 */
-.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:10px; background-color:#fff;}
+.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:10px; background-color:#fff; box-sizing:border-box;}
 .wid_94 {left:4%; right:4%; width:92%;}
 .wid_66 {left:17%; right:17%; width:66%;}
 .mt_225 {margin-top:-225px;}
@@ -15,9 +15,9 @@
 .pop_content {position:relative; width:100%; height:auto;}
 .pop_content .pop_u {width:100%; height:auto;}
 .pop_content .pop_u:after {display:block; clear:both; content:"";}
-.pop_content .pop_u .pop_l {float:left; width:50%; height:auto;}
+.pop_content .pop_u .pop_l {float:left; width:50%; height:auto; text-align:center;}
 .pop_content .pop_u .pop_l h4 {width:100%; height:33px; margin:0; padding:0; color:#46526c; font-size:16px; text-align:center; line-height:32px;}
-.pop_content .pop_u .pop_l .pop_first, .pop_second {position:relative; width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
+.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
 .pop_content .pop_u .pop_l .pop_second {border-right:0 none;}
 .pop_content .pop_u .pop_l .pop_second ul {display:none;}
 .pop_content .pop_u .pop_l ul {width:100%; height:auto;}
@@ -216,25 +216,34 @@
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
 #style-1::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-	border-radius: 4px;
-	background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2) !important;
+	border-radius: 4px !important;
+	background-color: #F5F5F5 !important;
 }
 
 #style-1::-webkit-scrollbar
 {
-	width: 4px;
-	background-color: #F5F5F5;
-	-webkit-appearance: none;
+	width: 4px !important;
+	background-color: #F5F5F5 !important;
+	-webkit-appearance: none !important;
 }
 
 #style-1::-webkit-scrollbar-thumb
 {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #adadad;
-}
+	border-radius: 10px !important;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3) !important;
+	background-color: #adadad !important;
+} 
 #style-1::-webkit-scrollbar-thumb:window-inactive {
    background: #41617D !important; 
  }
  /*----------------------------- 팝업류 스크롤 보이게 (170214 주철만) -----------------------------*/
+
+ /*----------------------------- 나이선택팝업 (170221 김다솜) ------------------------------------*/
+.pop_content .pop_u .pop_l_full {float:left; width:100%; height:auto; text-align:center;}
+.pop_content .pop_u .slct_age{height:36px; line-height:36px;}
+.pop_content .pop_u .slct_age a {display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
+.pop_content .pop_u .slct_age a:active {background:rgba(0,0,0,.1);}
+.pop_content .pop_u .slct_age a_active {background:rgba(0,0,0,.1);}
+.pop_content .pop_u .slct_age .slct_active {color:#24a0ea; font-weight:bold;}
+ /*--------------------------------------------------------------------------------------------*/
