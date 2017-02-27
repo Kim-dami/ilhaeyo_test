@@ -268,9 +268,9 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .wt_photo_wrap li .photo_del a{display:block; width:100%; height:100%; text-indent:-9999px;}
 
 /* 날씨표시 */
-.wth_roca_wrap {position:absolute; top:40px; right:10px; padding:5px; border:1px solid #CCC; border-radius:3px; background-color:#fff;}
+.wth_roca_wrap {position:absolute; top:40px; right:10px; padding:5px 3px 5px 3px; border:1px solid #CCC; border-radius:3px; background-color:#fff;}
 .wth_roca_wrap:active {background:rgba(0,0,0,.05);}
-.wth_roca_wrap .wth_roca {display:block; font-size:12px; letter-spacing:-1px; width:100px; text-align:center;}
+.wth_roca_wrap .wth_roca {display:block; font-size:12px; letter-spacing:-1px; width:100px; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 .wth_roca_wrap .wth_img img {display:inline-block; width:30px; height:29px; padding-top:2px; padding-left:8px;}
 .wth_roca_wrap .wth_img_txt {position:absolute; top:23px; left:45px; color:#4d4d4d; font-size:11px; text-align:center;}
 
