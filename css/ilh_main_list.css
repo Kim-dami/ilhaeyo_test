@@ -76,11 +76,19 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 .divi_u{position:relative; width:100%; height:auto;}
 .divi_u:after{content:""; display:block; clear:both;}
 .divi_l{width:50%; height:40px; line-height:40px; float:left; border-bottom:1px solid #edeff3; box-sizing:border-box;}
-.divi_l:first-of-type{width:100%;}
 .divi_l:nth-of-type(even){border-right:1px solid #edeff3;}
+.divi_l:first-of-type{width:100%;}
 .divi_l a{display:block; width:100%; height:100%; text-align:center; color:#676767; font-size:14px;}
-.divi_l a:active{font-weight:700; color:#04d464;}
-.divi_l .drop_active{font-weight:700; color:#04d464;}
+.divi_l:nth-of-type(even) span{color:#04d464;}
+.divi_l:nth-of-type(odd) span{color:#0082d3;}
+.divi_l:nth-of-type(even) a:active{font-weight:700; color:#fff; background-color:#66d69b;}
+.divi_l:nth-of-type(odd) a:active{font-weight:700; color:#fff; background-color:#5db2e7;}
+.divi_l:first-of-type a:active{font-weight:700; color:#fff; background-color:#78d1ce;}
+.divi_l a:active span{font-weight:700; color:#fff;}
+.divi_l:nth-of-type(even) .drop_active{font-weight:700; color:#fff; background-color:#66d69b;}
+.divi_l:nth-of-type(odd) .drop_active{font-weight:700; color:#fff; background-color:#5db2e7;}
+.divi_l:first-of-type .drop_active{font-weight:700; background-color:transparent; color:#0198b5;}
+.divi_l .drop_active span{color:#fff;}
 
 /* 성별 드롭 */
 .gender_drop{position:absolute; top:88px; left:60%; z-index:700; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
@@ -88,7 +96,7 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 .gender_l{width:100%; height:40px; line-height:40px; border-bottom:1px solid #edeff3; box-sizing:border-box;}
 .gender_l:last-of-type{border-bottom:none;}
 .gender_l a{display:block; width:100%; height:100%; text-align:center; color:#676767; font-size:14px;}
-.gender_l a:active{font-weight:700; color:#0198b5;}
+.gender_l a:active{font-weight:700; color:#fff; background-color:#62c8dc;}
 .gender_l .drop_active{font-weight:700; color:#0198b5;}
 
 /* 메인 검색결과 */

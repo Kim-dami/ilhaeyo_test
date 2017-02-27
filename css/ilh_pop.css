@@ -143,8 +143,9 @@
 .pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 10px 10px;}
 .pop_dn .pop_check {position:relative; width:100%; height:auto; padding:0 2.5%; box-sizing:border-box;}
 .pop_dn .pop_check:after {display:block; clear:both; content:"";}
-.pop_dn .pop_check p {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding:0 6% 0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
-.pop_dn .pop_check p a{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 65% center; background-size:9px 9px; text-indent:-9999px;}
+.pop_dn .pop_check .pop_slct {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding:0 6% 0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
+.pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%;}
+.pop_dn .pop_check .pop_slct .pop_slct_x{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 65% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:60px; padding:10px 0; box-sizing:border-box;}
 .pop_dn .pop_btn a {display:block; width:120px; height:40px; margin:0 auto; border-radius:20px; background-color:#46526c; color:#fff; font-size:16px; text-align:center; line-height:40px; ;}
 
