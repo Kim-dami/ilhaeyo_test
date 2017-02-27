@@ -73,6 +73,7 @@
 #container .dt_content .dt_u li:after {display:block; clear:both; content:"";}
 #container .dt_content .dt_u .dt_l {float:left; width:80px; height:23px; color:#4d4d4d; font-weight:700; text-align:left; line-height:23px;}
 #container .dt_content .dt_u .dt_r {float:left; width:auto; height:auto; text-align:left; line-height:23px;}
+#container .dt_content .dt_u .dt_r a{font-size:13px!important;}
 #container .dt_content .dt_u .day_badge, #container .dt_content .dt_u .month_badge, #container .dt_content .dt_u .annual_badge, #container .dt_content .dt_u .part_badge{margin-right:3px;}
 #container .dt_content .dt_u .dt_adress {clear:both; font-size:13px; margin-top:5px;}
 #container .dt_content .dt_btn_box{width:100%; height:auto; padding:5px 17% 10px 17%; box-sizing:border-box;}

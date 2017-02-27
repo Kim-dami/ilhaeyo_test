@@ -246,9 +246,9 @@ td,th {padding:0;}
 #container .content_list .list_profile {position:relative; width:100%; height:auto; padding-top:10px; overflow:hidden; box-sizing:border-box; cursor:pointer;}
 #container .content_list .list_profile a {display:block; width:100%; height:100%;}
 #container .content_list .top_line {position:relative; width:100%; height:20px; padding-left:75px; vertical-align:top; box-sizing:border-box;}
-#container .content_list .top_line .list_title { max-width:80%; height:auto; box-sizing:border-box;font-size:14px; font-weight:900; line-height:19px; letter-spacing:-0.5px;}
-#container .content_list .top_line .title_txt { display:inline-block; max-width:80%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap; padding-right:2px;}
-#container .content_list .top_line .help_badge {position:relative; top:-7px;}
+#container .content_list .top_line .list_title {max-width:80%; height:auto; box-sizing:border-box;font-size:14px; font-weight:900; line-height:19px; letter-spacing:-0.5px;}
+#container .content_list .top_line .title_txt {display:inline-block; max-width:80%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap; padding-right:2px; vertical-align:middle;}
+#container .content_list .top_line .help_badge {vertical-align:middle;}
 #container .content_list .top_line .wt_time {position:absolute; top:0px; right:0px; display:inline-block; width:auto; height:13px; padding:2px 5px 2px 0; color:#909dad; font-size:12px; line-height:12px;}
 #container .content_list .mid_line {position:relative; width:100%; height:45px; padding:3px 10px 6px 75px; box-sizing:border-box;}
 #container .content_list .mid_line .list_txt {display:block; display:-webkit-box; max-height:36px; overflow:hidden; color:#46526c; font-size:13px; text-overflow:ellipsis; line-height:18px; word-wrap:break-word;;-webkit-box-orient:vertical; -webkit-line-clamp:2;}
