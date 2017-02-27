@@ -258,7 +258,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 /* 사진 등록 영역 */
 .wt_photo_plus{position:absolute; top:1px; right:0; display:inline-block; width:85px; height:29px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_photo_plus.png) no-repeat center center; background-size:85px 29px;}
 .wt_photo_wrap{position:relative; width:100%; height:81px; border:1px solid #c0c7d4; border-radius:3px; background-color:#f2f5fa; overflow-y:hidden; overflow-x:hidden; white-space:nowrap; box-sizing:border-box;}
-.wt_photo_wrap li{position:relative; display:inline-block; width:71px; height:79px; padding:8px 4px; margin:0; box-sizing:border-box;}
+.wt_photo_wrap li{position:relative; display:inline-block; width:71px; height:79px; padding:8px 4px; margin:0; box-sizing:border-box; vertical-align:top;}
 .wt_photo_wrap li:first-of-type{width:75px; padding-left:8px;}
 .wt_photo_wrap li:last-of-type{width:75px; padding-right:8px;}
 .wt_photo_wrap li .photo_clip{position:relative; width:63px; height:63px; border:1px solid #c0c7d4; border-radius:10px; box-sizing:border-box; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_photo_plus.png) no-repeat center center; background-size:18px 18px;}

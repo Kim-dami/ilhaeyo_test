@@ -63,16 +63,20 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 .fix_wrap_clone{display:none; position:fixed; top:0px; z-index:600; width:100%; height:auto;}
 
 /* 메인 필터 */
-.main_filter{position:relative; width:100%; height:auto;}
-.main_filter_u{position:relative; width:100%; height:38px; line-height:38px;}
+.main_filter{position:relative; width:100%; height:auto; padding-left:60px; box-sizing:border-box;}
+.btn_main_home{position:absolute; top:0; left:0; width:60px; height:100%; padding-right:10px; box-sizing:border-box; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar02.png) no-repeat 50px center; background-size:2px 14px;}
+.btn_main_home a{display:block; width:100%; height:100%; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_home.png) no-repeat center 8px; background-size:20px 18px;}
+.btn_main_home a:active{background:rgba(0,0,0,0.05) url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_home.png) no-repeat center 8px; background-size:20px 18px;}
+.main_filter_u{position:relative; width:100%; height:35px; line-height:35px;}
 .main_filter_u:after{content:""; display:block; clear:both;}
 .main_filter_l{position:relative; width:20%; height:100%; float:left;}
-.main_filter_l a{display:block; width:100%; height:100%; padding-right:15px; box-sizing:border-box; text-align:center; color:#fff; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 80% center; background-size:7px 5px;}
-.main_filter_l:first-of-type .filter_active{color:#04d464; border-bottom:1px solid #edeff3; border-radius:0 3px 0 0; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop02.png) no-repeat 80% center; background-size:7px 5px;}
-.main_filter_l:nth-of-type(4) .filter_active{color:#0198b5; border-bottom:1px solid #edeff3; border-radius:3px 3px 0 0;background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop03.png) no-repeat 80% center; background-size:7px 5px;}
+.main_filter_l a{display:block; width:100%; height:100%; padding-right:10px; box-sizing:border-box; text-align:center; color:#fff; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 87% center; background-size:7px 5px;}
+.main_filter_l .filter_active{border-bottom:1px solid #edeff3; border-radius:3px 3px 0 0;}
+.main_filter_l:first-of-type .filter_active{color:#04d464; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop02.png) no-repeat 87% center; background-size:7px 5px;}
+.main_filter_l:nth-of-type(4) .filter_active{color:#0198b5; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop03.png) no-repeat 87% center; background-size:7px 5px;}
 
 /* 구분 드롭 */
-.divi_drop{position:absolute; top:88px; left:0px; z-index:700; width:60%; height:auto; background-color:#fff; border-radius:0 3px 3px 3px; overflow:hidden;}
+.divi_drop{position:absolute; top:85px; left:60px; z-index:700; width:60%; height:auto; background-color:#fff; border-radius:0 3px 3px 3px; overflow:hidden;}
 .divi_u{position:relative; width:100%; height:auto;}
 .divi_u:after{content:""; display:block; clear:both;}
 .divi_l{width:50%; height:40px; line-height:40px; float:left; border-bottom:1px solid #edeff3; box-sizing:border-box;}
@@ -91,8 +95,8 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 .divi_l .drop_active span{color:#fff;}
 
 /* 성별 드롭 */
-.gender_drop{position:absolute; top:88px; left:60%; z-index:700; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
-.gender_u{position:relative; width:100%; height:auto;}
+.gender_drop{position:absolute; top:85px; left:0; z-index:700; width:100%; height:auto; padding-left:60px; box-sizing:border-box;}
+.gender_u{position:relative; left:60%; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
 .gender_l{width:100%; height:40px; line-height:40px; border-bottom:1px solid #edeff3; box-sizing:border-box;}
 .gender_l:last-of-type{border-bottom:none;}
 .gender_l a{display:block; width:100%; height:100%; text-align:center; color:#676767; font-size:14px;}
