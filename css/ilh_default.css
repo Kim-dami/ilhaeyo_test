@@ -323,12 +323,12 @@ li, div, input{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 .result_none {width:100%; line-height:22px; padding-top:60px; background:#eceff4 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_exclam.png) no-repeat center top; background-size:47px 47px; color:#717f94; text-align:center;}
 
 /* 로그인 & 글쓰기 플로팅 버튼 */
-.float_btn {position:fixed; z-index:300; display:block; right:10px; bottom:60px; width:65px; height:65px; line-height:65px; border-radius:100%; text-align:center; color:#fff!important; font-size:16px!important; font-weight:700;  background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
+.float_btn {position:fixed; z-index:300; display:block; right:10px; bottom:60px; width:60px; height:60px; line-height:19px; border-radius:100%; padding-top:13px!important; box-sizing:border-box; text-align:center; color:#fff!important; font-size:16px!important; font-weight:700; background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
 .float_btn:active{box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -webkit-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -moz-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -ms-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -o-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3);}
-
+.float_btn span{font-size:14px;}
 
 /* 위로 */
-.go_up {position:fixed; z-index:400; right:22px; bottom:10px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}
+.go_up {position:fixed; z-index:400; right:20px; bottom:10px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}
 
 /*--------------------------------- 170221 뱃지수정 ---------------------------------*/
 .badge {display:table; width:18px; height:18px; border:1px solid #fff; border-radius:50%; background-color:#ffbb37; box-shadow:0px 3px 10px -4px #ffbb37; color:#fff; font-size:12px; text-align:center; line-height:19px; letter-spacing:-0.5px;-webkit-box-shadow:0px 3px 10px -4px #ffbb37; -moz-box-shadow:0px 3px 10px -4px #ffbb37;}
@@ -378,7 +378,7 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 /****************************** 170227 김다미 ******************************/
 /* 찾을 수 없는 페이지 */
 .nopg_fix{position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height: 100%; background-color:#fff;}
-.nopg_wrap{position:fixed; top:50%; left:50%; width:312px; height:auto; margin:-170px 0 0 -156px;}
+.nopg_wrap{position:fixed; top:50%; left:50%; width:315px; height:auto; margin:-170px 0 0 -157.5px;}
 .nopg_txt{position:relative; width:100%; height:auto;}
 .nopg_txt .nopg_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/icon_exclam02.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
 .nopg_txt .updt_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/icon_updata.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
@@ -397,3 +397,9 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .ta_justify{text-align:justify!important;}
 .fc_red{color:#ff1e00; font-weight:700;}
 .fc_yel{color:#ffbb37; font-weight:700;}
+
+/****************************** 170228 김다미 ******************************/
+.my_up_wrap{position:relative; width:100%; height:35px; padding:7px 5px 0 5px; box-sizing:border-box;}
+.my_up_wrap a{display:block; width:100%; height:100%; line-height:31px; background-color:#e0f0fb; border-bottom:1px solid #bfd2df; text-align:center; font-size:14px; color:#46526c; letter-spacing:-0.5px; border-radius:7px 7px 0 0;}
+.my_up_wrap a:active{position:relative; top:1px;}
+.my_up_wrap a span{display:inline-block; padding-left:18px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_my_up.png) no-repeat left 8px; background-size:12px 12px;}
