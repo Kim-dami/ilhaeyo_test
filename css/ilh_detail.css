@@ -72,7 +72,7 @@
 #container .dt_content .dt_u li {width:100%; height:auto; letter-spacing:-0.5px;}
 #container .dt_content .dt_u li:after {display:block; clear:both; content:"";}
 #container .dt_content .dt_u .dt_l {float:left; width:90px; height:26px; color:#303030; font-weight:700; text-align:left; line-height:26px;}
-#container .dt_content .dt_u .dt_r {float:left; width:auto; height:auto; text-align:left; line-height:25px;}
+#container .dt_content .dt_u .dt_r {float:left; width:auto; height:auto; text-align:left; line-height:26px;}
 #container .dt_content .dt_u .dt_r a{font-size:13px!important;}
 #container .dt_content .dt_u .dt_r .dt_direct_call{display:inline-block; vertical-align:middle; width:70px; height:25px; margin-left:3px;}
 #container .dt_content .dt_u .dt_r .dt_direct_call a{display:block; width:100%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_direct_call.png) no-repeat center center; background-size:70px 25px; text-indent:-9999px;}
@@ -174,7 +174,7 @@
 .wt_u .wt_title span{color:#4d4d4d; font-weight:400; font-size:12px; margin-left:1px;}
 
 /* 글쓰기 input text & number */
-.wt_u .wt_text{display:block; width:100%; height:auto; line-height:14px; font-size:14px; padding:8px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; box-shadow:none; outline:none; font-family:'NanumSquare'; letter-spacing:-0.5px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
+.wt_u .wt_text{display:block; width:100%; height:34px; line-height:14px; font-size:14px; padding:8px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; box-shadow:none; outline:none; font-family:'NanumSquare'; letter-spacing:-0.5px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .wt_u .wt_text:active{border:1px solid #abb8d1;}
 .wt_u input{color:#000;}
@@ -312,12 +312,12 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .wt_u .text_pay{position:relative; width:56%; height:auto; float:right;}
 .wt_u .text_pay .wt_text {padding:8px 32px 8px 10px; text-align:right; letter-spacing:0px;}
 .wt_u .text_pay label{position:absolute; top:0; right:0; width:27px; height:100%; line-height:32px; font-size:13px}
-.wt_u .nation_chk{position:absolute; top:0; right:105px; width:105px; height:32px; line-height:32px;}
+.wt_u .nation_chk{position:absolute; top:0; right:105px; width:110px; height:32px; line-height:32px;}
 .wt_u .oversea_chk{position:absolute; top:0; right:0px; width:105px; height:32px; line-height:32px;}
 .wt_u .nation_chk input[type="checkbox"], .wt_u .oversea_chk input[type="checkbox"]{position:absolute; top:0; left:0; display:inline-block; width:100%; height:32px; opacity:0; cursor:pointer;}
 .wt_u .nation_chk input[type="checkbox"]:checked + label{background:url('http://image.ilhaeyo.com/imgs/ilheayo_job/img_login/btn_chk1_on.png') 0 50% no-repeat;background-size:19px 19px}
 .wt_u .oversea_chk input[type="checkbox"]:checked + label{background:url('http://image.ilhaeyo.com/imgs/ilheayo_job/img_login/btn_chk1_on.png') 0 50% no-repeat;background-size:19px 19px}
-.wt_u .nation_chk .chk_lb, .wt_u .oversea_chk .chk_lb{font-size:13px; line-height:13px; padding-top:9px; padding-bottom:9px;}
+.wt_u .nation_chk .chk_lb, .wt_u .oversea_chk .chk_lb{font-size:14px; line-height:14px; padding-top:px; padding-bottom:9px;}
 .wt_u .chk_wrap{left:7px; padding:4px 0 5px 0;}
 .wt_u .wt_notice{margin-top:5px;}
 

@@ -131,7 +131,7 @@
 .pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%;}
 .pop_dn .pop_check .pop_slct .pop_slct_x{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 65% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:60px; padding:10px 0; box-sizing:border-box;}
-.pop_dn .pop_btn a {display:block; width:120px; height:40px; margin:0 auto; border-radius:20px; background-color:#46526c; color:#fff; font-size:16px; text-align:center; line-height:40px; ;}
+.pop_dn .pop_btn a {display:block; width:120px; height:40px; margin:0 auto; border-radius:20px; background-color:#46526c; color:#fff; font-size:17px; text-align:center; line-height:40px; ;}
 
 .pop_dn .pop_clse {position:relative; width:100%; height:100%; background-color:#d8deea;}
 .pop_dn .pop_clse a {display:block; width:100%; height:50px; color:#46526c; text-align:center; line-height:50px;}
@@ -156,7 +156,7 @@
 .pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:5px 5px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
 .pop_header h3 {position:relative; width:100%; height:30px; margin:0; padding:0 20px; color:#303030; font-size:14px; font-weight:400; line-height:29px; box-sizing:border-box;letter-spacing:-1px;}
 .pop_header h3 .grd_pop {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:1px;}
-.pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat center center; background-size:18px 18px; text-indent:-9999px;}
+.pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat 70% center; background-size:18px 18px; text-indent:-9999px;}
 
 /* 추가 알림_버튼x 161226_주철만 */
 .alarm_nobtn {display:none; position:fixed; z-index:999; left:50%; bottom:30px; width:80%; height:auto; overflow:hidden; border-radius:20px; background:rgba(0,0,0,.85); margin-left:-40%; }
