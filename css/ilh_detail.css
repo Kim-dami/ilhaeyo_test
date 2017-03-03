@@ -167,14 +167,14 @@
 .wt_wrap{position:relative; width:100%; height:auto;}
 .wt_u{position:relative; width:100%; height:auto; padding:7px 12px; box-sizing:border-box; font-size:14px;}
 .wt_u li{position:relative; width:100%; height:auto; letter-spacing:-0.5px; margin-bottom:5px;}
-.wt_u .wt_l{position:absolute; top:0; left:0; width:70px; height:32px; line-height:32px; color:#303030; font-weight:700; float:left; text-align:left;}
+.wt_u .wt_l{position:absolute; top:0; left:0; width:70px; height:34px; line-height:34px; color:#303030; font-weight:700; float:left; text-align:left;}
 .wt_u .wt_r{width:100%; height:auto; padding-left:70px; box-sizing:border-box; text-align:left;}
 .wt_u .wt_r:after{content:""; display:block; clear:both;}
-.wt_u .wt_title{position:relative; width:100%; height:31px; line-height:31px; color:#4d4d4d; font-weight:700; text-align:left;}
+.wt_u .wt_title{position:relative; width:100%; height:32px; line-height:32px; color:#4d4d4d; font-weight:700; text-align:left;}
 .wt_u .wt_title span{color:#4d4d4d; font-weight:400; font-size:11px; margin-left:1px;}
 
 /* 글쓰기 input text & number */
-.wt_u .wt_text{display:block; width:100%; height:auto; line-height:14px; font-size:13px; padding:8px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; box-shadow:none; outline:none; font-family:'NanumSquare'; letter-spacing:-0.5px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
+.wt_u .wt_text{display:block; width:100%; height:auto; line-height:14px; font-size:14px; padding:8px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; box-shadow:none; outline:none; font-family:'NanumSquare'; letter-spacing:-0.5px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .wt_u .wt_text:active{border:1px solid #abb8d1;}
 .wt_u input{color:#303030;}
@@ -184,18 +184,18 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 /* 글쓰기 textarea */
 .wt_u .wt_area{width:100%; height:70px; padding-bottom:2px;}
-.wt_u .wt_area textarea{display:block; width:100%; height:auto!important; line-height:20px; font-size:13px; padding:5px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; resize:none!important; outline:none; font-family:'NanumSquare'; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
+.wt_u .wt_area textarea{display:block; width:100%; height:auto!important; line-height:20px; font-size:14px; padding:5px 10px; background-color:#f2f5fa; border-radius:3px; border:1px solid #c0c7d4; box-sizing:border-box; resize:none!important; outline:none; font-family:'NanumSquare'; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .wt_u .wt_area textarea:active{border:1px solid #abb8d1;}
 .wt_u .wt_area .textarea_active{border:1px solid #abb8d1;}
 
 /* 글쓰기 select 박스 */
 .wt_u .grd_divide{border-radius:3px;}
-.wt_u .slct_man select, .wt_u .slct_woman select, .wt_u .slct_pay select, .wt_u .slct_career select, .wt_u .slct_first_age select, .wt_u .slct_last_age select {display:block; width:100%; height:32px; line-height:31px; font-size:13px; padding:0px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#303030; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 95% 50% no-repeat; background-size:15px 9px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; font-family:'NanumSquare'; overflow:visible;}
-.wt_u .slct_pop span{display:block; width:100%; height:auto; line-height:14px; font-size:13px; padding:8px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#303030; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 95% 50% no-repeat; background-size:15px 9px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; font-family:'NanumSquare'; overflow:visible;}
+.wt_u .slct_man select, .wt_u .slct_woman select, .wt_u .slct_pay select, .wt_u .slct_career select, .wt_u .slct_first_age select, .wt_u .slct_last_age select {display:block; width:100%; height:34px; line-height:33px; font-size:14px; padding:0px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#303030; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 95% 50% no-repeat; background-size:15px 9px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; font-family:'NanumSquare'; overflow:visible;}
+.wt_u .slct_pop span{display:block; width:100%; height:auto; line-height:14px; font-size:14px; padding:9px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#303030; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_drop01.png) 95% 50% no-repeat; background-size:15px 9px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; font-family:'NanumSquare'; overflow:visible;}
 .wt_u .slct_man select:active, .wt_u .slct_woman select:active, .wt_u .slct_pop span:active, .wt_u .slct_pay select:active, .wt_u .slct_career select:active, .wt_u .slct_first_age select:active, .wt_u .slct_last_age select:active{border:1px solid #04d464;}
 
 /* 글쓰기 input date */
-.wt_u input[type=date]{position:relative; display:block; width:100%; height:32px; line-height:14px; font-size:13px; padding:8px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#7e7e7e; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_day.png) 95% 50% no-repeat; background-size:16px 16px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
+.wt_u input[type=date]{position:relative; display:block; width:100%; height:34px; line-height:14px; font-size:14px; padding:9px 10px; border-radius:3px; border:1px solid #c0c7d4; outline:0 none; box-sizing:border-box; color:#7e7e7e; background: url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_day.png) 95% 50% no-repeat; background-size:16px 16px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .wt_u input[type=date]:active{border:1px solid #04d464;}
 .wt_u .date_active{border:1px solid #04d464;}
 .wt_u input[type=date]::-webkit-inner-spin-button{display:none; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none}
