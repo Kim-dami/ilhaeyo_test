@@ -29,10 +29,10 @@
 			<ul class="wt_u">
 				<li>
 				<div class="wt_l">
-					제목
+					<span class="wt_color_hl">제목</span>
 				</div>
 				<div class="wt_r">
-					<input type="text" placeholder="최소 5자 ~ 최대 20자 입력 가능" class="wt_text"/>
+					<input type="text" placeholder="최소 5자 ~ 최대 20자 입력 가능" class="wt_text wt_border_hl"/>
 				</div>
 				</li>
 				<li>
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 				<div class="wt_area">
-					<textarea name="text" cols="50" rows="3"></textarea>
+					<textarea name="text" cols="50" rows="3" placeholder="최소 10자 이상 입력하셔야 합니다."></textarea>
 				</div>
 				</li>
 				<li>
@@ -51,7 +51,13 @@
 					연락처
 				</div>
 				<div class="wt_r">
-					<input type="text" placeholder="'-'없이 입력하세요" class="wt_text"/>
+				    <div class="phone_txt">
+					<input type="number" placeholder="'-'없이 입력하세요" class="wt_text" />
+					</div>
+					<div class="phone_chk">
+					<input type="checkbox" id="phone_chk" class="chk">
+					<label for="phone_chk" class="chk_lb">비공개</label>
+				</div>
 				</div>
 				</li>
 				<li>
@@ -224,12 +230,21 @@
 			</ul>
 			<!-- 수정 버튼 -->
 			<ul class="wt_btn_box03">
+			    <li>
+				<a href="#">
+				<span class="wt_btn btn_blue btn_grd_blue">수정완료</span>
+				</a>
+				</li>
+			</ul>
+			<!-- // 수정 버튼 -->
+			<!-- 수정 버튼 -->
+			<!--<ul class="wt_btn_box03">
 				<li>
 				<a href="#">
 				<span class="wt_btn btn_blue btn_grd_blue">등록하기</span>
 				</a>
 				</li>
-			</ul>
+			</ul>-->
 			<!-- // 수정 버튼 -->
 		</div>
 	</div>

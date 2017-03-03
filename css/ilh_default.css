@@ -234,7 +234,7 @@ td,th {padding:0;}
 #container .content_list .top_line .list_title {max-width:80%; height:auto; box-sizing:border-box;font-size:14px; font-weight:900; line-height:19px; letter-spacing:-0.5px;}
 #container .content_list .top_line .title_txt {display:inline-block; max-width:80%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap; padding-right:2px; vertical-align:middle;}
 #container .content_list .top_line .help_badge {vertical-align:middle;}
-#container .content_list .top_line .wt_time {position:absolute; top:0px; right:0px; display:inline-block; width:auto; height:13px; padding:2px 5px 2px 0; color:#909dad; font-size:12px; line-height:12px;}
+#container .content_list .top_line .wt_time {position:absolute; top:0px; right:0px; display:inline-block; width:auto; height:13px; padding:2px 5px 2px 0; color:#464d57; font-size:12px; line-height:12px;}
 #container .content_list .mid_line {position:relative; width:100%; height:45px; padding:3px 10px 6px 75px; box-sizing:border-box;}
 #container .content_list .mid_line .list_txt {display:block; display:-webkit-box; max-height:36px; overflow:hidden; color:#46526c; font-size:13px; text-overflow:ellipsis; line-height:18px; word-wrap:break-word;;-webkit-box-orient:vertical; -webkit-line-clamp:2;}
 #container .content_list .admin_line {position:relative; width:100%; height:auto;}
@@ -242,7 +242,7 @@ td,th {padding:0;}
 #container .content_list .admin_line a {float:left; display:inline-block; width:auto; height:100%; line-height:17px; font-size:13px; font-weight:900; padding:0 2px; margin-right:5px;}
 #container .content_list .bot_line {position:relative; width:100%; height:42px; padding:3px 10px; overflow:hidden; background:rgba(220,230,245,0.4); box-sizing:border-box;}
 #container .content_list .bot_line ul {display:block; width:100%; height:19px; padding:1px 0; box-sizing:border-box;}
-#container .content_list .bot_line ul li {width:auto; height:100%; line-height:17px; font-size:12px; vertical-align:middle;}
+#container .content_list .bot_line ul li {width:auto; height:100%; line-height:17px; font-size:12px; vertical-align:middle; font-weight:700;}
 #container .content_list .bot_line ul .list_money, #container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {float:left; margin-right:10px;}
 #container .content_list .bot_line ul .list_money .day_badge, #container .content_list .bot_line ul .list_money .month_badge, #container .content_list .bot_line ul .list_money .annual_badge, #container .content_list .bot_line ul .list_money .part_badge {position:relative; margin-right:3px;}
 #container .content_list .bot_line ul .list_dist {float:right; font-size:12px;}
@@ -323,9 +323,10 @@ li, div, input{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 .result_none {width:100%; line-height:22px; padding-top:60px; background:#eceff4 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_exclam.png) no-repeat center top; background-size:47px 47px; color:#717f94; text-align:center;}
 
 /* 로그인 & 글쓰기 플로팅 버튼 */
-.float_btn {position:fixed; z-index:300; display:block; right:10px; bottom:60px; width:60px; height:60px; line-height:19px; border-radius:100%; padding-top:13px!important; box-sizing:border-box; text-align:center; color:#fff!important; font-size:16px!important; font-weight:700; background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
+.float_btn {position:fixed; z-index:300; display:block; right:12px; bottom:60px; width:55px; height:55px; line-height:55px; border-radius:100%; box-sizing:border-box; text-align:center; color:#fff!important; font-size:15px!important; font-weight:700; background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
 .float_btn:active{box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -webkit-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -moz-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -ms-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -o-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3);}
 .float_btn span{font-size:14px;}
+.lh_17{line-height:17px; padding-top:12px!important;}
 
 /* 위로 */
 .go_up {position:fixed; z-index:400; right:20px; bottom:10px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}

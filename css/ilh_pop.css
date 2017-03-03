@@ -4,28 +4,12 @@
 /* 팝업배경 */
 .pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,.4);}
 /* 팝업 중앙 */
-.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:10px; background-color:#fff;}
-.wid_94 {left:4%; right:4%; width:92%;}
+.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:5px; background-color:#fff;}
+.wid_94 {left:1%; right:1%; width:98%;}
 .wid_66 {left:17%; right:17%; width:66%;}
 .mt_225 {margin-top:-225px;}
 .mt_100 {margin-top:-100px;}
 .mt_150 {margin-top:-150px;}
-
-/* 팝업 콘텐츠 */
-.pop_content {position:relative; width:100%; height:auto;}
-.pop_content .pop_u {width:100%; height:auto;}
-.pop_content .pop_u:after {display:block; clear:both; content:"";}
-.pop_content .pop_u .pop_l {float:left; width:50%; height:auto; text-align:center;}
-.pop_content .pop_u .pop_l h4 {width:100%; height:33px; margin:0; padding:0; color:#46526c; font-size:16px; text-align:center; line-height:32px;}
-.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
-.pop_content .pop_u .pop_l .pop_second {border-right:0 none;}
-.pop_content .pop_u .pop_l .pop_second ul {display:none;}
-.pop_content .pop_u .pop_l ul {width:100%; height:auto;}
-.pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
-.pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; text-align:center;}
-.pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.1);}
-.pop_content .pop_u .pop_l ul li a_active {background:rgba(0,0,0,.1);}
-.pop_content .pop_u .pop_l ul li .slct_active {color:#24a0ea; font-weight:bold;}
 
 /* 나의 연락 내역 */
 .pop_my {position:relative; width:100%; height:auto; padding:5px 10px; background-color:#46526c; color:#fff; box-sizing:border-box;}
@@ -143,7 +127,7 @@
 .pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 10px 10px;}
 .pop_dn .pop_check {position:relative; width:100%; height:auto; padding:0 2.5%; box-sizing:border-box;}
 .pop_dn .pop_check:after {display:block; clear:both; content:"";}
-.pop_dn .pop_check .pop_slct {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding:0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
+.pop_dn .pop_check .pop_slct {position:relative; float:left; width:46%; height:30px; margin:5px 2% 0 2%; padding:0 15px 0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
 .pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%;}
 .pop_dn .pop_check .pop_slct .pop_slct_x{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 65% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:60px; padding:10px 0; box-sizing:border-box;}
@@ -169,8 +153,8 @@
 /****************************** 161227 김다미 ******************************/
 /* 팝업 헤더 */
 .pop_header {position:relative; width:100%; height:auto;}
-.pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:10px 10px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
-.pop_header h3 {position:relative; width:100%; height:30px; margin:0; padding:0 20px; color:#6d6d6d; font-size:13px; font-weight:400; line-height:29px; box-sizing:border-box;letter-spacing:-1px;}
+.pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:5px 5px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
+.pop_header h3 {position:relative; width:100%; height:30px; margin:0; padding:0 20px; color:#303030; font-size:14px; font-weight:400; line-height:29px; box-sizing:border-box;letter-spacing:-1px;}
 .pop_header h3 .grd_pop {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:1px;}
 .pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat center center; background-size:18px 18px; text-indent:-9999px;}
 
@@ -214,6 +198,7 @@
 
 .pop_container .btn_call{position:relative; width:100%; margin-bottom:15px; text-align:center;}
 .pop_container .btn_call a{width:120px; padding:12px 0; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 26px center; background-size:13px 16px; font-size:17px; padding-left:14px;}
+
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
 #style-1::-webkit-scrollbar-track
 {
@@ -224,7 +209,7 @@
 
 #style-1::-webkit-scrollbar
 {
-	width: 4px !important;
+	width: 6px !important;
 	background-color: #F5F5F5 !important;
 	-webkit-appearance: none !important;
 }
@@ -248,3 +233,26 @@
 .pop_content .pop_u .slct_age a_active {background:rgba(0,0,0,.1);}
 .pop_content .pop_u .slct_age .slct_active {color:#24a0ea; font-weight:bold;}
  /*--------------------------------------------------------------------------------------------*/
+
+/****************************** 170303 김다미 ******************************/
+/* 팝업 콘텐츠 */
+.pop_content {position:relative; width:100%; height:auto;}
+.pop_content .pop_u {width:100%; height:auto;}
+.pop_content .pop_u:after {display:block; clear:both; content:"";}
+.pop_content .pop_u .pop_l {float:left; width:50%; height:auto; text-align:center;}
+.pop_content .pop_u .pop_l h4 {width:100%; height:33px; margin:0; padding:0; color:#46526c; font-size:16px; text-align:center; line-height:32px;}
+.pop_content .pop_u .pop_l div {width:100%; height:202px; border-width:1px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;overflow-y:auto; -webkit-overflow-scrolling: touch; -webkit-box-shadow:inset 0 -5px 5px -5px rgba(0,0,0,0.2);} /* 160106 아이폰대응 추가 _ 김다미 */
+.pop_content .pop_u .pop_l .pop_second {border-right:0 none;}
+.pop_content .pop_u .pop_l .pop_second ul {display:none;}
+.pop_content .pop_u .pop_l ul {width:100%; height:auto;}
+.pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
+.pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; text-align:center;}
+.pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.1);}
+.pop_content .pop_u .pop_l ul li a_active {background:rgba(0,0,0,.1);}
+.pop_content .pop_u .pop_l ul li .slct_active {color:#24a0ea; font-weight:bold;}
+
+/*.pop_divi1{width:25%!important;}
+.pop_divi2{width:75%!important;}
+.pop_divi2 ul:after{content:""; display:block; clear:both;}
+.pop_divi2 ul li{width:50%!important; float:left;}
+.pop_divi1 ul li a,.pop_divi2 ul li a{font-size:14px!important;}*/
