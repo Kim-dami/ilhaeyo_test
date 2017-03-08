@@ -34,7 +34,7 @@
 /* 상단 글씨 영역 */
 #dt_top_wrap .dt_top {position:relative; float:left; width:80%; height:47px; padding:5px 0; box-sizing:border-box;}
 #dt_top_wrap .dt_top h2 {width:100%; height:22px; color:#46526c; font-size:16px; line-height:22px;}
-#dt_top_wrap .dt_top h3 {width:100%; height:15px; color:#525252; font-size:11px; font-weight:400; line-height:15px;}
+#dt_top_wrap .dt_top h3 {width:100%; height:15px; color:#525252; font-size:13px; font-weight:400; line-height:15px;}
 
 /* 정보 영역 공통 */
 #container h4 {position:relative; width:100%; height:29px; padding:0 12px; border-top:1px solid #cdd5e1; background-color:#eceff4; color:#46526c; font-size:15px; line-height:28px; letter-spacing:-0.5px; box-sizing:border-box;}
@@ -71,7 +71,7 @@
 #container .dt_content .dt_u {width:100%; height:auto; padding:7px 12px; color:#303030; font-size:14px; box-sizing:border-box; font-weight:700;}
 #container .dt_content .dt_u li {width:100%; height:auto; letter-spacing:-0.5px;}
 #container .dt_content .dt_u li:after {display:block; clear:both; content:"";}
-#container .dt_content .dt_u .dt_l {float:left; width:90px; height:26px; color:#767678; font-weight:700; text-align:left; line-height:26px;}
+#container .dt_content .dt_u .dt_l {float:left; width:90px; height:26px; color:#7b7b7b; font-weight:700; text-align:left; line-height:26px;}
 #container .dt_content .dt_u .dt_r {float:left; width:auto; height:auto; text-align:left; line-height:26px;}
 #container .dt_content .dt_u .dt_r a{font-size:13px!important;}
 #container .dt_content .dt_u .dt_r .dt_direct_call{display:inline-block; vertical-align:middle; width:70px; height:25px; margin-left:3px;}
@@ -238,15 +238,23 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .wt_photo_wrap li .photo_del a{display:block; width:100%; height:100%; text-indent:-9999px;}
 
 /* 날씨표시 */
-.wth_roca_wrap {position:relative; display:inline-block; bottom:124px; right:-147px; padding:5px 1px 5px 1px; border:1px solid #CCC; border-radius:3px; background-color:#fff;}
+.wth_roca_wrap {position:relative; display:inline-block; bottom:135px; right:-106px; padding:5px 1px 5px 1px; border:1px solid #CCC; border-radius:3px; background-color:#fff;}
 .wth_roca_wrap:active {background:rgba(0,0,0,.05);}
 .wth_roca_wrap .wth_roca {display:block; font-size:12px; letter-spacing:-1px; width:100px; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 .wth_roca_wrap .wth_img img {display:inline-block; width:30px; height:29px; padding-top:2px; padding-left:8px;}
 .wth_roca_wrap .wth_img_txt {position:absolute; top:23px; left:45px; color:#4d4d4d; font-size:11px; text-align:center;}
 @media (min-width:360px) {
-.wth_roca_wrap {  }
+.wth_roca_wrap { bottom:124px; right:-147px;  }
 }
-
+@media (min-width:375px) {
+.wth_roca_wrap { bottom:124px; right:-160px;  }
+}
+@media (min-width:414px) {
+.wth_roca_wrap { bottom:124px; right:-198px;  }
+}
+@media (min-width:768px) {
+.wth_roca_wrap { bottom:124px; right:-552px;  }
+}
 /****************************** 170201 김다미 ******************************/
 /* 수정 버튼 */
 .wt_btn_box01{width:100%; height:auto; padding:0 7% 20px 7%; box-sizing:border-box;}

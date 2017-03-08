@@ -37,6 +37,8 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {overf
 button[disabled],html input[disabled] {cursor:default;}
 button::-moz-focus-inner,input::-moz-focus-inner {padding:0; border:0;}
 input {line-height:normal;}
+input[type="text"],input[type="tel"],input[type="number"] {font-family:'NanumSquare';}
+select{font-family:'NanumSquare';}
 select::-ms-expand {display:none;}
 input[type="search"] {box-sizing:content-box;-webkit-appearance:textfield; -webkit-box-sizing:content-box; -moz-box-sizing:content-box;}
 input[type="checkbox"],input[type="radio"] {width:13px; height:13px; padding:0; box-sizing:border-box;**}
@@ -77,7 +79,7 @@ td,th {padding:0;}
  /* 보조그레이1 */
 .bs_asst_gray2 {color:#d8deea;}
  /* 보조그레이2 */
-.bs_asst_txt1 {color:#909dad;}
+.bs_asst_txt1 {color:#24282d;}
   /* 보조텍스트 */
 /* 메인그라디언트 */
 .grd_main {background:#04d464; background:-moz-linear-gradient(left, #04d464 0%, #0081d4 100%); background:-webkit-linear-gradient(left, #04d464 0%,#0081d4 100%); background:linear-gradient(to right, #04d464 0%,#0081d4 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#04d464', endColorstr='#0081d4',GradientType=1 );}
