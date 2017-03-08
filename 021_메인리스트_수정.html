@@ -12,6 +12,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script>
+$(document).ready(function(){
+	/* 전체보기 버튼 click시 메뉴 슬라이드토글 */
+	$(".btn_dropmenu").click(function(){
+        $(this).toggleClass("btn_dropmenu_on");
+        $("#main_bg_modal02").fadeToggle(200);
+		$(".dropmenu_container").slideToggle(200);
+		$(".dropmenu_container li a").toggleClass("dropmenu_fade");
+	});
+});
+</script>
 </head>
 <body>
 <!---------------------------------------- 메인리스트 ---------------------------------------->
@@ -124,20 +135,18 @@
             </div>
         </div>
     </div>
-	<!-- // 최근검색 및 추천검색 -->     
+	<!-- // 최근검색 및 추천검색 -->
 	<div class="fix_wrap">
         <!-- 메인 필터 -->
         <div class="main_filter grd_main">
             <!-- 홈 버튼 -->
             <div class="btn_main_home">
-               <a href="#">
-                   홈 버튼
-               </a>
+               <a href="#">홈 버튼</a>
             </div>
             <!-- // 홈 버튼 -->
             <ul class="main_filter_u">
                 <li class="main_filter_l">
-                    <a href="#">구분</a>
+                    <a href="#">전체</a>
                 </li>
                 <li class="main_filter_l">
                     <a href="#">직업</a>
@@ -151,9 +160,59 @@
                 <li class="main_filter_l">
                     <a href="#">나이</a>
                 </li>
-            </ul>       
+            </ul>
+            <div id="main_bg_modal02"></div><!-- 드롭 배경 -->
+            <!-- 전체보기 -->
+            <div class="dropmenu_wrap">
+        	<a href="#" class="btn_dropmenu">
+            	전체보기
+            	<img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_new_badge.png" width="20" height="20" class="new_icon">
+            </a>
+            <ul class="dropmenu_container">
+            	<li>
+                	<a href="#">
+                    	<div class="dropmenu">대화함</div>
+                        <div class="count_alim">
+                            <div class="alim_num">99</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<div class="dropmenu">등록글 관리<br />및 올리기</div>
+                        <div class="count_alim">
+                            <div class="alim_num">5</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                	    <div class="dropmenu">스크랩</div>
+                	    <div class="count_alim">
+                            <div class="alim_num">12</div>
+                        </div>
+                	</a>
+                </li>
+                <li>
+                	<a href="#">
+                	    <div class="dropmenu">공지사항</div>
+                	    <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_new_badge.png" width="20" height="20" class="new_icon">
+                	</a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">카톡추천</div></a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">광고하기</div></a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">더보기</div></a>
+                </li>
+            </ul>
+            </div>
+            <!-- 전체보기 -->
         </div>
-        <!-- // 메인 필터 -->
+        <!-- // 메인 필터 --> 
         <!-- 메인 검색결과 -->
         <div class="main_result">
             <div class="result_default">
@@ -227,8 +286,6 @@
         </ul>
     </div>
     <!-- // 성별 드롭 -->
-	<div id="main_bg_modal" class="hidden"></div>
-	<!-- 드롭메뉴 배경 -->
 	<!-- 메인리스트 -->
 	<div id="container" class="mt_69">
 		<ul class="content_list">
