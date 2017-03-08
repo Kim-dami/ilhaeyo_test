@@ -82,13 +82,13 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 .divi_l .drop_active span{color:#fff;}
 
 /* 성별 드롭 */
-.gender_drop{position:absolute; top:85px; left:0; z-index:700; width:100%; height:auto; padding-left:55px; padding-right:3px; box-sizing:border-box;}
+.gender_drop{position:absolute; top:85px; left:0; z-index:700; width:100%; height:auto; padding-left:40px; padding-right:80px; box-sizing:border-box;}
 .gender_u{position:relative; left:60%; width:20%; height:auto; background-color:#fff; border-radius:0 0 3px 3px; overflow:hidden;}
 .gender_l{width:100%; height:40px; line-height:40px; border-bottom:1px solid #edeff3; box-sizing:border-box;}
 .gender_l:last-of-type{border-bottom:none;}
 .gender_l a{display:block; width:100%; height:100%; text-align:center; color:#676767; font-size:14px;}
 .gender_l a:active{font-weight:700; color:#fff; background-color:#62c8dc;}
-.gender_l .drop_active{font-weight:700; color:#0198b5;}
+.gender_l .drop_active{font-weight:900; color:#0198b5;}
 
 /* 메인 검색결과 */
 .main_result{position:relative; width:100%; height:30px; line-height:30px; background-color:#46526c; border-top:1px solid #313554; color:#fff; font-size:14px;}
