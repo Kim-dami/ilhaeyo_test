@@ -11,7 +11,7 @@
 <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
 <script>
 $(document).ready(function(){
 	/* 전체보기 버튼 click시 메뉴 슬라이드토글 */
@@ -161,7 +161,7 @@ $(document).ready(function(){
                     <a href="#">나이</a>
                 </li>
             </ul>
-            <div id="main_bg_modal02"></div><!-- 드롭 배경 -->
+            <div id="main_bg_modal02" class="hidden"></div><!-- 드롭 배경 -->
             <!-- 전체보기 -->
             <div class="dropmenu_wrap">
         	<a href="#" class="btn_dropmenu">
@@ -272,7 +272,7 @@ $(document).ready(function(){
     </div>
     <!-- // 구분 드롭 -->
     <!-- 성별 드롭 -->
-    <div class="gender_drop">
+    <div class="gender_drop hidden">
         <ul class="gender_u box_shadow1">
             <li class="gender_l">
             <a href="#" class="drop_active">전체</a>

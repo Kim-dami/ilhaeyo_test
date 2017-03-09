@@ -117,7 +117,7 @@
 .pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%; font-size:13px; letter-spacing:-0.5px;}
 .pop_dn .pop_check .pop_slct .pop_slct_x{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 40% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:auto;}
-.pop_dn .pop_btn a {display:block; width:100%; height:45px; background-color:#46526c; color:#fff; font-size:17px; text-align:center; line-height:40px; ;}
+.pop_dn .pop_btn a {display:block; width:100%; height:45px; background-color:#46526c; color:#fff; font-size:17px; text-align:center; line-height:40px; box-shadow:inset 0px -2px 0px #364057;}
 
 .pop_dn .pop_clse {position:relative; width:100%; height:100%; background-color:#d8deea;}
 .pop_dn .pop_clse a {display:block; width:100%; height:50px; color:#46526c; text-align:center; line-height:50px;}
@@ -216,7 +216,7 @@
 
  /*----------------------------- 나이선택팝업 (170221 김다솜) ------------------------------------*/
 .pop_content .pop_u .pop_l_full {float:left; width:100%; height:auto; text-align:center;}
-.pop_content .pop_u .slct_table{height:36px; line-height:36px;}
+.pop_content .pop_u .slct_table{height:38px; line-height:38px;}
 .pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
 .pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.1);}
 .pop_content .pop_u .slct_table .slct_checked{color:#24a0ea; font-weight:bold;}
