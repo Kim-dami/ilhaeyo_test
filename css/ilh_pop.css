@@ -217,11 +217,13 @@
  /*----------------------------- 나이선택팝업 (170221 김다솜) ------------------------------------*/
 .pop_content .pop_u .pop_l_full {float:left; width:100%; height:auto; text-align:center;}
 .pop_content .pop_u .slct_table{height:36px; line-height:36px;}
-.pop_content .pop_u .slct_table a {display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
-.pop_content .pop_u .slct_table a:active {background:rgba(0,0,0,.1);}
-.pop_content .pop_u .slct_table .slct_active_l {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
-.pop_content .pop_u .slct_table .slct_active {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
+.pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.1);}
+.pop_content .pop_u .slct_table .slct_checked{color:#24a0ea; font-weight:bold;}
+.pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
 .pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table .slct_active_l {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table .slct_active_l:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
  /*--------------------------------------------------------------------------------------------*/
 
 /****************************** 170303 김다미 ******************************/
@@ -250,10 +252,9 @@
 .pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
 .pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#000; font-size:15px; text-align:center;}
 .pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.1);}
-.pop_content .pop_u .pop_l ul li .slct_active {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .pop_l ul li .slct_checked{color:#24a0ea; font-weight:bold;}
+.pop_content .pop_u .pop_l ul li .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
 .pop_content .pop_u .pop_l ul li .slct_active:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
-.pop_content .pop_u .pop_l ul li a_active {background:rgba(0,0,0,.1);}
-.pop_content .pop_u .pop_l ul li .slct_active {color:#24a0ea; font-weight:bold;}
 
 /*.pop_divi1{width:25%!important;}
 .pop_divi2{width:75%!important;}
