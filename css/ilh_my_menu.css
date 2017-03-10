@@ -337,19 +337,16 @@
 
 .regi_content .regi_card .box_card{position:relative; width:100%; height:auto; margin-bottom:3px; border:1px solid #bac2d3; border-radius:4px; box-sizing:border-box;}
 .regi_content .regi_card .box_none{position:relative; width:100%; height:auto; padding:16px 0; border:1px solid #bac2d3; border-radius:4px; background:#ecf1f4; color:#303030; box-sizing:border-box; text-align:center;}
-.regi_content .regi_card .box_card h3.card_tit a{display:-webkit-box; height:38px; margin:0 5px; padding:0 45px 0 13px; border-bottom:2px solid #e2e9ed; font-size:15px; line-height:39px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
+.regi_content .regi_card .box_card h3.card_tit {position:relative}
+.regi_content .regi_card .box_card h3.card_tit a.tit{display:-webkit-box; height:38px; margin:0 5px; padding:0 45px 0 13px; border-bottom:2px solid #e2e9ed; font-size:15px; line-height:39px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
 
 .regi_content .regi_card .box_card .card_txt{position:relative; display:-webkit-box; height:auto; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
-.regi_content .regi_card .box_card .card_txt a{display:block; margin:10px 5px 12px 5px; padding:0 45px 0 13px; font-size:14px; color:#303030; line-height:19px; overflow:hidden;}
-.regi_content .regi_card .box_card .card_txt_line1{-webkit-line-clamp:1;}
-.regi_content .regi_card .box_card .card_txt_line1 a{line-height:36px;}
+.regi_content .regi_card .box_card .card_txt a.conts{display:block; margin:10px 5px 12px 5px; padding:0 45px 0 13px; font-size:14px; color:#303030; line-height:19px; overflow:hidden;}
 
-.regi_content .regi_card .box_card .btn_mod{position:absolute; top:0; right:0; text-indent:-9999px;}
-.regi_content .regi_card .box_card .btn_mod a{display:block; width:30px; height:30px; border:1px solid #97a0b3; border-radius:6px; box-sizing:border-box; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/btn_modify.png) no-repeat center center; background-size:15px 18px;}
+.regi_content .regi_card .box_card .btn_mod{position:absolute; top:50%; right:5px; text-indent:-9999px;}
+.regi_content .regi_card .box_card .btn_mod a{display:block; padding:0; margin-top:-15px; width:30px; height:30px; border:1px solid #97a0b3; border-radius:6px; box-sizing:border-box; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/btn_modify.png) no-repeat center center; background-size:15px 18px;}
 .regi_content .regi_card .box_card .btn_mod a:active{background-color:rgba(0,0,0,0.08);}
 .regi_content .regi_card .box_card .btn_mod a_active{background-color:rgba(0,0,0,0.08);}
-.regi_content .regi_card .box_card .btn_mod a.mod_tit{margin:5px;}
-.regi_content .regi_card .box_card .btn_mod a.mod_txt{margin:13px 5px 15px 5px; padding:0;}
 
 .regi_content .regi_card .box_card ul.btn_modi{position:relative; width:100%; height:auto; background:#ecf1f4; border-top:1px solid #d1dae0; border-radius:0 0 4px 4px; font-size:0;}
 .regi_content .regi_card .box_card li{display:inline-block; width:33%; height:36px; font-size:14px; color:#303030; font-weight:700; line-height:36px; text-align:center; box-sizing:border-box;}
