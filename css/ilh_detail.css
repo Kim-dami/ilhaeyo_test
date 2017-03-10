@@ -400,7 +400,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 /* 상단 글씨 영역 */
 #dt_top_wrap .dt_top {position:relative; width:100%; height:auto; padding:5px 0 7px 0; box-sizing:border-box;}
-#dt_top_wrap .dt_top h2 {width:100%; height:25px; color:#46526c; font-size:16px; line-height:25px;}
+#dt_top_wrap .dt_top h2 {width:100%; height:25px; color:#46526c; font-size:16px; line-height:25px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
 @media (min-width:360px) {
 #dt_top_wrap .dt_top h2 {width:100%; height:28px; color:#46526c; font-size:17px; line-height:28px;}
 }
