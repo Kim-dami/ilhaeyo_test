@@ -4,7 +4,7 @@
 /* 팝업배경 */
 .pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,.6);}
 /* 팝업 중앙 */
-.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:5px; background-color:#fff;}
+.pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:7px; background-color:#fff;}
 .wid_98 {left:1%; right:1%; width:98%;}
 .wid_94 {left:3%; right:3%; width:94%;}
 .wid_66 {left:17%; right:17%; width:66%;}
@@ -109,7 +109,7 @@
 .pop_app {position:relative; width:290px; height:auto; margin:0 auto; padding:20px 0 20px 70px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_launch.png) no-repeat 9px center; background-size:52px 53px; font-size:14px; text-align:left; line-height:20px; box-sizing:border-box;letter-spacing:-0.5px;}
 
 /* 팝업 하단 */
-.pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 10px 10px;}
+.pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 7px 7px;}
 .pop_dn .pop_check {position:relative; width:100%; height:auto; padding:3px 2% 6px 2%; box-sizing:border-box;}
 .pop_dn .pop_check_over{height:90px; overflow-y:auto; box-sizing:border-box; -webkit-overflow-scrolling: touch;}
 .pop_dn .pop_check:after {display:block; clear:both; content:"";}
@@ -117,7 +117,7 @@
 .pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%; font-size:13px; letter-spacing:-0.5px;}
 .pop_dn .pop_check .pop_slct .pop_slct_x{position:absolute; top:0; right:0; width:20%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse02.png) no-repeat 40% center; background-size:9px 9px; text-indent:-9999px;}
 .pop_dn .pop_btn {position:relative; width:100%; height:auto;}
-.pop_dn .pop_btn a {display:block; width:100%; height:45px; background-color:#46526c; color:#fff; font-size:17px; text-align:center; line-height:40px; box-shadow:inset 0px -2px 0px #364057;}
+.pop_dn .pop_btn a {display:block; width:100%; height:45px; background-color:#46526c; color:#fff; font-size:17px; text-align:center; line-height:45px; box-shadow:inset 0px -2px 0px #364057;}
 
 .pop_dn .pop_clse {position:relative; width:100%; height:100%; background-color:#d8deea;}
 .pop_dn .pop_clse a {display:block; width:100%; height:50px; color:#46526c; text-align:center; line-height:50px;}
@@ -128,7 +128,7 @@
 .pop_dn ul li {width:50%; height:auto;}
 .pop_dn ul .dn_l {float:left;}
 .pop_dn ul .dn_r {float:right;}
-.pop_dn ul li a {display:block; height:50px; color:#46526c; text-align:center; line-height:50px;}
+.pop_dn ul li a {display:block; height:50px; color:#46526c; text-align:center; line-height:50px; font-weight:700;}
 .pop_dn ul li a:active {background:rgba(0,0,0,0.05);}
 .pop_dn ul .dn_r a {color:#0081d5;}
 
@@ -139,7 +139,7 @@
 /****************************** 161227 김다미 ******************************/
 /* 팝업 헤더 */
 .pop_header {position:relative; width:100%; height:auto;}
-.pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:5px 5px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
+.pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:7px 7px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
 .pop_header h3 {position:relative; width:100%; height:30px; margin:0; padding:0 20px; color:#303030; font-size:14px; font-weight:400; line-height:29px; box-sizing:border-box;letter-spacing:-1px;}
 .pop_header h3 .grd_pop {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:1px;}
 .pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat 70% center; background-size:18px 18px; text-indent:-9999px;}
@@ -187,8 +187,9 @@
 }
 
 .pop_container .box_call_pop .btn_call{display:inline-block; position:relative; width:128px; margin:10px 0 14px 0; padding:12px 0 12px 19px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_call.png) no-repeat 19px center; background-size:13px 16px; border:1px solid #606163; border-radius:25px; -webkit-border-radius:25px; -moz-border-radius:25px; font-size:17px; color:#303030; letter-spacing:-0.5px; line-height:14px; text-decoration:none; text-align:center; -webkit-tap-highlight-color:rgba(255,255,255,0);}
-
 /*----------------------------- 170209 음성통화팝업(김다솜) -----------------------------*/
+
+/*----------------------------- 팝업류 스크롤 보이게 (170214 주철만) -----------------------------*/
 .style_1::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2) !important;
@@ -219,8 +220,12 @@
 .pop_content .pop_u .slct_table{height:38px; line-height:38px;}
 .pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box;}
 .pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.1);}
+.pop_content .pop_u .slct_table .fc_green{color:#04d464;}
+.pop_content .pop_u .slct_table .fc_blue{color:#0082d3;}
 .pop_content .pop_u .slct_table .slct_checked{color:#24a0ea; font-weight:bold;}
+.pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea;}
 .pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
+.pop_content .pop_u .slct_table .slct_active .fc_green, .pop_content .pop_u .slct_table .slct_active .fc_blue{color:#24a0ea;}
 .pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 7% center no-repeat; background-size:15px 11px;}
 .pop_content .pop_u .slct_table .slct_active_l {color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
 .pop_content .pop_u .slct_table .slct_active_l:active{background:rgba(0,0,0,.1) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk_on.png) 32% center no-repeat; background-size:15px 11px;}
