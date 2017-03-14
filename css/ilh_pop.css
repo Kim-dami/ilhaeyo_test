@@ -8,7 +8,9 @@
 .wid_98 {left:1%; right:1%; width:98%;}
 .wid_94 {left:3%; right:3%; width:94%;}
 .wid_66 {left:17%; right:17%; width:66%;}
+.mt_400 {margin-top:-400px;}
 .mt_275 {margin-top:-275px;}
+.mt_234 {margin-top:-234px;}
 .mt_225 {margin-top:-225px;}
 .mt_150 {margin-top:-150px;}
 .mt_122 {margin-top:-122px;}
@@ -228,7 +230,11 @@
 .pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea;}
 .pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
 .pop_content .pop_u .slct_table .slct_active .fc_green, .pop_content .pop_u .slct_table .slct_active .fc_blue{color:#24a0ea;}
-.pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}}
+.pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .pop_l_full a{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat!important; background-size:18px 18px!important;}
+.pop_content .pop_u .pop_l_full a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat!important; background-size:18px 18px!important;}
+.pop_content .pop_u .pop_l_full .slct_active_l{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat!important; background-size:18px 18px!important;}
+.pop_content .pop_u .pop_l_full .slct_active_l:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat!important; background-size:18px 18px!important;}
 
  /*--------------------------------------------------------------------------------------------*/
 
@@ -261,8 +267,8 @@
 .pop_content .pop_u .pop_l .pop_first .slct_checked{color:#24a0ea;}
 .location_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
 .location_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
-.field_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:120px 36px;}
-.field_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:120px 36px;}
+.field_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:95px 36px;}
+.field_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:95px 36px;}
 .pop_content .pop_u .pop_l .pop_second a{padding-left:5px; box-sizing:border-box; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
 .pop_content .pop_u .pop_l .pop_second a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
 .pop_content .pop_u .pop_l .pop_second .slct_active{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}.pop_content .pop_u .pop_l .pop_second .slct_active:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
@@ -277,6 +283,9 @@
 .pop_report {display:block; width:100%; height:100%; padding-left:28px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_report02.png) no-repeat left center; background-size:23px 24px; font-size:16px; box-sizing:border-box;letter-spacing:-1px;}
 
 .report_slct {position:relative; width:100%; height:auto;}
+.report_reason{height:275px; overflow-y:scroll;}
+.report_write{height:97px; box-shadow:0px 1px 17px 1px #afafaf;}
+
 .report_slct li {position:relative; width:100%; height:50px; padding:0 20px; border-bottom:1px solid #d8deea; color:#46526c; font-size:15px; font-weight:700; line-height:50px; vertical-align:middle; box-sizing:border-box;}
 .report_slct li input[type=radio] {display:block; position:absolute; z-index:10; top:0px; right:0px; width:100%; height:100%; opacity:0; cursor:pointer;}
 .report_slct li .slct_check {position:absolute; top:15px; right:20px; width:20px; height:20px; border:1px solid #545454; border-radius:100%; background:#ffffff; background:-moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 40%, #f7f5fe 100%); background:-webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 40%,#f7f5fe 100%); background:radial-gradient(ellipse at center, #ffffff 0%,#ffffff 40%,#f7f5fe 100%); transition:all 0.1s ease-in-out;filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f5fe',GradientType=1 ); -webkit-transition:all 0.1s ease-in-out; -o-transition:all 0.1s ease-in-out; -moz-transition:all 0.1s ease-in-out; -ms-transition:all 0.1s ease-in-out;}
@@ -285,8 +294,9 @@
 .report_slct li .slct_checked:before {background-color:#0081d4;}
 
 /* 신고사유 */
-.report_slct li.rp_reason{padding:0 20px; height:97px;}
+.report_slct li.rp_reason{padding:0 20px; height:97px; padding-top:1px;}
 .report_slct li.rp_reason label{display:block; color:#3878c5; font-size:15px; line-height:28px; margin-top:8px;}
+.report_write li.rp_reason label{display:block; color:#3878c5; font-size:15px; line-height:28px; margin-top:6px;}
 .report_slct li.rp_reason textarea{width:100%; height:50px!important; top:0; padding:6.5px 10px; border:1px solid #d8deea; background-color:#f8fafe; box-sizing:border-box; resize:none!important; outline:none; font-family:'NanumSquare'; font-size:15px; font-weight:bold; color:#46526c; line-height:19px; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none;}
 .report_slct li.rp_reason textarea::-webkit-input-placeholder{font-weight:normal; color:#61708e;}
 
