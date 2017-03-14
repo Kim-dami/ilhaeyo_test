@@ -167,7 +167,7 @@ body{background-color:#eceff4;}
 .main_filter_u:after{content:""; display:block; clear:both;}
 .main_filter_l{position:relative; width:33.33333%; height:100%; float:left;}
 .main_filter_l:active{background:rgba(0,0,0,0.05);}
-.main_filter_l a{display:block; width:100%; height:100%; line-height:35px; padding-right:10px; box-sizing:border-box; text-align:center; color:#fff; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 90% 50%; background-size:7px 5px;}
+.main_filter_l a{display:block; width:100%; height:100%; line-height:35px; padding-right:10px; box-sizing:border-box; text-align:center; color:#fff; font-weight:700; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 88% 50%; background-size:7px 5px;}
 .main_filter_l .filter_active{border-bottom:1px solid #edeff3; border-radius:3px 3px 0 0;}
 .main_filter_l:first-of-type .filter_active{color:#04d464; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop02.png) no-repeat 50% 82%; background-size:7px 5px;}
 .main_filter_l:nth-of-type(4) .filter_active{color:#0198b5; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop03.png) no-repeat 50% 82%; background-size:7px 5px;}
@@ -178,7 +178,7 @@ body{background-color:#eceff4;}
 .btn_main_write a:active{background:rgba(0,0,0,0.1);}
 @media screen and (max-width:350px) {
 .main_filter{padding-right:140px;}
-.main_filter_l a{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 92% 50%; background-size:7px 5px;}
+.main_filter_l a{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_main_drop.png) no-repeat 96% 50%; background-size:7px 5px;}
 .btn_main_write{width:55px;}
 }
 
