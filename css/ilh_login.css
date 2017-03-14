@@ -242,9 +242,9 @@ body.lg_bg {background-color:#f6faff;}
 .rcv_lg_data p{font-size:17px; line-height:28px; letter-spacing:-1px;}
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-input:-moz-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-::-webkit-input-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-::-moz-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
-:-ms-input-placeholder {color:#46526c; font-weight:normal; line-height:16px;}
+input:-moz-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+::-webkit-input-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+::-moz-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
+:-ms-input-placeholder {color:#46526c; font-family:'NanumSquare'; font-weight:normal; line-height:16px;}
 
 

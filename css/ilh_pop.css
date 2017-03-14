@@ -8,7 +8,7 @@
 .wid_98 {left:1%; right:1%; width:98%;}
 .wid_94 {left:3%; right:3%; width:94%;}
 .wid_66 {left:17%; right:17%; width:66%;}
-.mt_400 {margin-top:-400px;}
+.mt_350 {margin-top:-350px;}
 .mt_275 {margin-top:-275px;}
 .mt_234 {margin-top:-234px;}
 .mt_225 {margin-top:-225px;}
@@ -222,19 +222,19 @@
  /*----------------------------- 나이선택팝업 (170221 김다솜) ------------------------------------*/
 .pop_content .pop_u .pop_l_full {float:left; width:100%; height:auto; text-align:center;}
 .pop_content .pop_u .slct_table{height:38px; line-height:38px;}
-.pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#6d6d6d; font-size:15px; padding-left:5px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box; letter-spacing:-0.5px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .slct_table a{display:block; width:100%; height:100%; color:#000; font-size:15px; padding-left:5px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box; letter-spacing:-0.5px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
 .pop_content .pop_u .slct_table a:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;;}
 .pop_content .pop_u .slct_table .fc_green{color:#04d464;}
 .pop_content .pop_u .slct_table .fc_blue{color:#0082d3;}
 .pop_content .pop_u .slct_table .slct_checked{color:#24a0ea;}
-.pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea;}
+.pop_content .pop_u .slct_table .slct_checked .fc_green, .pop_content .pop_u .slct_table .slct_checked .fc_blue{color:#24a0ea; font-weight:bold;}
 .pop_content .pop_u .slct_table .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
 .pop_content .pop_u .slct_table .slct_active .fc_green, .pop_content .pop_u .slct_table .slct_active .fc_blue{color:#24a0ea;}
 .pop_content .pop_u .slct_table .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l_full a{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat!important; background-size:18px 18px!important;}
-.pop_content .pop_u .pop_l_full a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat!important; background-size:18px 18px!important;}
-.pop_content .pop_u .pop_l_full .slct_active_l{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat!important; background-size:18px 18px!important;}
-.pop_content .pop_u .pop_l_full .slct_active_l:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat!important; background-size:18px 18px!important;}
+.pop_content .pop_u .pop_l_full a{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .pop_l_full a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 32% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .slct_table .slct_active_l{background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat; background-size:18px 18px;}
+.pop_content .pop_u .slct_table .slct_active_l:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 32% center no-repeat; background-size:18px 18px;}
 
  /*--------------------------------------------------------------------------------------------*/
 
@@ -264,7 +264,7 @@
 .pop_content .pop_u .pop_l ul li {width:100%; height:36px; line-height:36px;}
 .pop_content .pop_u .pop_l ul li a {display:block; width:100%; height:100%; color:#000; font-size:15px; text-align:center; letter-spacing:-0.5px;}
 .pop_content .pop_u .pop_l ul li a:active {background:rgba(0,0,0,.05);}
-.pop_content .pop_u .pop_l .pop_first .slct_checked{color:#24a0ea;}
+.pop_content .pop_u .pop_l .pop_first .slct_checked{color:#24a0ea; font-weight:bold;}
 .location_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
 .location_slct .pop_u .pop_l .pop_first .slct_active:active{background:rgba(0,0,0,.05) url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:50px 36px;}
 .field_slct .pop_u .pop_l .pop_first .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/bg_slct_acive.png) center center no-repeat; background-size:95px 36px;}

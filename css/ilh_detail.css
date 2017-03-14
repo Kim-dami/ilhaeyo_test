@@ -331,16 +331,17 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 /*----------------------------- 새로운 날씨정보 (170309 주철만) -----------------------------*/
 .wth_roca_new { width:206px; background-color:#f8fbff; border:1px solid #cdd5e1; padding:1px 0px; box-sizing:border-box; border-radius:3px; color:#303032; margin-bottom:5px; }
 .wth_roca_new:active {background:rgba(0,0,0,.05); }
+.wth_roca_new a{position:relative; display:block; width:100%; height:100%;}
+.wth_roca_new a:after{content:""; display:block; clear:both;}
 .ico_wth {width:20px; height:20px; vertical-align:bottom; margin-bottom:3px; padding:0 3px 0 7px;}
 .txt_wth { padding:4px 5px 4px 7px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar.png) no-repeat left center; background-size:1px 10px; }
 .temper { padding:0 0 0 6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar.png) no-repeat left center; background-size:1px 10px; }
-.temper b { font-size:13px; padding-left:10px; }
+.ico_wth_more{position:absolute; top:4px; right:7px; width:18px; height:18px;}
 @media (min-width:360px) {
-.wth_roca_new { width:246px; padding:1px 10px; box-sizing:border-box; }
-.ico_wth { padding:0 3px 0 1px;}
+.wth_roca_new { width:246px; box-sizing:border-box; }
+.ico_wth { padding:0 3px 0 11px;}
 .txt_wth {padding:4px 8px 4px 13px;}
 .temper { padding-left:10px; }
-.temper b { font-size:14px; padding-left:15px; }
 }
 /*----------------------------- 새로운 날씨정보 (170309 주철만) -----------------------------*/
 

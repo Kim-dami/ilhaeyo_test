@@ -198,7 +198,7 @@ td,th {padding:0;}
 .pd_50 {padding-bottom:50px;}
 .pd_85 {padding-bottom:85px;}
 .pd_95 {padding-bottom:95px;}
-.mt_69 {margin-top:75px;}
+.mt_69 {margin-top:70px;}
 
 /* 뱃지 */
 .badge {display:table; width:18px; height:18px; border:1px solid #fff; border-radius:50%; background-color:#ffbb37; box-shadow:0px 3px 10px -4px #ffbb37; color:#fff; font-size:12px; text-align:center; line-height:19px; letter-spacing:-0.5px;-webkit-box-shadow:0px 3px 10px -4px #ffbb37; -moz-box-shadow:0px 3px 10px -4px #ffbb37;}
@@ -220,7 +220,7 @@ td,th {padding:0;}
 /****************************** 170209 김다미 ******************************/
 /* 메인 리스트 공통사용 */
 #container {position:relative; width:100%; height:auto;}
-#container .content_list {position:relative; width:100%; height:auto; background-color:#fff; border-top:1px solid #e2e7f1;}
+#container .content_list {position:relative; width:100%; height:auto; background-color:#fff; margin-top:5px; border-top:1px solid #e2e7f1;}
 #container .content_list .list_card {position:relative; width:100%; height:auto; overflow:hidden; border-bottom:1px solid #cdd3e0; color:#46526c;}
 #container .content_list .list_card:active {background:rgba(0,0,0,.05);}
 #container .content_list .list_photo_wrap {position:absolute; z-index:10; top:0; left:0; width:75px; height:75px;}
@@ -250,7 +250,7 @@ td,th {padding:0;}
 #container .content_list .bot_line ul .list_dist {float:right; font-size:12px;}
 #container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {padding-left:6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot.png) no-repeat left 6px; background-size:3px 3px;}
 @media (max-width:320px) {
-#container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {padding-left:6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot.png) no-repeat left 6px; background-size:3px 3px; letter-spacing:-1px;}   
+#container .content_list .bot_line ul .list_field, #container .content_list .bot_line ul .list_roca {padding-left:6px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot.png) no-repeat left 6px; background-size:3px 3px; letter-spacing:-1px;}
 }
 #container .content_list .bot_line ul .list_dist {color:#797979;}
 #container .content_list .bot_line ul .category_bar {display:inline-block; width:auto; height:100%; padding-right:5px; margin-right:4px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_col_bar.png) no-repeat right 3px; background-size:2px 10px;}
