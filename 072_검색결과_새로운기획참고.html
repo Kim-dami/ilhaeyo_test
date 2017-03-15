@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>일해요!</title>
-<link href="http://image.club5678.com/imgs/@test/test_nanum.css" rel="stylesheet" type="text/css">
+<link href="css/nanum_sq_url.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_default.css" rel="stylesheet" type="text/css">
 <link href="css/ilh_search.css" rel="stylesheet" type="text/css">
 
@@ -132,21 +132,23 @@
         </div>
     </div>
 	<!-- // 최근검색 및 추천검색 -->
+
     <!-- 검색 결과 -->
     <div class="result_wrap">
         <!-- 검색 필터 -->
         <div class="filter_box">
-        	<div class="result_filter grd_divide">
-            	<span>전체</span>
+        	<div class="result_filter">
+            	<div class="rf_slct">전체</div>
             </div>
-            <div class="result_filter grd_divide">
-            	<span>전체</span>
+            <div class="result_filter">
+            	<div class="rf_slct">지역</div>
             </div>
-            <div class="result_align">
-            	<select>
-                	<option>정확도순</option>
-                    <option>등록일순</option>
-                </select>
+            <div class="result_filter">
+                <div class="rf_slct">정렬</div>
+                <ul class="rf_option box_shadow1">
+                    <li class="option_active">등록일순</li>
+                    <li>마감일순</li>
+                </ul>
             </div>
         </div>
         <!-- // 검색 필터 -->
