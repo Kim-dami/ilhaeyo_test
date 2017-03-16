@@ -92,7 +92,7 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 
 /*----------------------------------------------- 마이메뉴 -----------------------------------------------*/
 #my_wrap{position:fixed; top:0; left:0; z-index:900; width:235px; height:100%; background-color:#323a4c; overflow-y:auto; -webkit-overflow-scrolling: touch;}
-.my_header{width:100%; height:100%; line-height:48px; padding:0 10px; box-sizing:border-box; color:#fff; text-align:left; font-size:15px; letter-spacing:-0.5px;}
+.my_header{width:100%; height:100%; line-height:50px; padding:0 10px; box-sizing:border-box; color:#fff; text-align:left; font-size:15px; letter-spacing:-0.5px;}
 
 /* 상단 사진 등록 */
 #myinfo_wrap{position:relative; width:100%; height:auto; padding:0 10px; box-sizing:border-box;}
