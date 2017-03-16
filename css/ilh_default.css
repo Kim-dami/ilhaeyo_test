@@ -378,10 +378,11 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_l{position:relative; width:100%; height:auto; padding:0 10px; margin-bottom:4px; border-radius:5px 5px 0 0; border:1px solid #d9deea; box-sizing:border-box; background-color:#fff; overflow:hidden; box-shadow:1px 1px 2px #dde2ea;}
 .card_l:last-of-type{margin-bottom:0px;}
 .card_l:active{background-color:#fafafa;}
+.card_l .help_badge{position:absolute; top:7px; left:8px;}
 
-.card_photo_wrap{position:absolute; z-index:10; top:10px; left:10px; width:90px; height:74px; line-height:74px; overflow:hidden; text-align:center;}
+.card_photo_wrap{position:absolute; z-index:10; top:10px; left:10px; width:90px; height:72px; line-height:72px; overflow:hidden; text-align:center;}
 .card_photo_wrap .logo_clip{width:90px; margin:19px 0;}
-.card_photo_wrap .person_clip{width:60px; height:80px; margin-top:-3px;}
+.card_photo_wrap .person_clip{width:60px; height:80px; margin-top:-4px;}
 .card_photo_wrap .logo_no{color:#434343; font-weight:900;  font-size:18px; letter-spacing:-0.5px;}
 .card_photo_wrap .logo_long{font-size:14px;}
 
@@ -390,14 +391,14 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_top .top_name{width:100%; height:12px; font-size:12px; font-weight:700; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .card_top .company_c{color:#46526c;}
 .card_top .person_c{color:#7a7a7a;}
-.card_top .top_title{width:100%; height:17px; font-size:17px; padding:5px 0 4px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.card_top .top_title{width:100%; height:16px; font-size:16px; padding:4px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .card_top .top_txt{display:block; display:-webkit-box; width:100%; height:36px; line-height:18px; font-size:14px; color:#303030; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
 
 .card_admin{position:relative; width:100%; height:13px; line-height:13px; font-size:13px; padding-bottom:7px; text-align:right;}
 .card_admin span{margin-right:7px; font-weight:700;}
 .card_admin span:last-of-type{margin-right:0;}
 
-.card_bottom{position:relative; width:100%; height:auto; padding:7px 0 8px 0; border-top:1px solid #d9deea;}
+.card_bottom{position:relative; width:100%; height:auto; padding:7px 0 10px 0; border-top:1px solid #d9deea;}
 .card_bottom .badge_alba_offer, .card_bottom .badge_job_offer, .card_bottom .badge_find_alba, .card_bottom .badge_find_job{position:absolute; top:8px; left:0; width:32px; height:32px; text-indent:-9999px;}
 .bottom_info{position:relative; width:100%; height:auto; padding-left:40px; box-sizing:border-box;}
 .bottom_info .bottom_u{position:relative; width:100%; height:18px; line-height:18px; font-size:13px; color:#767676; font-weight:700;}
