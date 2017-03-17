@@ -271,6 +271,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .wt_u .wt_detail .attach_btn .btn_white{width:100%;}
 .wt_u .wt_detail .preview_btn{position:absolute; top:-1px; left:240px; cursor:pointer;}
 .wt_u .wt_detail .preview_btn .btn_white{width:65px;}
+.wt_u .wt_detail .wd_disable{border:1px solid #c0c7d4; background:#e3e7ed; color:#6b758a;}
+.wt_u .wt_detail .wd_disable:active{position:relative; top:0px; -webkit-box-shadow:0px 3px 10px -4px #b3d0f1;}
 @media screen and (max-width:350px) {
 .wt_u .wt_detail .ques_btn{position:absolute; top:-1px; left:117px; width:25px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_ques.png) no-repeat center center; background-size:24px 24px; cursor:pointer;}
 .wt_u .wt_detail .attach_btn{position:absolute; top:-1px; left:145px; width:75px; cursor:pointer;}
@@ -314,7 +316,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .layer_up_wrap .layer_up .layer_clip {width:100%; height:100%; overflow:hidden; border:1px solid #e3e7ed; border-radius:5px; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_ip_up.png) no-repeat 65% 70%; background-size:80px 60px; box-sizing:border-box;}
 .layer_up_wrap .layer_up .layer_clip a {display:block; width:100%; height:100%;}
 .layer_up_wrap .layer_up .layer_clip img {width:100%; height:100%;}
-.layer_up_wrap .layer_del {display:none; position:absolute; top:-10px; right:-10px; width:38px; height:38px; margin:0; padding:0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_photo_clse.png) no-repeat center center; background-size:38px 38px;}
+.layer_up_wrap .layer_del {position:absolute; top:-10px; right:-10px; width:38px; height:38px; margin:0; padding:0; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_photo_clse.png) no-repeat center center; background-size:38px 38px;}
 .layer_up_wrap .layer_del a {display:block; width:100%; height:100%; text-indent:-9999px;}
 .layer_up_wrap p {padding-top:8px; color:#4d4d4d; font-size:14px; line-height:17px; letter-spacing:-0.5px; text-align:center}
 
@@ -329,7 +331,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .help_layer .layer_red{display:inline-block; padding:5px 0; font-size:14px; line-height:21px; color:#ff0000;}
 
 /*----------------------------- 새로운 날씨정보 (170309 주철만) -----------------------------*/
-.wth_roca_new { width:206px; background-color:#f8fbff; border:1px solid #cdd5e1; padding:1px 0px; box-sizing:border-box; border-radius:3px; color:#303032; margin-bottom:5px; }
+.wth_roca_new {position:relative; width:206px; background-color:#f8fbff; border:1px solid #cdd5e1; padding:1px 0px; box-sizing:border-box; border-radius:3px; color:#303032; margin-bottom:5px; }
 .wth_roca_new:active {background:rgba(0,0,0,.05); }
 .wth_roca_new a{position:relative; display:block; width:100%; height:100%;}
 .wth_roca_new a:after{content:""; display:block; clear:both;}
