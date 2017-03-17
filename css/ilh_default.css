@@ -409,6 +409,7 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .bottom_info .bottom_l .pay_num{color:#ff1f44; font-weight:900;}
 .bottom_info .bottom_over{max-width:67%; text-overflow:ellipsis;  overflow:hidden; white-space:nowrap;}
 .bottom_info .bottom_career{color:#0e54da;}
+
 @media (max-width:359px) {
 .card_bottom .badge_alba_offer, .card_bottom .badge_job_offer, .card_bottom .badge_find_alba, .card_bottom .badge_find_job{top:7px;}
 .bottom_info{padding-left:35px;}
