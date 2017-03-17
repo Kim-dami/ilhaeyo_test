@@ -373,7 +373,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .logo_btn .btn_white{width:95px; padding:10px 0;}
 
 /* 목록별 */
-.wt_u .wt_count{width:100%; height:16px; line-height:16px; text-align:right; font-size:12px; font-weight:400;}
+.wt_u .wt_count{position:absolute; top:0; right:0; width:70px; height:100%; line-height:33px; text-align:right; font-size:12px; font-weight:400;}
+.wt_u .wt_count_job{position:relative; width:100%; height:16px; line-height:16px;}
 .wt_u .wt_count .count_active{font-size:12px!important; color:#4d4d4d;}
 
 .wt_u .slct_man{width:48%; height:auto; float:left;}
@@ -441,7 +442,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .profile_preview .pp_img img{width:100%; height:100%;}
 .profile_preview .pp_img_del{position:absolute; top:-12px; right:-10px; width:28px; height:29px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_photo_clse.png) no-repeat center center; background-size:28px 29px; text-indent:-9999px;}
 .profile_btn{width:80px; margin-top:10px; cursor:pointer;}
-.profile_btn .btn_white{width:78px; height:12px; line-height:12px; font-size:12px; padding:10px 0;}
+.profile_btn .btn_white{width:78px; height:12px; line-height:13px; font-size:12px; padding:10px 0;}
 
 .wt_pl{padding-left:90px; box-sizing:border-box;}
 .wt_head{width:100%; height:auto; text-align:left;}
