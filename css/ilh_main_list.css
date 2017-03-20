@@ -97,11 +97,11 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 /* 상단 사진 등록 */
 #myinfo_wrap{position:relative; width:100%; height:auto; padding:0 10px; box-sizing:border-box;}
 #myinfo_wrap h2{position:relative; width:100%; height:auto; line-height:18px; padding:10px 0; font-size:13px; color:#d8deea; text-align:center; letter-spacing:-0.5px; font-weight:400;}
-#myinfo_wrap .pp_wrap{position:relative; width:100%; height:65px;}
+#myinfo_wrap .pp_wrap{position:relative; width:100%; height:74px;}
 #myinfo_wrap .pp_wrap a{display:block; width:100%; height:100%;}
-#myinfo_wrap .pp_wrap .pp_clip{position:relative; width:65px; height:65px; margin:0 auto; border-radius:50%; background-color:#fff; overflow:hidden;}
-#myinfo_wrap .pp_wrap .pp_clip img{width:65px; height:65px;}
-#myinfo_wrap .pp_wrap .pp_up{position:absolute; right:65px; bottom:0; display:inline-block; width:26px; height:26px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_pp_up.png) no-repeat center center; background-size:26px 26px; text-indent:-9999px; }
+#myinfo_wrap .pp_wrap .pp_clip{position:relative; width:62px; height:74px; margin:0 auto; border-radius:5px; background-color:#fff; overflow:hidden;}
+#myinfo_wrap .pp_wrap .pp_clip img{width:62px;}
+#myinfo_wrap .pp_wrap .pp_up{position:absolute; right:65px; bottom:-5px; display:inline-block; width:26px; height:26px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_pp_up.png) no-repeat center center; background-size:26px 26px; text-indent:-9999px; }
 
 #myinfo_wrap .id_wrap{position:relative; width:100%; height:auto; padding:17px 0 15px 0; color:#fff; font-size:13px; line-height:15px; letter-spacing:-0.5px;}
 #myinfo_wrap .id_title{color:#ffbb37;}
@@ -119,7 +119,7 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 #my_footer .reco_kko,.reco_ms{position:absolute; top:15px; width:65px; height:28px; line-height:29px;}
 #my_footer .reco_kko{right:75px; background-color:#fae100; color:#3c1e1e;}
 #my_footer .reco_ms{right:0px; background-color:#219ba6;}
-#my_footer .reco_kko a,.reco_ms a{display:block; width:100%; height:100%; font-size:13px; text-align:center;}
+#my_footer .reco_kko a,#my_footer .reco_ms a{display:block; width:100%; height:100%; font-size:13px; text-align:center; font-weight:bold;}
 #my_footer .my_btn_box{position:relative; width:100%; height:auto; padding-bottom:30px; box-sizing:border-box; font-size:13px;}
 #my_footer .my_btn_box:after{content:""; display:block; clear:both;}
 #my_footer .btn_info_change, .btn_sece{width:100px; height:30px; line-height:30px; border:1px solid #d8deea;}

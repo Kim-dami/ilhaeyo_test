@@ -387,8 +387,9 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_photo_wrap .logo_long{font-size:14px;}
 
 .card_profile{position:relative; width:100%; height:auto; letter-spacing:-0.5px;}
-.card_top{position:relative; width:100%; height:auto; padding:11px 0 9px 100px; box-sizing:border-box;}
-.card_top .top_name{width:100%; height:14px; line-height:14px; font-size:12px; font-weight:700; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.card_top{position:relative; width:100%; height:auto; padding:10px 0 8px 100px; box-sizing:border-box;}
+.card_top .top_name{width:100%; height:18px; line-height:18px; font-size:12px; font-weight:700; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.card_top .badge_alba_offer, .card_top .badge_job_offer, .card_top .badge_find_alba, .card_top .badge_find_job{display:inline-block; width:54px; height:18px; vertical-align:middle; text-indent:-9999px;}
 .card_top .company_c{color:#46526c;}
 .card_top .person_c{color:#7a7a7a;}
 .card_top .top_title{width:100%; height:18px; line-height:18px; font-size:16px; padding:3px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
@@ -399,13 +400,11 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_admin span:last-of-type{margin-right:0;}
 
 .card_bottom{position:relative; width:100%; height:auto; padding:7px 0 10px 0; border-top:1px solid #d9deea;}
-.card_bottom .badge_alba_offer, .card_bottom .badge_job_offer, .card_bottom .badge_find_alba, .card_bottom .badge_find_job{position:absolute; top:8px; left:0; width:32px; height:32px; text-indent:-9999px;}
-.bottom_info{position:relative; width:100%; height:auto; padding-left:40px; box-sizing:border-box;}
-.bottom_info .bottom_u{position:relative; width:100%; height:13px; font-size:13px; color:#767676; font-weight:700;}
-.bottom_info .bottom_u:first-of-type{padding-bottom:6px;}
-.bottom_info .bottom_l{display:inline-block; padding-left:12px; vertical-align:middle; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar05.png) no-repeat 5px center; background-size:1px 10px;}
-.bottom_info .bottom_l:first-child{padding-left:0px; background:none;}
-.bottom_info .bottom_over{max-width:67%; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.card_bottom .bottom_u{position:relative; width:100%; height:13px; font-size:13px; color:#767676; font-weight:700;}
+.card_bottom .bottom_u:first-of-type{padding-bottom:6px;}
+.card_bottom .bottom_l{display:inline-block; padding-left:12px; vertical-align:middle; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar05.png) no-repeat 5px center; background-size:1px 10px;}
+.card_bottom .bottom_l:first-child{padding-left:0px; background:none;}
+.card_bottom .bottom_over{max-width:67%; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
 .bottom_career{color:#0e54da;}
 .d_today{color:#ff1e00;}
 .pay_num{color:#ff1f44; font-weight:900;}
@@ -437,10 +436,10 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .find_nm{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_nm1.png) no-repeat center center; background-size:50px 16px;}
 .find_ab{display:inline-block; width:50px; height:16px; text-indent:-9999px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_ab1.png) no-repeat center center; background-size:50px 16px;}
 
-.badge_alba_offer{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_alba_offer.png) no-repeat center center; background-size:32px 32px;}
-.badge_job_offer{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_job_offer.png) no-repeat center center; background-size:32px 32px;}
-.badge_find_alba{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_alba.png) no-repeat center center; background-size:32px 32px;}
-.badge_find_job{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_job.png) no-repeat center center; background-size:32px 32px;}
+.badge_alba_offer{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_alba_offer.png) no-repeat center center; background-size:54px 18px;}
+.badge_job_offer{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_job_offer.png) no-repeat center center; background-size:54px 18px;}
+.badge_find_alba{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_alba.png) no-repeat center center; background-size:54px 18px;}
+.badge_find_job{background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/badge_find_job.png) no-repeat center center; background-size:54px 18px;}
 
 .day_badge {display:inline-block; width:30px; height:15px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/day_badge.png) no-repeat center center; background-size:30px 15px; text-indent:-9999px; vertical-align:middle;}
 .month_badge {display:inline-block; width:30px; height:15px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/month_badge.png) no-repeat center center; background-size:30px 15px; text-indent:-9999px; vertical-align:middle;}
