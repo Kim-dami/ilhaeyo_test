@@ -12,6 +12,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".pp_wrap").click(function(){
+        $(".pp_clip").eq(0).toggleClass("hidden");
+        $(".pp_clip").eq(1).toggleClass("hidden");
+    });
+});
+</script>
 </head>
 <body ontouchstart="">
 <!---------------------------------------- 메인리스트 ---------------------------------------->
@@ -834,7 +842,9 @@
         	<a href="#">
         		<div class="pp_clip">
                     <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ava_man02.png" alt="남자아바타" />
-                	<img src="img/photo.png" alt="프로필사진" />
+                </div>
+                <div class="pp_clip hidden">
+                    <img src="img/photo.png" alt="프로필사진"/>
                 </div>
                 <span class="pp_up">사진 등록</span>
             </a>

@@ -27,6 +27,9 @@ $(document).ready(function(){
         $(".lp_img").toggleClass("hidden");
         $(".lp_img_del").toggleClass("hidden");
     });
+    $(".wt_notice").click(function(){
+		$(this).next(".law_layer").slideToggle();
+	});
 });
 </script>
 </head>
@@ -144,6 +147,24 @@ $(document).ready(function(){
 							<option>여자</option>
 						</select>
 					</div>
+					<a href="#" class="wt_notice">
+				        ※ 남녀고용평등법 자세히 <b>[보기]</b>	    
+					</a>
+                    <!-- 법규 레이어 -->
+                    <div class="law_layer box_shadow1">
+                        <h2>
+                            <남녀고용평등법 - 성차별 금지><span class="grd_main"></span>
+                            <div class="law_clse">
+                                <a href="#">닫기</a>    
+                            </div>
+                        </h2>
+                        <div class="layer_txt">
+                            채용 시 <b>남녀를 차별</b>하거나, <b>여성근로자를 채용할 때</b> 직무수행에 불필요한 용모, 키, 체중 등의 신체조건 및 미혼 조건을 제시 또는 요구하는 경우,<br/><br/>
+                            남녀고용평등법 위반에 해당되어 <span class="layer_red">500만원 이하의 벌금</span>이 부과될 수 있으니 유의하세요!<br/><br/>
+                            차별사례나 차별예외사례 등 보다 자세한 내용은 '남녀고용평등법'을 검색해보시기 바랍니다.
+                        </div>
+                    </div>
+                    <!-- // 법규 레이어 -->
 				</div>
 				</li>
 				<li>
@@ -202,6 +223,27 @@ $(document).ready(function(){
 						<input type="checkbox" id="age_chk" class="chk">
 						<label for="age_chk" class="chk_lb">나이무관</label>
 					</div>
+					<a href="#" class="wt_notice">
+				        ※ 연령차별 금지법 자세히 <b>[보기]</b>	    
+					</a>
+                    <!-- 법규 레이어 -->
+                    <div class="law_layer box_shadow1">
+                        <h2>
+                            <연령차별금지법 - 연령차별 금지><span class="grd_main"></span>
+                            <div class="law_clse">
+                                <a href="#">닫기</a>    
+                            </div>
+                        </h2>
+                        <div class="layer_txt">
+                            채용 시 합리적인 이유 없이 "1900년 이후/이하 출생자", "2000년 졸업자", "졸업 0년 이내"등 <b>직,간접적 연령제한</b>을 하는 경우,<br/><br/>
+                            연령차별금지법 위반에 해당되어 <span class="layer_red">500만원 이하의 벌금</span>이 부과될 수 있으니 유의하세요!<br/><br/>
+                            차별사례나 차별예외사례 등 보다 자세한 내용은 '연령차별금지법'을 검색해보시기 바랍니다.
+                        </div>
+                    </div>
+                    <!-- // 법규 레이어 -->
+                    <a href="#" class="wt_notice fc_red">
+				        ※ 청소년 채용 시 유의사항 <b>[보기]</b>	    
+					</a>
 				</div>
 				</li>
 				<li>
