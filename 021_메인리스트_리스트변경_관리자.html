@@ -14,12 +14,31 @@
 <script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".pp_wrap").click(function(){
-        $(".pp_clip").eq(0).toggleClass("hidden");
-        $(".pp_clip").eq(1).toggleClass("hidden");
-    });
+	/* 전체보기 버튼 click시 메뉴 슬라이드토글 */
+	$(".btn_dropmenu").click(function(){
+        $(this).toggleClass("btn_dropmenu_on");
+        $("#main_bg_modal").toggleClass("hidden");
+		$(".dropmenu_container").slideToggle(200);
+		$(".dropmenu_container li a").toggleClass("dropmenu_fade");
+	});
+    /* 필터 click시 상세검색 토글 */
+	$(".main_filter_l").click(function(){
+        $(".main_result").fadeToggle(200);
+        $(".ds_wrap").slideToggle(300);
+        $(".ds_wrap").toggleClass("ds_wrap_fade");
+	});
+    /* 상세검색 버튼 click시 옵션 슬라이드토글 */
+	$(".ds_slct").click(function(){
+        $(this).toggleClass("slct_active");
+        $("#main_bg_modal").toggleClass("hidden");
+		$(this).next(".ds_option").slideToggle(200);
+	});
+	
 });
 </script>
+<style>
+    .ds_wrap{display:none;}
+</style>
 </head>
 <body ontouchstart="">
 <!---------------------------------------- 메인리스트 ---------------------------------------->
@@ -286,7 +305,8 @@ $(document).ready(function(){
                             <div class="badge_job_offer">
                                 일반구인
                             </div>
-                            (주)인포렉스
+                            <span class="top_over">(주)인포렉스</span>
+                            <span class="top_time">(10시간전)</span>
                         </div>
                         <div class="top_title">
                            웹개발 및 디자인 구합니다.                         
@@ -296,6 +316,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -335,7 +362,8 @@ $(document).ready(function(){
                             <div class="badge_alba_offer">
                                 알바구인
                             </div>
-                            (주)코카콜라
+                            <span class="top_over">코카콜라 코리아 주식회사</span>
+                            <span class="top_time">(7시간전)</span>
                         </div>
                         <div class="top_title">
                            홈페이지 디자인 및 관리 경력 모집함                            
@@ -345,6 +373,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -384,7 +419,8 @@ $(document).ready(function(){
                             <div class="badge_find_alba">
                                 알바구직
                             </div>
-                            나이쁨 (여/24세)
+                            <span class="top_over">나이쁨 (여/24세)</span>
+                            <span class="top_time">(7시간전)</span>
                         </div>
                         <div class="top_title">
                            메이크업 아티스트입니다. 예쁘게 만들어드립니다.
@@ -394,6 +430,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -426,7 +469,8 @@ $(document).ready(function(){
                             <div class="badge_job_offer">
                                 일반구인
                             </div>
-                            오뚜기건설
+                            <span class="top_over">오뚜기건설</span>
+                            <span class="top_time">(5시간전)</span>
                         </div>
                         <div class="top_title">
                            경력 사원 모집합니다.                        
@@ -436,6 +480,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -475,7 +526,8 @@ $(document).ready(function(){
                             <div class="badge_find_job">
                                 일반구직
                             </div>
-                            김영희 (여/40세)
+                            <span class="top_over">김영희 (여/40세)</span>
+                            <span class="top_time">(1시간전)</span>
                         </div>
                         <div class="top_title">
                             청소 잘 합니다.                     
@@ -485,6 +537,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -518,7 +577,8 @@ $(document).ready(function(){
                             <div class="badge_find_alba">
                                 알바구직
                             </div>
-                            홍길순(여/26세)
+                            <span class="top_over">홍길순(여/26세)</span>
+                            <span class="top_time">(50분전)</span>
                         </div>
                         <div class="top_title">
                            프리랜서 쇼핑몰 홈페이지 만들어드립니다.                        
@@ -528,6 +588,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -566,7 +633,8 @@ $(document).ready(function(){
                             <div class="badge_find_job">
                                 일반구직
                             </div>
-                            홍길동(남/30세)
+                            <span class="top_over">홍길동(남/30세)</span>
+                            <span class="top_time">(30분전)</span>
                         </div>
                         <div class="top_title">
                            업무지원전문가입니다. 맡겨주세요!                        
@@ -576,6 +644,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -611,7 +686,8 @@ $(document).ready(function(){
                             <div class="badge_alba_offer">
                                 알바구인
                             </div>
-                            패밀리마트
+                            <span class="top_over">패밀리마트</span>
+                            <span class="top_time">(10분전)</span>
                         </div>
                         <div class="top_title">
                            매장관리 및 진열 알바 2명 굽합니다.                        
@@ -621,6 +697,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -660,7 +743,8 @@ $(document).ready(function(){
                             <div class="badge_find_job">
                                 일반구직
                             </div>
-                            홍길동(남/30세)
+                            <span class="top_over">홍길동(남/30세)</span>
+                            <span class="top_time">(5분전)</span>
                         </div>
                         <div class="top_title">
                            업무지원전문가입니다. 맡겨주세요!                        
@@ -670,6 +754,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -702,7 +793,8 @@ $(document).ready(function(){
                             <div class="badge_job_offer">
                                 일반구인
                             </div>
-                            현대엔지니어링
+                            <span class="top_over">현대엔지니어링</span>
+                            <span class="top_time">(1분전)</span>
                         </div>
                         <div class="top_title">
                            경력 사원 모집합니다.                        
@@ -712,6 +804,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                     <!-- // 카드 상단 -->
+                    <!-- 어드민 -->
+                    <div class="card_admin">
+                        <span>[X]</span>
+                        <span>[관리]</span>
+                        <span>[수정]</span>
+                    </div>
+                    <!-- // 어드민 -->
                     <!-- 카드 하단 -->
                     <div class="card_bottom">
                         <ul class="bottom_u">
@@ -751,153 +850,26 @@ $(document).ready(function(){
 		<!-- // 위로 -->
 	</div>
 	<!-- // 메인리스트 -->
-	<div id="main_bg_modal02" class="">
-	</div>
-	<!-- 마이메뉴 배경 -->
 </div>
-
-<!---------------------------------------- 마이메뉴 --------------------------------------->
-<div id="my_wrap">
-	<!-- 공통 헤더 -->
-	<div id="header" class="header_relative grd_down">
-        <h1 class="my_header">홍길동님! 안녕하세요</h1>
-        <div class="header_btn btn_clse">
-            <a href="#">닫기</a>
-        </div>
-    </div>
-    <!-- // 공통 헤더 -->
-    <!-- 상단 사진 등록 -->
-    <div id="myinfo_wrap">
-    	<h2>
-        	<b>프로필 사진</b>(대화시 사용)을 등록하세요!
-        </h2>
-        <div class="pp_wrap">
-        	<a href="#">
-        		<div class="pp_clip">
-                    <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ava_man02.png" alt="남자아바타" />
-                </div>
-                <div class="pp_clip hidden">
-                    <img src="img/photo.png" alt="프로필사진"/>
-                </div>
-                <span class="pp_up">사진 등록</span>
-            </a>
-        </div>
-        <div class="id_wrap">
-            <span class="id_title ft_wt700">ID : </span><span class="id_ilh">010.1234.5678</span>
-            <!--<span class="id_nv">NV_20160100001</span>  * 네이버로그인시
-            	<span class="id_kko">KA_20160100001</span> * 카카오로그인시
-             -->
-            <div class="btn_logout">
-                <a href="#">로그아웃</a>
-            </div>
-        </div>
-    </div>
-    <!-- // 상단 사진 등록 -->
-    <!-- 마이 메뉴 목록 -->
-    <div id="my_container">
-    	<ul class="my_u ft_wt700">
-           <li>
-            	<a href="#">
-					대화함
-                    <div class="count_alim">
-                        <div class="alim_num">99</div>
-                    </div>
-                    <div class="my_regi">신규 <span class="my_regi_num ft_wt900">24</span> 건　<span>[보기]</span></div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-					내 스크랩
-                    <div class="my_regi">총 <span class="my_regi_num ft_wt900">25</span> 개　<span>[보기]</span></div>
-                </a>
-            </li>
-        	<li>
-            	<a href="#">
-					내 등록글
-                    <div class="my_regi">총 <span class="my_regi_num ft_wt900">2</span> 개　<span>[관리]</span></div>
-                </a>
-            </li>
-            <li>
-				<div class="my_toggle">수신설정</div>
-                <!-- 수신설정 서브 메뉴 -->
-                <ul class="my_recep">
-                	<li>
-                    	<a href="#">알림(push) 수신 설정</a>
-                    </li>
-                    <li>
-                    	메세지 수신 알림d
-                        <p>※ 실시간 푸시 알림을 받을 수 있습니다.</p>
-                        <div class="chk_wrap">
-                            <div class="chk_switch">
-                                <span class="chk_on">ON</span>
-                                <span class="chk_off">OFF</span>
-                                <span class="chk_handle"></span>
-                            </div>
-                            <input type="checkbox">
-                        </div>
-                    </li>
-                    <li>
-                    	<a href="#">전화연락 수신 설정</a>
-                    </li>
-                    <li>
-                    	일해요 전화 수신(무료)
-                        <p>※ 내가 등록한 글을 통해 전화연락을 할 수 없도록 차단할 수 있습니다.</p>
-                        <div class="chk_wrap">
-                            <div class="chk_switch">
-                                <span class="chk_on">ON</span>
-                                <span class="chk_off">OFF</span>
-                                <span class="chk_handle"></span>
-                            </div>
-                            <input type="checkbox">
-                        </div>
-                    </li>
-                </ul>
-                <!-- // 수신설정 서브 메뉴 -->
-            </li>
-            <li>
-            	<a href="#">1:1 문의 (제안)하기</a>
-            </li>
-            <li>
-            	<a href="#">작업분야 추가 요청</a>
-            </li>
-            <li>
-            	<a href="#">공지사항<img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_new_badge.png" width="20" height="20" class="new_icon"></a>
-            </li>
-            <li>
-            	<a href="#">고객센터</a>
-            </li>
-        </ul>
-    </div>
-    <!-- // 마이 메뉴 목록 -->
-    <!-- 하단 버튼 -->
-    <div id="my_footer">
-    	<div class="reco_wrap ft_wt700">
-        	일해요 추천
-            <div class="reco_kko">
-            	<a href="#">카톡추천</a>
-            </div>
-            <div class="reco_ms">
-            	<a href="#">문자추천</a>
-            </div>
-        </div>
-        <div class="my_btn_box">
-        	<div class="btn_info_change">
-            	<a href="#">회원정보변경</a>
-            </div>
-            <div class="btn_sece">
-            	<a href="#">탈퇴하기</a>
-            </div>
-        </div>
-    </div>
-    <!-- // 하단 버튼 -->
-</div>
-<!-- // 마이메뉴 부분 -->
 <!-- 광고 삽입 부분 -->
 <!--<div id="ad_zone">
-<a href="#">
-	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
-</a>   
+	<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">
+		광고영역
+	</p>
+	</a>
 </div>
 <!-- // 광고 삽입 부분 -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+    $(window).load(function(){
+        $(".scroll_wrap").mCustomScrollbar({
+            axis:"x",
+            theme:"minimal-dark"
+        });
+    });
+})(jQuery);
+</script>
 </body>
 </html>

@@ -273,11 +273,9 @@ li, div, input{-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 
 .result_none {width:100%; line-height:22px; padding-top:60px; background:#eceff4 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_exclam.png) no-repeat center top; background-size:47px 47px; color:#717f94; text-align:center;}
 
-/* 로그인 & 글쓰기 플로팅 버튼 */
-.float_btn {position:fixed; z-index:300; display:block; right:12px; bottom:50px; width:55px; height:55px; line-height:55px; border-radius:100%; box-sizing:border-box; text-align:center; color:#fff!important; font-size:15px!important; font-weight:700; background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
+/* 플로팅 버튼 */
+.float_btn {position:fixed; z-index:300; display:block; right:12px; bottom:50px; width:55px; height:55px; line-height:17px; padding-top:11px!important; border-radius:100%; box-sizing:border-box; text-align:center; color:#fff!important; font-size:15px!important; font-weight:700; background: #23a2ec; background: -moz-linear-gradient(top, #23a2ec 0%, #3878c5 100%); background: -webkit-linear-gradient(top, #23a2ec 0%,#3878c5 100%); background: linear-gradient(to bottom, #23a2ec 0%,#3878c5 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a2ec', endColorstr='#3878c5',GradientType=0 ); box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -webkit-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -moz-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -ms-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3); -o-box-shadow:0px 3px 10px -2px rgba(0,117,255,.3);}
 .float_btn:active{box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -webkit-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -moz-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -ms-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3); -o-box-shadow:0px 0px 5px 2px rgba(0,117,255,.3);}
-.float_btn span{font-size:14px;}
-.lh_17{line-height:17px; padding-top:12px!important;}
 
 /* 위로 */
 .go_up {position:fixed; z-index:400; right:20px; bottom:5px; width:40px; height:40px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_up.png) no-repeat center center; background-size:40px 40px; text-indent:-9999px;}
@@ -392,6 +390,8 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_top .badge_alba_offer, .card_top .badge_job_offer, .card_top .badge_find_alba, .card_top .badge_find_job{display:inline-block; width:54px; height:18px; vertical-align:middle; text-indent:-9999px;}
 .card_top .company_c{color:#46526c;}
 .card_top .person_c{color:#7a7a7a;}
+.card_top .top_over{display:inline-block; max-width:44%; vertical-align:middle; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.card_top .top_time{display:inline-block; vertical-align:middle; color:#02a89f;}
 .card_top .top_title{width:100%; height:18px; line-height:18px; font-size:16px; padding:3px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .card_top .top_txt{display:block; display:-webkit-box; width:100%; height:36px; line-height:18px; font-size:14px; color:#8e8e8e; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
 
