@@ -325,10 +325,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 /* 상단 영역 */
 #dt_top_wrap {position:relative; width:100%; height:auto; padding:0 12px; box-sizing:border-box;}
 #dt_top_wrap:after{content:""; display:block; clear:both;}
-.dt_top_l{float:left; position:relative; width:90px; height:74px; line-height:74px; margin:10px 7px 10px 0; overflow:hidden; text-align:center;}
+.dt_top_l{float:left; position:relative; width:90px; height:74px; line-height:74px; margin:10px 12px 10px 0; overflow:hidden; text-align:center;}
 .dt_top_l .card_photo_wrap{top:0px; left:0px;}
 .dt_top_l .logo_no{display:inline-block; width:90px; height:36px; line-height:36px; margin:19px 0; background-color:#f7f9fc; border:1px solid #cdd5e1; box-sizing:border-box;}
-.dt_top_r{float:left; width:calc(100% - 97px);}
+.dt_top_r{float:left; width:calc(100% - 102px);}
+@media screen and (max-width:350px) {
+    .dt_top_l{margin:10px 7px 10px 0;}
+    .dt_top_r{float:left; width:calc(100% - 97px);}
+}
 
 .badge_line{position:relative; width:60px; height:20px; margin-top:10px;}
 .badge_line .badge_alba_offer02, .badge_line .badge_job_offer02, .badge_line .badge_find_alba02, .badge_line .badge_find_job02{width:100%; height:100%; text-indent:-9999px;}
