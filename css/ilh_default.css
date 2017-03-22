@@ -379,7 +379,7 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_l .help_badge{position:absolute; top:7px; left:8px;}
 
 .card_photo_wrap{position:absolute; z-index:10; top:10px; left:10px; width:90px; height:74px; line-height:74px; overflow:hidden; text-align:center;}
-.card_photo_wrap .logo_clip{width:90px; margin:19px 0;}
+.card_photo_wrap .logo_clip{width:90px; height:36px; margin:19px 0;}
 .card_photo_wrap .person_clip{width:62px; height:74px;}
 .card_photo_wrap .logo_no{color:#434343; font-weight:900; font-size:18px; letter-spacing:-0.5px;}
 .card_photo_wrap .logo_long{font-size:14px;}
