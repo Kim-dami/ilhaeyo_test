@@ -111,8 +111,8 @@
 .pop_basic h1 {width:100%; height:100%; font-size:15px; text-align:center; line-height:28px; letter-spacing:-0.5px;}
 .pop_basic span {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:2px;}
 
-.pop_txt {position:relative; width:100%; height:auto; padding:20px 0; font-size:14px; text-align:center; line-height:20px; letter-spacing:-0.5px;}
-.pop_app {position:relative; width:290px; height:auto; margin:0 auto; padding:20px 0 20px 70px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_launch.png) no-repeat 9px center; background-size:52px 53px; font-size:14px; text-align:left; line-height:20px; box-sizing:border-box;letter-spacing:-0.5px;}
+.pop_txt {position:relative; width:100%; height:auto; padding:20px 0; font-size:14px; text-align:center; line-height:20px; letter-spacing:-0.5px; font-weight:700;}
+.pop_app {position:relative; width:290px; height:auto; margin:0 auto; padding:20px 0 20px 70px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_launch.png) no-repeat 9px center; background-size:52px 53px; font-size:14px; text-align:left; line-height:20px; box-sizing:border-box; letter-spacing:-0.5px; font-weight:700;}
 
 /* 팝업 하단 */
 .pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 7px 7px;}
