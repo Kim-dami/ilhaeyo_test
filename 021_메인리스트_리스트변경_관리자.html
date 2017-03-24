@@ -17,7 +17,7 @@ $(document).ready(function(){
 	/* 전체보기 버튼 click시 메뉴 슬라이드토글 */
 	$(".btn_dropmenu").click(function(){
         $(this).toggleClass("btn_dropmenu_on");
-        $("#main_bg_modal").toggleClass("hidden");
+        $("#main_bg_modal01").toggleClass("hidden");
 		$(".dropmenu_container").slideToggle(200);
 		$(".dropmenu_container li a").toggleClass("dropmenu_fade");
 	});
@@ -30,10 +30,14 @@ $(document).ready(function(){
     /* 상세검색 버튼 click시 옵션 슬라이드토글 */
 	$(".ds_slct").click(function(){
         $(this).toggleClass("slct_active");
-        $("#main_bg_modal").toggleClass("hidden");
+        $("#main_bg_modal01").toggleClass("hidden");
 		$(this).next(".ds_option").slideToggle(200);
 	});
-	
+	/* 플로팅버튼 */
+	$(".float_wrap").click(function(){
+        $(this).toggleClass("float_wrap_on");
+        $("#main_bg_modal03").toggleClass("hidden");
+    });
 });
 </script>
 <style>
@@ -283,7 +287,7 @@ $(document).ready(function(){
         <!-- // 상세 검색 -->
         </div>
     </div>
-    <div id="main_bg_modal" class="hidden">
+    <div id="main_bg_modal01" class="hidden">
 	</div>
 	<!-- 드롭메뉴 배경 -->
 	<!-- 메인리스트 -->
@@ -842,12 +846,30 @@ $(document).ready(function(){
             </a>
             <!-- // 더보기 -->
 	    </ul>
-	    <!-- 위로 -->
-		<a href="#" class="float_btn">지도<br />보기</a>
-		<!-- // 위로 -->
+	    <div id="main_bg_modal03" class="hidden">
+        </div>
+        <!-- 드롭메뉴 배경 -->
+	    <!-- 플로팅 -->
+	    <div class="float_wrap">
+	        <div class="float_btn">플로팅버튼</div>
+	        <div class="float_write">
+                <div class="float_txt">글쓰기/위로 올리기</div>
+	            <a href="#"></a>        
+	        </div>
+	        <div class="float_map">
+                <div class="float_txt">구인지도</div>
+	            <a href="#"></a>        
+	        </div>
+	    </div>
+		<!-- // 플로팅 -->
 		<!-- 위로 -->
 		<a href="#" class="go_up">위로올리기</a>
 		<!-- // 위로 -->
+		<!-- 더보기 -->
+       <div class="list_more">
+           <a href="#" class="ft_wt700">더보기</a>
+       </div>
+       <!-- // 더보기 -->
 	</div>
 	<!-- // 메인리스트 -->
 </div>
