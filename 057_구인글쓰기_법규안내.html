@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link href="css/nanum_sq_url.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_detail.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".law_tab ul li").click(function(){
+        $(".law_tab ul li a").removeClass("tab_on");
+        $(this).find("a").addClass("tab_on");
+		if($(this).hasClass("slider")){
+			return;		
+		}
+		var tab_idx = $(this).index(".law_tab ul li");
+		if(tab_idx == 0){
+			$(".slider").css("left","0");
+		}
+		if(tab_idx == 1){
+			$(".slider").css("left","50%");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_blue">
+		<div class="header_btn btn_back">
+			<a href="#">뒤로</a>
+		</div>
+		<h1 class="sub_header2">청소년 채용시 유의사항</h1>
+	</div>
+	<!-- // 공통 헤더 -->
+	 <!-- 탭 네비 -->
+    <div class="law_tab box_shadow1">
+        <ul>
+            <li>
+            	<a href="#" class="ft_wt700 tab_on">청소년 고용 유의사항</a>
+            </li>
+            <li>
+            	<a href="#" class="ft_wt700">청소년 고용금지 직종</a>
+            </li>
+            <li class="slider"></li>
+        </ul>
+    </div>
+    <!-- // 탭 네비 -->
+	<div class="law_info_box">
+		만 15세~만 17세까지의 청소년 고용계획이 있는 구인자 분들은 꼭 읽어보세요<br /><br />
+        <b>1. 청소년 고용시 사업장에 준비해야 할 것은?</b> <br />
+          : 청소년의 부모님(친권자/후견인) 동의서와 가족관계증명서를 사업장에 비치해야 합니다.<br /><br />
+
+        <b>2. 청소년도 근로계약서를 작성해야 하나?</b> <br />
+         : 당연히 근로조건을 명시한 근로계약서를 작성해 근로자에게 교부해야 합니다. <br /><br />
+
+        <b>3. 청소년은 최대 몇 시간까지 일할 수 있나?</b> <br />
+         : 하루 7시간, 1주일 40시간 이하만 가능. 단 당사자의 합의에 따라 1일 1시간, 1주일 6시간 연장 가능합니다. <br /><br />
+
+        <b>4. 청소년 야간근무에 제한이 있나?</b> <br />
+         : 밤 10시~새벽6시 사이에 근무할 수 없습니다. <br />
+           단 청소년 본인이 동의하고 고용노동부장관의 인가를 받은 상황에서만 야간근무가 가능합니다. <br /><br />
+
+        ※ 청소년 고용에 대한 보다 자세한 내용이 알고 싶으신 분은 관련 법규를 검색해보시기 바랍니다. <br /><br />
+        
+        
+        청소년보호법 및 근로기준법에서는 만 18세 미만 청소년을 고용할 수 없는 직종을 명시하고 있습니다. 이를 위반할 시 <span class="fc_red">3년 이하의 징역 또는 2천만원 이하의 벌금</span>에 처하고 있으니 유의하세요! <br /><br />
+        
+        ◆ 청소년출입·고용금지업소 <br /><br />
+
+        1. 일반게임제공업, 복합유통게임제공업 <br />
+        2. 복권발행업, 현상업, 그 밖의 사행행위업(회전판돌리기업, 추첨업, 경품업) <br />
+        3. 유흥주점영업, 단란주점영업 <br />
+        4. 비디오물감상실업, 제한관람가비디오물소극장업 <br />
+        5. 노래연습장업(청소년실을 갖춘 노래연습장업의 경우 청소년실에 한하여 청소년의 출입을 허용) <br />
+        6. 무도학원업, 무도장업 <br />
+        7. 불특정한 사람들 사이의 음성대화 또는 화상대화를 매개하는 것을 주된 목적으로 하는 영업 <br />
+        8. 불특정한 사람 사이의 신체적인 접촉 또는 은밀한 부분의 노출 등 성적 행위가 이루어지거나 이와 유사한 행위가 이루어질 우려가 있는 서비스를 제공하는 영업 <br />
+        9. 윤락행위, 퇴폐적 안마 등의 신체적 접촉, 성관련 신체부위의 노출 등 성적 접대행위 및 이와 유사한 행위가 이루어질 우려가 있는 영업 <br />
+        10. 영업의 형태나 목적이 주로 성인을 대상으로 한 술·노래·춤의 제공 등 유흥접객행위가 이루어지는 영업 <br />
+        11. 주로 성인용의 매체물을 유통하는 영업 <br />
+        12. 청소년유해매체물·청소년유해약물등을 제작·생산·유통하는 영업중 청소년의 출입·고용이 청소년의 심신발달에 장애를 유발할 우려가 있는 영업 <br /><br />
+
+        ◆ 청소년고용금지업소 <br /><br />
+
+        1. 청소년게임제공업, 인터넷컴퓨터게임시설제공업<br />
+        2. 숙박업, 이용업, 목욕장업중 안마실을 설치하여 영업을 하거나 또는 개실로 구획하여 하는 영업<br />
+        3. 주로 다류를 조리·판매하는 다방중 종업원에게 영업장을 벗어나 다류 등을 배달·판매하게 하면서 소요시간에 따라 대가를 수수하게 하거나 이를 조장 또는 묵인하는 형태로 운영되는 영업 <br />
+        4. 비디오물소극장업 <br />
+        5. 유독물영업 (유독물을 직접 사용하지 아니하는 장소에서 이루어지는 영업 제외) <br />
+        6. 만화대여업 <br />
+        7. 청소년유해매체물 또는 청소년유해약물등을 제작·생산·유통하는 영업으로서 청소년이 고용되어 근로할 경우에 청소년유해매체물 또는 청소년유해약물등에 쉽게 접촉되어 고용청소년의 건전한 심신발달에 장애를 유발할 우려가 있는 영업 <br />
+        8. 외견상 영업행위가 성인·청소년 모두를 대상으로 하지만 성인대상의 영업이 이루어짐으로써 고용청소년에게 유해한 근로행위의 요구가 우려되는 영업 <br />
+        9. 고압작업 및 잠수작업 <br />
+        10. 운전·조종면허 취득을 제한하고 있는 직종 또는 업종의 운전·조종업무 <br />
+        11. 교도소 또는 정신병원에서의 업무 <br />
+        12. 소각 또는 도살의 업무 <br />
+        13. 유류를 취급하는 업무(주유업무는 제외) <br />
+        14. 2-브로모프로판을 취급하거나 노출될 수 있는 업무 <br />
+        15. 그 밖에 고용노동부장관이 산업재해보상보험및예방심의위원회의 심의를 거쳐 지정하여 고시하는 업무
+
+	</div>
+</div>
+<!-- 광고 삽입 부분
+<div id="ad_zone">
+<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">광고영역</p>
+</a>   
+</div>
+광고 삽입 부분 -->
+
+</body>
+</html>

@@ -421,6 +421,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .wt_u .nation_chk .chk_lb, .wt_u .oversea_chk .chk_lb{font-size:14px; line-height:14px; padding-top:px; padding-bottom:9px;}
 .wt_u .chk_wrap{left:7px; padding:4px 0 5px 0;}
 .wt_u .wt_notice{display:block; clear:both; padding-top:7px; font-size:13px!important;}
+.wt_u .wt_notice2{display:block; clear:both; padding:0 0 5px 0;font-size:12px!important;}
 .wt_u .fc_red{color:#ff0000; font-weight:normal; padding-bottom:5px;}
 
 .wt_u .wt_detail{position:relative; width:100%; height:40px; line-height:40px; padding:0 8px; border:1px solid #c0c7d4; border-radius:3px; background-color:#f8fafe; box-sizing:border-box;}
@@ -466,3 +467,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .law_layer h2 .law_clse a{display:block; position:relative; width:100%; height:100%; text-indent:-9999px; background:url('http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse03.png') right center no-repeat; background-size:20px 20px;}
 .law_layer .layer_txt{position:relative; width:100%; height:auto; padding:13px 3px; box-sizing:border-box; font-size:14px; line-height:18px; text-align:justify;}
 .law_layer .layer_red{color:#ff0000;}
+
+/****************************** 170327 김다미 ******************************/
+/* 탭 네비 */
+.law_tab {position:relative; width:100%; height:auto;}
+.law_tab ul {position:relative; width:100%; height:40px; line-height:40px;}
+.law_tab li {float:left; width:50%; height:100%;}
+.law_tab li a {display:block; width:100%; height:100%; color:#46526c; font-size:14px; text-align:center; letter-spacing:-0.5px;}
+.law_tab li .tab_on{color:#0081d5;}
+.law_tab .slider {position:absolute; left:0; bottom:0; clear:both; width:50%; height:4px; background-color:#0081d5; transition:all 0.1s ease-in-out;-webkit-transition:all 0.1s ease-in-out; -o-transition:all 0.1s ease-in-out; -moz-transition:all 0.1s ease-in-out; -ms-transition:all 0.1s ease-in-out;}
+
+.law_info_box {position:relative; height:auto; line-height:20px; padding:10px 12px; box-sizing:border-box; font-size:14px;}
