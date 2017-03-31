@@ -112,7 +112,7 @@
 .pop_title span {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:2px;}
 
 .pop_txt {position:relative; width:100%; height:auto; padding:20px 0; font-size:14px; text-align:center; line-height:20px; letter-spacing:-0.5px; font-weight:700;}
-.pop_txt img{vertical-align: middle; padding:0 2px;}
+.pop_txt img{vertical-align:middle; padding:0 2px;}
 .pop_app {position:relative; width:290px; height:auto; margin:0 auto; padding:20px 0 20px 70px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/img_launch.png) no-repeat 9px center; background-size:52px 53px; font-size:14px; text-align:left; line-height:20px; box-sizing:border-box; letter-spacing:-0.5px; font-weight:700;}
 
 /* 팝업 하단 */
@@ -360,3 +360,15 @@ input:-moz-placeholder {color:#46526c; font-weight:normal;}
 .btn_regi{position:fixed; z-index:10; bottom:0; left:0; right:0; z-index:600; width:100%; height:50px; line-height:50px; background-color:#46526c;}
 .btn_regi a{display:block; width:100%; height:100%; text-align:center; font-weight:900; font-size:17px; color:#fff;}
 .btn_regi a:active{background:rgba(0,0,0,0.05);}
+
+/****************************** 170330 김다미 ******************************/
+/* 엔딩팝업 */
+.ending_pop_bg {position:fixed; width:100%; height:100%; background-color:rgba(0,0,0,0.7);}
+.ending_pop {display:block; position:fixed; top:50%; left:50%; margin-top:-200px; margin-left:-137px; width:275px; height:390px; padding:0; overflow:none; background-color:#fff;}
+.ending_pop img {display:block; position:relative; top:0; left:0; width:275px; height:295px; margin:0; padding:0; border:none;}
+.txt_section {display:block; position:relative; top:0; left:0; padding:14px 13px; background-color:#fff;}
+.txt_section p {display:block; position:relative; text-align:center; font-size:16px; font-weight:900; color:#737373; letter-spacing:-0.5px; margin-bottom:13px;}
+.btn:after{content:""; display:block; clear:both;}
+.btn a {width:118px; height:37px; border:1px solid #bcbcbc; box-sizing:border-box; text-align:center; font-size:16px; font-weight:bold; color:#737373; letter-spacing:-0.5px; line-height:36px;}
+.btn .btn_cancel {float:left;}
+.btn .btn_confirm {float:right;}

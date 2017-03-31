@@ -371,17 +371,17 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_l{position:relative; width:100%; height:auto; padding:0 10px; margin-bottom:4px; border-radius:5px 5px 0 0; border:1px solid #d9deea; box-sizing:border-box; background-color:#fff; overflow:hidden; box-shadow:1px 1px 2px #dde2ea;}
 .card_l:last-of-type{margin-bottom:0px;}
 .card_l:active{background-color:#f7f7f7;}
-.card_l .help_badge{position:absolute; top:7px; left:8px;}
+.card_l .help_badge{position:absolute; top:3px; left:8px;}
 
-.card_photo_wrap{position:absolute; z-index:10; top:10px; left:10px; width:90px; height:74px; line-height:74px; overflow:hidden; text-align:center;}
-.card_photo_wrap .logo_clip{width:90px; height:36px; margin:19px 0;}
-.card_photo_wrap .person_clip{width:62px; height:74px;}
+.card_photo_wrap{position:absolute; z-index:10; top:5px; left:10px; width:90px; height:74px; line-height:74px; overflow:hidden; text-align:center;}
+.card_photo_wrap .logo_clip{width:90px; height:36px; margin:19px 0; border-radius:3px;}
+.card_photo_wrap .person_clip{width:62px; height:74px; border-radius:3px;}
 .card_photo_wrap .logo_no{display:inline-block; width:90px; height:36px; line-height:36px; margin:19px 0; background-color:#f7f9fc; border:1px solid #cdd5e1; border-radius:3px; box-sizing:border-box; overflow:hidden; color:#434343; font-weight:900; font-size:18px; letter-spacing:-0.5px;}
 .card_photo_wrap .logo_long{font-size:14px;}
 .card_photo_wrap .logo_very_long{font-size:12px;}
 
 .card_profile{position:relative; width:100%; height:auto; letter-spacing:-0.5px;}
-.card_top{position:relative; width:100%; height:auto; padding:10px 0 8px 100px; box-sizing:border-box;}
+.card_top{position:relative; width:100%; height:auto; padding:5px 0 2px 100px; box-sizing:border-box;}
 .card_top .top_name{position:relative; width:100%; height:18px; line-height:20px; padding-right:50px; box-sizing:border-box; font-size:12px; font-weight:700; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .card_top .badge_alba_offer, .card_top .badge_job_offer, .card_top .badge_find_alba, .card_top .badge_find_job{display:inline-block; width:54px; height:18px; vertical-align:top; text-indent:-9999px;}
 .card_top .company_c{color:#42af7c;}
@@ -391,13 +391,13 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_top .top_title{width:100%; height:18px; line-height:18px; font-size:16px; padding:4px 0 2px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .card_top .top_txt{display:block; display:-webkit-box; width:100%; height:36px; line-height:18px; font-size:14px; color:#545454; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
 
-.card_admin{position:absolute; top:7px; right:0; width:auto; line-height:13px; font-size:13px; padding-bottom:7px; text-align:right;}
+.card_admin{position:absolute; top:4px; right:0; width:auto; line-height:13px; font-size:13px; padding-bottom:7px; text-align:right;}
 .card_admin span{margin-right:7px; font-weight:700;}
 .card_admin span:last-of-type{margin-right:0;}
 
-.card_bottom{position:relative; width:100%; height:auto; padding:7px 0 10px 0; border-top:1px solid #d9deea;}
+.card_bottom{position:relative; width:100%; height:auto; padding:2px 0 5px 0; border-top:1px solid #d9deea;}
 .card_bottom .bottom_u{position:relative; width:100%; height:13px; font-size:13px; color:#767676; font-weight:700;}
-.card_bottom .bottom_u:first-of-type{padding-bottom:6px;}
+.card_bottom .bottom_u:first-of-type{padding-bottom:5px;}
 .card_bottom .bottom_l{display:inline-block; padding-left:12px; vertical-align:middle; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar05.png) no-repeat 5px center; background-size:1px 10px;}
 .card_bottom .bottom_l:first-child{padding-left:0px; background:none;}
 .card_bottom .bottom_over{max-width:67%; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
@@ -414,8 +414,8 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 }
 
 .card_my{padding:25px 9px 0 9px; border-radius:8px 8px 0 0; border:2px solid #02a89f;}
-.card_my .help_badge{top:32px;}
-.card_my .card_photo_wrap{top:35px;}
+.card_my .help_badge{top:28px;}
+.card_my .card_photo_wrap{top:30px;}
 .my_up{position:absolute; top:0; left:0; width:100%; height:25px; line-height:25px; border-radius:0px; background-color:#02a89f; color:#fff; text-align:center; font-size:14px; font-weight:700;}
 .my_up span{display:inline-block; width:auto; height:100%; padding-left:18px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_up02.png) no-repeat left 6px; background-size:11px 11px;}
 
