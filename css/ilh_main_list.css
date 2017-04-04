@@ -252,10 +252,10 @@ z-index 순서 : 내메뉴(900) 내메뉴배경(800) 드롭(700) 드롭배경(60
 
 .float_bg_modal{display:none; position:absolute; z-index:20; top:0; right:0; width:50px; height:50px; border-radius:100%; background:rgba(0,0,0,0.6);}
 .float_btn {position:relative; z-index:10; width:50px; height:50px; border-radius:100%; text-indent:-9999px; background:#259ee8 url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_floating.png) no-repeat center center; background-size:17px 17px; box-shadow:0px 3px 10px -2px #b3d0f1; transition:0.12s transform ease-in-out; cursor:pointer;}
-.float_write{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_write{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0; /*transition:0.2s all ease-in-out;*/}
 .float_write a{display:block; width:25%; height:100%; border-radius:100%;  background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_float_write.png) no-repeat center center; background-size:21px 23px; box-shadow:0px 2px 4px #383838; float:left;}
 .float_write a:active{background:#efefef url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_float_write.png) no-repeat center center; background-size:21px 23px;}
-.float_map{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0;}
+.float_map{position:absolute; top:-25px; right:0px; width:400%; height:50px; line-height:50px; transform:scale(0); transform-origin:87.5% center; opacity:0; /*transition:0.2s all ease-in-out;*/}
 .float_map a{display:block; width:25%; height:100%; border-radius:100%;  background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_float_map.png) no-repeat center center; background-size:23px 24px; box-shadow:0px 2px 4px #383838; float:left;}
 .float_map a:active{background:#efefef url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_float_map.png) no-repeat center center; background-size:23px 24px; box-shadow:0px 2px 4px #383838; float:left;}
 .float_txt{width:75%; height:100%; padding-right:12px; box-sizing:border-box; font-size:15px; color:#fff; font-weight:700px; text-align:right; float:left;}

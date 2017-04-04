@@ -304,8 +304,8 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .nopg_fix{position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height: 100%; background-color:#fff;}
 .nopg_wrap{position:fixed; top:50%; left:50%; width:315px; height:auto; margin:-170px 0 0 -157.5px;}
 .nopg_txt{position:relative; width:100%; height:auto;}
-.nopg_txt .nopg_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/icon_exclam02.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
-.nopg_txt .updt_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.club5678.com/imgs/ilheayo_job/img01/icon_updata.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
+.nopg_txt .nopg_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_exclam02.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
+.nopg_txt .updt_title{width:100%; height:18px; line-height:18px; font-size:18px; padding-top:76px; text-align:center; color:#46526c; background:#fff url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/icon_updata.png) no-repeat center top; background-size:47px 47px; letter-spacing:-0.5px;}
 .nopg_txt .nopg_notice{width:100%; height:auto; line-height:24px; padding:22px 0 25px 0; color:#46526c; font-size:15px; text-align:center; letter-spacing:-1px; border-bottom:1px solid #d1d8e0;}
 .nopg_btn{position:relative; width:265px; height:auto; padding-top:25px; margin:0 auto;}
 .nopg_btn:after{content:""; display:block; clear:both;}
@@ -326,7 +326,7 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .my_up_wrap{position:relative; width:100%; height:35px; padding:7px 5px 0 5px; box-sizing:border-box;}
 .my_up_wrap a{display:block; width:100%; height:100%; line-height:31px; background-color:#e0f0fb; border-bottom:1px solid #bfd2df; text-align:center; font-size:14px; color:#46526c; letter-spacing:-0.5px; border-radius:7px 7px 0 0;}
 .my_up_wrap a:active{position:relative; top:1px;}
-.my_up_wrap a span{display:inline-block; padding-left:18px; background:url(http://image.club5678.com/imgs/ilheayo_job/img01/ico_my_up.png) no-repeat left 8px; background-size:12px 12px;}
+.my_up_wrap a span{display:inline-block; padding-left:18px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_my_up.png) no-repeat left 8px; background-size:12px 12px;}
 
 /****************************** 170315 김다미 ******************************/
 /* 메인 리스트 공통사용 */
@@ -388,15 +388,15 @@ er:1px solid #d8deea; border-radius:100%; box-sizing:border-box; opacity:1; tran
 .card_top .person_m{color:#5d6ad0;}
 .card_top .person_f{color:#ff698a;}
 .card_top .top_time{position:absolute; top:0px; right:0px; display:inline-block; vertical-align:middle; color:#8e8e8e;}
-.card_top .top_title{width:100%; height:18px; line-height:18px; font-size:16px; padding:4px 0 2px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
-.card_top .top_txt{display:block; display:-webkit-box; width:100%; height:36px; line-height:18px; font-size:14px; color:#545454; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
+.card_top .top_title{width:100%; height:18px; line-height:18px; font-size:14px; padding:4px 0 2px 0; font-weight:700; color:#464545; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.card_top .top_txt{display:block; display:-webkit-box; width:100%; height:36px; line-height:18px; font-size:13px; color:#929292; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2; font-weight:700;}
 
 .card_admin{position:absolute; top:4px; right:0; width:auto; line-height:13px; font-size:13px; padding-bottom:7px; text-align:right;}
 .card_admin span{margin-right:7px; font-weight:700;}
 .card_admin span:last-of-type{margin-right:0;}
 
-.card_bottom{position:relative; width:100%; height:auto; padding:2px 0 5px 0; border-top:1px solid #d9deea;}
-.card_bottom .bottom_u{position:relative; width:100%; height:13px; font-size:13px; color:#767676; font-weight:700;}
+.card_bottom{position:relative; width:100%; height:auto; padding:3px 0 5px 0; border-top:1px solid #d9deea;}
+.card_bottom .bottom_u{position:relative; width:100%; height:13px; font-size:13px; color:#585858; font-weight:700;}
 .card_bottom .bottom_u:first-of-type{padding-bottom:5px;}
 .card_bottom .bottom_l{display:inline-block; padding-left:12px; vertical-align:middle; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/bg_bar05.png) no-repeat 5px center; background-size:1px 10px;}
 .card_bottom .bottom_l:first-child{padding-left:0px; background:none;}
