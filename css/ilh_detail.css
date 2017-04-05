@@ -40,7 +40,7 @@
 #container .dt_content .dt_u .dt_r {float:left; width:auto; height:auto; text-align:left; line-height:28px;}
 #container .dt_content .dt_u .dt_r a{font-size:13px!important;}
 #container .dt_content .dt_u .dt_r .dt_direct_call{display:inline-block; vertical-align:middle; width:60px; height:20px; margin-left:5px;}
-#container .dt_content .dt_u .dt_r .dt_direct_call a{display:block; width:100%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_direct_call.png) no-repeat center center; background-size:55px 20px; text-indent:-9999px;}
+#container .dt_content .dt_u .dt_r .dt_direct_call a{display:block; width:100%; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/btn_direct_call.png) no-repeat center center; background-size:60px 20px; text-indent:-9999px;}
 #container .dt_content .dt_u .dt_r .dt_direct_call a:active{position:relative; top:1px;}
 #container .dt_content .dt_u .day_badge, #container .dt_content .dt_u .month_badge, #container .dt_content .dt_u .annual_badge, #container .dt_content .dt_u .part_badge{margin-right:3px;}
 #container .dt_content .dt_u .dt_adress {clear:both; font-size:14px; margin-top:7px;}

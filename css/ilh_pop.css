@@ -118,7 +118,7 @@
 /* 팝업 하단 */
 .pop_dn {position:relative; width:100%; height:auto; border-radius:0 0 7px 7px;}
 .pop_dn .pop_check {position:relative; width:100%; height:auto; padding:3px 2% 6px 2%; box-sizing:border-box;}
-.pop_dn .pop_check_over{height:90px; overflow-y:auto; box-sizing:border-box; -webkit-overflow-scrolling: touch;}
+.pop_dn .pop_check_over{height:80px; overflow-y:auto; box-sizing:border-box; -webkit-overflow-scrolling: touch;}
 .pop_dn .pop_check:after {display:block; clear:both; content:"";}
 .pop_dn .pop_check .pop_slct {position:relative; float:left; width:30.33333%; height:30px; margin:3px 1.5% 0 1.5%; padding:0 15px 0 5px; border:1px solid #add4ed; border-radius:5px; background-color:#f7fcff; color:#539fd0; font-size:13px; line-height:30px; box-sizing:border-box; overflow:hidden;}
 .pop_dn .pop_check .pop_slct a {display:block; width:100%; height:100%; font-size:13px; letter-spacing:-0.5px;}
@@ -367,18 +367,17 @@ input:-moz-placeholder {color:#46526c; font-weight:normal;}
 .btn .btn_confirm {float:right;}
 
 /****************************** 170404 김다미 ******************************/
-/* 성별/나이 */
-.pop_content .pop_u .pop_l_list {width:100%; height:45px; line-height:45px; text-align:center;}
-.pop_content .pop_u .pop_l_list a{display:block; width:100%; height:100%; color:#000; font-size:15px; padding-left:5px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box; letter-spacing:-0.5px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l_list a:active{background:rgba(0,0,0,.05) url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_chk02_off.png) 7% center no-repeat; background-size:18px 18px;;}
-.pop_content .pop_u .pop_l_list .slct_active{color:#24a0ea; font-weight:bold; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
-.pop_content .pop_u .pop_l_list .slct_active:active{background:rgba(0,0,0,.05) url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_chk03_on.png) 7% center no-repeat; background-size:18px 18px;}
+/* 성별/나이 선택팝업 */
+.pop_content .pop_u .pop_l_list {width:100%; height:50px; line-height:50px; text-align:center;}
+.pop_content .pop_u .pop_l_list a{display:block; width:100%; height:100%; color:#000; font-size:15px; border-width:0px 1px 1px 0; border-style:solid; border-color:#e7e7e7; box-sizing:border-box; letter-spacing:-0.5px;}
+.pop_content .pop_u .pop_l_list a:active{background:rgba(0,0,0,.05);}
+.pop_content .pop_u .pop_l_list .slct_active{color:#24a0ea; font-weight:bold;}
 
 /* 팝업 헤더 */
 .pop_header {position:relative; width:100%; height:auto;}
 .pop_header h2 {width:100%; height:45px; margin:0; padding:0 15px; border-radius:7px 7px 0 0; color:#fff; font-size:18px; line-height:45px; box-sizing:border-box;}
 .pop_header h3 {position:relative; width:100%; height:30px; margin:0; padding:0 20px; color:#303030; font-size:15px; font-weight:400; line-height:29px; box-sizing:border-box; letter-spacing:-1px;}
-.pop_header .h3_divi{padding:0 15px; font-weight:bold; background-color:#eceff4; border-bottom:1px solid #e7e7e7; color:#364057;}
-.pop_header h3 .h3_sub{font-size:13px; color:#767676; font-weight:400; margin-left:8px;}
+.pop_header .h3_divi{height:35px; line-height:35px;  padding:0 15px; font-weight:bold; color:#fff;}
+.pop_header .h3_divi .h3_sub{font-size:13px; font-weight:normal; margin-left:8px;}
 .pop_header h3 .grd_pop {display:block; position:absolute; left:0; right:0; bottom:0; width:100%; height:1px;}
-.pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:45px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat 70% center; background-size:18px 18px; text-indent:-9999px;}
+.pop_header .pop_clse {position:absolute; top:0; right:0; width:60px; height:100%; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_clse.png) no-repeat 70% center; background-size:18px 18px; text-indent:-9999px;}
