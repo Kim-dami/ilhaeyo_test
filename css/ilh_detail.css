@@ -74,7 +74,10 @@
 /* 다음 지도 */
 .dt_map_wrap{position:relative; width:100%; clear:both; background-color:#eceff4; border:1px solid #46526c; box-sizing:border-box;}
 .dt_map_wrap .map_title{position:relative; height:30px; line-height:30px; background:rgba(70, 82, 108, 0.8); color:#fff; font-size:13px; padding:0 90px 0 10px; box-sizing:border-box; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
-.dt_map_wrap .map_title a{position:absolute; top:3px; right:5px; display:inline-block; width:80px; height:22px; line-height:23px; font-size:12px; text-align:center; background-color:#343e53; border:1px solid #232b3c;}
+.dt_map_wrap .map_title a{position:absolute; top:3px; right:5px; display:inline-block; width:auto; height:22px; line-height:23px; padding:0 15px; font-size:12px; text-align:center; color:#232b3c; background-color:#fff; border:1px solid #343e53;}
+.no_gps{padding:0px!important; text-align:center;}
+.no_gps a{position:relative!important; top:0!important; right:0!important;}
+
 .map_gps{position:relative; clear:both; width:100%; height:150px; background-color:#eceff4; box-sizing:border-box;}
 .map_gps .attention{padding:30px 15px 0 15px; font-size:13px; font-weight:700; line-height:18px; color:#343e53; letter-spacing:-1px; text-align:center}
 .map_gps .attention a{display:block; width:125px; height:25px; line-height:25px; margin:12px auto 0 auto; border:1px solid #e4a52a; font-size:13px; background-color:#ffbb37; color:#fff; text-align:center;}
