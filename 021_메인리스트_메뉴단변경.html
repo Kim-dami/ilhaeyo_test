@@ -36,17 +36,30 @@ $(document).ready(function(){
     $(".rolling_wrap").click(function(){
         $(this).toggleClass("rolling_wrap_on");
     });
+    /* 로고 리플 */
+    $(".header_logo").click(function(){
+        $(".logo_ripple").addClass("logo_ripple_on");
+        setTimeout(function(){
+			$(".logo_ripple").removeClass("logo_ripple_on");
+		},500);
+    });
 });
 </script>
 </head>
 <body ontouchstart="">
 <!---------------------------------------- 메인리스트 ---------------------------------------->
 <div id="wrap">
+    <div class="logo_ripple">
+        <span></span>    
+    </div>
 	<!-- 공통 헤더 -->
 	<div id="header" class="header_relative grd_main">
         <h1 class="header_logo">
             일해요
         </h1>
+        <div class="header_btn btn_back hidden" style="left:10px;">
+            <a href="#">뒤로</a>
+        </div>
 		<div class="srch_wrap">
             <div class="srch_bg">
                 <input type="text" id="srch_text" placeholder="직업, 상호(이름), 제목검색">
@@ -234,7 +247,8 @@ $(document).ready(function(){
         <!-- 롤링 메세지 -->
         <div class="rolling_wrap">
            <div class="roll_bg_modal"></div>
-           <div class="dot_fix"></div>   
+           <div class="dot_fix"></div>
+           <div id="rolling_div">   
            <ul class="rolling_u">
               <li class="rolling_l">
                   <p>
@@ -273,6 +287,7 @@ $(document).ready(function(){
                   </p>
               </li>
            </ul>
+           </div>
            <div class="btn_toggle">
            ▼   
            </div>          
