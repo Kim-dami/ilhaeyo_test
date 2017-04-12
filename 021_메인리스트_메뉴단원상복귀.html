@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>일해요!</title>
+<link rel="stylesheet" type="text/css" href="css/nanum_sq_url.css">
+<link href="css/ilh_default.css" rel="stylesheet" type="text/css">
+<link href="css/ilh_main_list.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async type="text/javascript" src="http://devm-yupitereu.ilhaeyo.com/_global/assets/js/jquery-mobile.event.min.js"></script>
+<script>
+$(document).ready(function(){
+	/* 전체보기 버튼 click시 메뉴 슬라이드토글 */
+	$(".btn_dropmenu").click(function(){
+        $(this).toggleClass("btn_dropmenu_on");
+        $("#main_bg_modal01").toggleClass("hidden");
+		$(".dropmenu_container").slideToggle(200);
+		$(".dropmenu_container li a").toggleClass("dropmenu_fade");
+	});
+    /* 필터 click시 상세검색 토글 */
+	$(".main_filter_l").click(function(){
+        $(".main_result").fadeToggle(200);
+        $(".ds_wrap").slideToggle(300);
+        $(".ds_wrap").toggleClass("ds_wrap_fade");
+	});
+    /* 상세검색 버튼 click시 옵션 슬라이드토글 */
+	$(".ds_slct").click(function(){
+        $(this).toggleClass("slct_active");
+        $("#main_bg_modal01").toggleClass("hidden");
+		$(this).next(".ds_option").slideToggle(200);
+	});
+    /* 플로팅버튼 */
+	$(".float_wrap").click(function(){
+        $(this).toggleClass("float_wrap_on");
+        $("#main_bg_modal03").toggleClass("hidden");
+    });
+    /* 롤링 클릭 */
+    $(".rolling_wrap").click(function(){
+        $(this).toggleClass("rolling_wrap_on");
+    });
+});
+</script>
+<style>
+    .ds_wrap{display:none;}
+</style>
+</head>
+<body ontouchstart="">
+<!---------------------------------------- 메인리스트 ---------------------------------------->
+<div id="wrap">
+	<!-- 공통 헤더 -->
+	<div id="header" class="header_relative grd_main">
+	    <div class="header_btn btn_my">
+			<a href="#left-panel">마이메뉴</a>
+			<span class="badge">N</span>
+		</div>
+		<div class="srch_wrap">
+            <div class="srch_bg">
+               <div class="srch_btn srch_back">
+				<a href="#">뒤로</a>
+                </div>
+                <input type="text" id="srch_text">
+                <label for="srch_text">일해요</label>
+                <!--<div class="srch_btn srch_voice">
+                    <a href="#">음성 검색</a>
+                </div>-->
+                <div class="srch_btn srch_del">
+                    <a href="#">검색어 삭제</a>
+                </div>
+                <div class="srch_btn srch_on">
+                    <a href="#">검색</a>
+                </div>
+            </div>
+        </div>
+		<div class="header_btn btn_my_roca">
+			<a href="#right-panel">구인&amp;구직 검색</a>
+		</div>
+	</div>
+	<!-- // 공통 헤더 -->
+	<!-- 최근검색 및 추천검색 -->
+    <div class="history_wrap">
+        <div class="srch_history box_shadow1">
+            <!-- 직업검색 -->
+            <ul id="jobCtgr_srchWord" class="hidden">
+                <li>
+                <a href="#" class="srch_go">건설일용직><span class="srch_rel ft_wt700">배</span>관</a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">건설일용직>도<span class="srch_rel ft_wt700">배</span></a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">단순직>오토바이 <span class="srch_rel ft_wt700">배</span>달</a>
+                </li>
+                <li>
+                <a href="#" class="srch_go">단순직>오토바이 <span class="srch_rel ft_wt700">배</span>달</a>
+                </li>
+            </ul>
+            <!-- 추천검색 -->
+            <ul id="recommend_srchWord" class="hidden">
+                <li>
+                <a href="#">추천검색어1</a>
+                </li>
+                <li>
+                <a href="#">추천검색어2</a>
+                </li>
+                <li>
+                <a href="#">추천검색어3</a>
+                </li>
+            </ul>
+            <!-- 최근검색 -->
+            <ul id="latest_srchWord" class="hidden">
+                <li>
+                <a href="#" class="srch_go">레고</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">선박배관</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">과수원</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">레고</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">선박배관</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+                <li>
+                <a href="#" class="srch_go">과수원</a>
+                <div class="history_del">
+                    <a href="#">검색어삭제</a>
+                </div>
+                </li>
+            </ul>
+            <!-- 검색어 전체삭제 -->
+            <div class="history_all_del hidden">
+            <a href="#" class="ft_wt700">검색어 전체삭제</a>
+            </div>
+            <!-- 검색어 없음 -->
+            <div class="history_none ft_wt700">
+                 최근 검색어가 없습니다
+            </div>
+        </div>
+    </div>
+	<!-- // 최근검색 및 추천검색 -->
+	<div class="fix_wrap">
+        <!-- 메인 필터 -->
+        <div class="main_filter grd_main">
+            <!-- 홈 버튼 -->
+            <div class="btn_main_home">
+               <a href="#">홈 버튼</a>
+            </div>
+            <!-- // 홈 버튼 -->
+            <ul class="main_filter_u">
+                <li class="main_filter_l">
+                    <a href="#">전체</a>
+                </li>
+                <li class="main_filter_l">
+                    <a href="#">직업</a>
+                </li>
+                <li class="main_filter_l">
+                    <a href="#">지역</a>
+                </li>
+            </ul>
+            <!-- 글쓰기 -->
+            <div class="btn_main_write">
+               <a href="#">
+                   글쓰기
+               </a>
+            </div>
+            <!-- // 글쓰기 -->
+            <!-- 전체보기 -->
+            <div class="dropmenu_wrap">
+        	<a href="#" class="btn_dropmenu">
+            	전체보기
+            	<img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_new_badge.png" width="20" height="20" class="new_icon">
+            </a>
+            <ul class="dropmenu_container">
+            	<li>
+                	<a href="#">
+                    	<div class="dropmenu">대화함</div>
+                        <div class="count_alim">
+                            <div class="alim_num">99</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<div class="dropmenu">등록글 관리<br />및 올리기</div>
+                        <div class="count_alim">
+                            <div class="alim_num">5</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                	    <div class="dropmenu">스크랩</div>
+                	    <div class="count_alim">
+                            <div class="alim_num">12</div>
+                        </div>
+                	</a>
+                </li>
+                <li>
+                	<a href="#">
+                	    <div class="dropmenu">공지사항</div>
+                	    <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_new_badge.png" width="20" height="20" class="new_icon">
+                	</a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">카톡추천</div></a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">광고하기</div></a>
+                </li>
+                <li>
+                	<a href="#"><div class="dropmenu">더보기</div></a>
+                </li>
+            </ul>
+            </div>
+            <!-- 전체보기 -->
+        </div>
+        <!-- // 메인 필터 -->
+        <div class="change_wrap">
+            <!-- 메인 검색결과 -->
+            <div class="main_result ">
+                <div class="result_default">
+                   일해요는 등록비, 연락비, 수수료 모두 무료! 
+                </div>   
+                <div class="refresh_wrap">
+                    <a href="#" class="">
+                    <svg class="circle_svg" x="0px" y="0px" viewbox="0 0 150 150">
+                    <circle class="circle_inner" cx="75" cy="75" r="45"/>
+                    </svg>
+                    <span class="arrow_span"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- // 메인 검색결과 --> 
+            <!-- 상세 검색 -->
+            <div class="ds_wrap">
+                <div class="ds_title">
+                   상세검색
+                </div>
+                <div class="ds_content">
+                    <div class="ds_filter gender_slct">
+                        <div class="ds_slct">성별</div>
+                        <ul class="ds_option box_shadow1">
+                            <li class="option_active">전체</li>
+                            <li>남자</li>
+                            <li>여자</li>
+                        </ul>
+                    </div>
+                    <div class="ds_filter">
+                        <div class="ds_slct">나이</div>
+                    </div>
+                    <div class="ds_filter align_slct">
+                        <div class="ds_slct">정렬</div>
+                        <ul class="ds_option box_shadow1">
+                            <li class="option_active">등록일순</li>
+                            <li>마감일순</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="refresh_wrap">
+                    <a href="#" class="">
+                    <svg class="circle_svg" x="0px" y="0px" viewbox="0 0 150 150">
+                    <circle class="circle_inner circle_dark" cx="75" cy="75" r="45"/>
+                    </svg>
+                    <span class="arrow_span arrow_dark"></span>
+                    </a>
+                </div>
+            </div>
+        <!-- // 상세 검색 -->
+        </div>
+    </div>
+    <div id="main_bg_modal01" class="hidden">
+	</div>
+	<!-- 드롭메뉴 배경 -->
+	<!-- 메인리스트 -->
+	<div id="container" class="mt_70">
+        <!-- 롤링 메세지 -->
+        <div class="rolling_wrap">
+           <div class="roll_bg_modal"></div>
+           <div class="dot_fix"></div>
+           <div id="rolling_div">   
+               <ul class="rolling_u">
+                  <li class="rolling_l">
+                      <p>
+                      등록은 <span class="fc_red">모두 무료</span>이며, 구인글은 다수개를 등록할 수 있습니다.
+                      </p>
+                  </li>
+                  <li class="rolling_l">
+                      <p>
+                      일해요는 <span class="fc_red">어플, 모바일웹, PC</span> 에서 모두 사용할 수 있습니다.
+                      </p>
+                  </li>
+                  <li class="rolling_l">
+                      <p>
+                      <span class="fc_red">네이버, 카카오</span>아이디로 <span class="fc_red">간편가입</span>이 가능합니다.
+                      </p>
+                  </li>
+                  <li class="rolling_l">
+                      <p>
+                      <span class="fc_red">정보가 맞지 않는 글</span>이나 일해요 <span class="fc_red">서비스와 관련 없는 글</span>은 
+                      </p>
+                      <p>
+                      <span class="fc_red">삭제 및 정리</span>처리 됩니다.
+                      </p>
+                  </li>
+                  <li class="rolling_l">
+                      <p>
+                      내가 찾는 직업 분야가 없는 경우 
+                      </p>
+                      <p>
+                      <span class="fc_red">'MY > 직업분야 추가요청'</span>에 등록해 주세요.
+                      </p>
+                  </li>
+                  <li class="rolling_l">
+                      <p>
+                      유흥업소, 유해업소 광고성 구인글은 삭제 및 정지 처리합니다.
+                      </p>
+                  </li>
+               </ul>
+           </div>
+           <div class="btn_toggle">
+           ▼   
+           </div>          
+        </div>
+        <!-- // 롤링 메세지 -->
+	    <ul class="card_u">
+            <li class="card_l">
+                <!-- 급구 -->
+                <div class="help_badge">급구</div>   
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 로고사진 -->
+                    <img src="img/logo02.png" alt="인포렉스" class="logo_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name company_c">
+                            <div class="badge_job_offer">
+                                일반구인
+                            </div>
+                            (주)인포렉스
+                            <span class="top_time">1분전</span>
+                        </div>
+                        <div class="top_title">
+                           웹개발 및 디자인 구합니다.                         
+                        </div>
+                        <div class="top_txt">
+                            무섭게 성장하는 인포렉스와 함께 새로운 미래를 그려가실 분을 모집합니다. 함께하실 분 연락주세요.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                ~ 3/31
+                            </li>
+                            <li class="bottom_l">
+                                연봉 <span class="pay_num">6,000</span> 만원
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                광주 서구
+                            </li>
+                            <li class="bottom_l">
+                                나이무관
+                            </li>
+                            <li class="bottom_l">
+                                00명/성별무관
+                            </li> 
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+            </li>
+            <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 인물사진 -->
+                    <img src="img/photo03.png" alt="나이쁨"  class="person_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name person_f">
+                            <div class="badge_find_alba">
+                                알바구직
+                            </div>
+                            나이쁨 (여/24세)
+                            <span class="top_time">20분전</span>
+                        </div>
+                        <div class="top_title">
+                           메이크업 아티스트입니다. 예쁘게 만들어드립니다.
+                        </div>
+                        <div class="top_txt">
+                            경험은 부족하지만 예쁜 얼굴 만들어 드릴 자신이 있습니다. 불러주세요.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                제주 전체
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l bottom_over">
+                                뷰티/헤어 > 메이크업 외 3종
+                            </li>
+                            <li class="bottom_l bottom_career">
+                                경력 없음
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	        </li>
+            <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <span class="logo_no">오뚜기건설</span>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name company_c">
+                            <div class="badge_job_offer">
+                                일반구인
+                            </div>
+                            오뚜기건설
+                            <span class="top_time">50분전</span>
+                        </div>
+                        <div class="top_title">
+                           경력 사원 모집합니다.                        
+                        </div>
+                        <div class="top_txt">
+                            힘차게 도약하는 한화건설의 미래와 함께하실 능력있는 건축설계사를 모집합니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                3/20 ~ 3/30
+                            </li>
+                            <li class="bottom_l">
+                                연봉 <span class="pay_num">8,000</span> 만원
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                부산 사상구
+                            </li>
+                            <li class="bottom_l">
+                                20세~30세
+                            </li>
+                            <li class="bottom_l">
+                                20명/남
+                            </li> 
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+            </li>
+            <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 인물사진 -->
+                    <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ava_woman02.png" alt="홍길순"  class="person_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name person_f">
+                            <div class="badge_find_job">
+                                일반구직
+                            </div>
+                            김영희 (여/40세)
+                        </div>
+                        <div class="top_title">
+                            청소 잘 합니다.                     
+                        </div>
+                        <div class="top_txt">
+                            경력단절됐지만 다시 일하고 싶습니다. 깔끔한 성격으로 청소 아주 잘합니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                서울 전체
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l bottom_over">
+                                IT/인터넷 > 그래픽/일러스트 외 3종
+                            </li>
+                            <li class="bottom_l bottom_career">
+                                경력 10년 이상
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	        </li>
+            <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 인물사진 -->
+                    <img src="img/photo02.png" alt="홍길순"  class="person_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name person_f">
+                            <div class="badge_find_alba">
+                                알바구직
+                            </div>
+                            홍길순(여/26세)
+                        </div>
+                        <div class="top_title">
+                           프리랜서 쇼핑몰 홈페이지 만들어드립니다.                        
+                        </div>
+                        <div class="top_txt">
+                            서울 강남 유명 웹에이전시에서 일했습니다. 클라이언트와 활발한 교류로 좋은 홈페이지 만들어가겠습니다. 포트폴리오 있습니다. 
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                서울 전체
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l bottom_over">
+                                IT/인터넷 > 그래픽/일러스트 외 3종
+                            </li>
+                            <li class="bottom_l bottom_career">
+                                경력 10년 이상
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	        </li>
+           <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 로고사진 -->
+                    <img src="img/logo.png" alt="코카콜라" class="logo_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name company_c">
+                            <div class="badge_alba_offer">
+                                알바구인
+                            </div>
+                            코카콜라 코리아 주식회사
+                            <span class="top_time">10분전</span>
+                        </div>
+                        <div class="top_title">
+                           홈페이지 디자인 및 관리 경력 모집함                            
+                        </div>
+                        <div class="top_txt">
+                            올해 코카콜라 주식회사 홈페이지를 리뉴얼하려고 합니다. 능력있는 웹디자이너 구합니다. 프리도 환영합니다. 많은 지원바랍니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                <span class="d_today">오늘마감</span>
+                            </li>
+                            <li class="bottom_l">
+                                월급 <span class="pay_num">300</span> 만원
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                경남 창원시 마산합포구
+                            </li>
+                            <li class="bottom_l">
+                                23세~34세
+                            </li>
+                            <li class="bottom_l">
+                                00명/성별무관
+                            </li> 
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+            </li>
+            <li class="card_l card_my">
+                <!-- 내글 위로올리기  -->
+                <div class="my_up">
+                    <span>내글 위로 올리기</span>        
+                </div>
+                <!-- 내글 위로올리기  -->
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 인물사진 -->
+                    <img src="img/photo.png" alt="홍길동"  class="person_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name person_m">
+                            <div class="badge_find_job">
+                                일반구직
+                            </div>
+                            홍길동(남/30세)
+                        </div>
+                        <div class="top_title">
+                           업무지원전문가입니다. 맡겨주세요!                        
+                        </div>
+                        <div class="top_txt">
+                            모모주식회사에서에서 3년, 유유주식회사에서 10년, 업무지원하면 바로 저 홍길동입니다. 확실히 보여드리겠습니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                서울 전체
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l bottom_over">
+                                경영/사무/기획 > 관리/업무지원 외 3종
+                            </li>
+                            <li class="bottom_l bottom_career">
+                                경력 10년 이상
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	        </li>
+	        <li class="card_l">
+                <!-- 급구 -->
+                <div class="help_badge">급구</div> 
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">   
+                    <!-- 로고사진 -->
+                    <img src="img/logo03.png" alt="패밀리마트" class="logo_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name company_c">
+                            <div class="badge_alba_offer">
+                                알바구인
+                            </div>
+                            패밀리마트
+                        </div>
+                        <div class="top_title">
+                           매장관리 및 진열 알바 2명 굽합니다.                        
+                        </div>
+                        <div class="top_txt">
+                            성실하게 일할 예쁜 알바생구합니다. 일 잘하면 시급 올려줄 의향 있습니다^^
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                상시구인
+                            </li>
+                            <li class="bottom_l">
+                                시급 <span class="pay_num">9,000</span> 원
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                경기 고양시 일산동구
+                            </li>
+                            <li class="bottom_l">
+                                20세~30세
+                            </li>
+                            <li class="bottom_l">
+                                0명/여자
+                            </li> 
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	       </li>
+	       <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <!-- 인물사진 -->
+                    <img src="http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ava_man02.png" alt="홍길동"  class="person_clip"/>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name person_m">
+                            <div class="badge_find_job">
+                                일반구직
+                            </div>
+                            홍길동(남/30세)
+                        </div>
+                        <div class="top_title">
+                           업무지원전문가입니다. 맡겨주세요!                        
+                        </div>
+                        <div class="top_txt">
+                            모모주식회사에서에서 3년, 유유주식회사에서 10년, 업무지원하면 바로 저 홍길동입니다. 확실히 보여드리겠습니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                서울 전체
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l bottom_over">
+                                경영/사무/기획 > 관리/업무지원 외 3종
+                            </li>
+                            <li class="bottom_l bottom_career">
+                                경력 10년 이상
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	        </li>
+	       <li class="card_l">
+                <!-- 사진영역 -->
+	            <div class="card_photo_wrap">
+                    <span class="logo_no logo_long">현대엔지니어링</span>
+	            </div>
+	            <!-- // 사진영역 -->
+	            <div class="card_profile">
+                    <!-- 카드 상단 -->
+                    <div class="card_top">
+                        <div class="top_name company_c">
+                            <div class="badge_job_offer">
+                                일반구인
+                            </div>
+                            현대엔지니어링
+                        </div>
+                        <div class="top_title">
+                           경력 사원 모집합니다.                        
+                        </div>
+                        <div class="top_txt">
+                            힘차게 도약하는 현대엔지니어링의 미래와 함께하실 능력있는 생산관리자를 모집합니다.
+                        </div>
+                    </div>
+                    <!-- // 카드 상단 -->
+                    <!-- 카드 하단 -->
+                    <div class="card_bottom">
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                3/20 ~ 3/30
+                            </li>
+                            <li class="bottom_l">
+                                일당 <span class="pay_num">20</span> 만원
+                            </li>
+                        </ul>
+                        <ul class="bottom_u">
+                            <li class="bottom_l">
+                                부산 사상구
+                            </li>
+                            <li class="bottom_l">
+                                20세~30세
+                            </li>
+                            <li class="bottom_l">
+                                20명/남
+                            </li> 
+                        </ul>
+                    </div>
+                    <!-- // 카드 하단 --> 
+	            </div>
+	       </li>
+	    </ul>
+	    <div id="main_bg_modal03" class="hidden">
+        </div>
+        <!-- 드롭메뉴 배경 -->
+	    <!-- 플로팅 -->
+	    <div class="float_wrap">
+            <div class="float_bg_modal"></div>
+	        <div class="float_btn">플로팅버튼</div>
+	        <div class="float_write">
+                <div class="float_txt">글쓰기/위로 올리기</div>
+	            <a href="#"></a>        
+	        </div>
+	        <div class="float_map">
+                <div class="float_txt">구인지도</div>
+	            <a href="#"></a>        
+	        </div>
+	    </div>
+		<!-- // 플로팅 -->
+		<!-- 위로 -->
+		<a href="#" class="go_up">위로올리기</a>
+		<!-- // 위로 -->
+		<!-- 더보기 -->
+       <div class="list_more">
+           <a href="#" class="ft_wt700">더보기</a>
+       </div>
+       <!-- // 더보기 -->
+	</div>
+	<!-- // 메인리스트 -->
+</div>
+<!-- 광고 삽입 부분 -->
+<!--<div id="ad_zone">
+	<a href="#">
+	<p style="font-size:18px; font-weight:700; color:#fff; text-align:center;">
+		광고영역
+	</p>
+	</a>
+</div>
+<!-- // 광고 삽입 부분 -->
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+    $(window).load(function(){
+        $(".scroll_wrap").mCustomScrollbar({
+            axis:"x",
+            theme:"minimal-dark"
+        });
+    });
+})(jQuery);
+</script>
+</body>
+</html>
