@@ -339,7 +339,7 @@ body{background-color:#eceff4;}
 /* 롤링 메세지 */
 .rolling_wrap{position:relative; z-index:100; width:100%; height:26px; padding:1px 5px 0 5px; box-sizing:border-box; -webkit-transform:translateZ(0);}
 
-.roll_bg_modal{display:none; position:fixed; top:118px; bottom:0; left:0; right:0; background:rgba(0,0,0,0.6);}
+.roll_bg_modal{display:none; position:fixed; top:85px; bottom:0; left:0; right:0; z-index:100; background:rgba(0,0,0,0.6);}
 .dot_fix{position:absolute; z-index:10; top:2px; left:6px; width:20px; height:23px; background:url(http://image.ilhaeyo.com/imgs/ilheayo_job/img01/ico_dot02.png) no-repeat 8px 7px; background-size:8px 8px;}
 .btn_toggle{position:absolute; top:2px; right:6px; width:30px; height:23px; line-height:23px; text-align:center; color:#626262; font-size:11px; cursor:pointer;}
 
